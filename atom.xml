@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Teal</title>
+  
+  <subtitle>星辰大海</subtitle>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-08-24T09:59:31.997Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Teal</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript关于数组方法</title>
+    <link href="http://yoursite.com/2020/08/25/bei-fen/"/>
+    <id>http://yoursite.com/2020/08/25/bei-fen/</id>
+    <published>2020-08-25T06:34:14.172Z</published>
+    <updated>2020-08-24T09:59:31.997Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Array-forEach-v-i-callback&quot;&gt;&lt;a href=&quot;#Array-forEach-v-i-callback&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+    <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jsArray</title>
+    <link href="http://yoursite.com/2020/08/25/jsarray/"/>
+    <id>http://yoursite.com/2020/08/25/jsarray/</id>
+    <published>2020-08-25T02:21:36.000Z</published>
+    <updated>2020-08-25T07:14:31.550Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Array-forEach-v-i-callback&quot;&gt;&lt;a href=&quot;#Array-forEach-v-i-callback&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+    <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>
