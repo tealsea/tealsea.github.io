@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档: 2020, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
+    <meta name="keywords" content="分类: 后端, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档: 2020 | Teal</title>
+    <title>分类: 后端 | Teal</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -379,48 +379,69 @@
 
     
 
+<div id="category-cloud" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
+            </div>
+            <div class="tag-chips">
+                
+                
+                
+                <a href="/categories/%E5%89%8D%E7%AB%AF/" title="前端: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9EBEA;">前端
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="数据库: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">数据库
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%90%8E%E7%AB%AF/" title="后端: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            style="background-color: #D5F5E3;">后端
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
     
 
-    <div id="cd-timeline" class="container">
-        
-        <div class="cd-timeline-block">
-
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
             
-            
-            
-            <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/archives/2020">2020</a>
-            </div>
-            
-
-            
-            
-            
-            <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2020/08">08</a>
-            </div>
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>25</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/08/25/bei-fen-fu-ben/">
-                            <div class="card-image">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/08/25/bei-fen-fu-ben/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mongodb数据加密">
+                            
+                            <span class="card-title">mongodb数据加密</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
                                 
-                                
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="mongodb数据加密">
-                                
-                                <span class="card-title">mongodb数据加密</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    
 打开终端 （如：cmd || powershell 等等…）
 
 输入  mongo
@@ -430,195 +451,47 @@ show dbs   //查询数据列表
 use admin  //切换至admin数据库
 
 db.createUser({user:’用户名’，pwd
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-25
+                            </span>
+                            <span class="publish-author">
                                 
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-08-25
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
                                     数据库
-                                    </a>
-                                    
-                                    <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                </a>
+                                
+                                <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%90%8E%E7%AB%AF/" class="post-category">
                                     后端
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
+                                </a>
+                                
+                                
+                            </span>
                         </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/mongodb/"><span class="chip bg-color">mongodb</span></a>
-                            
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"><span class="chip bg-color">数据库</span></a>
-                            
-                        </div>
-                        
                     </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
 
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>25</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/08/25/bei-fen/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="javascript关于数组方法">
-                                
-                                <span class="card-title">javascript关于数组方法</span>
-                            </div>
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/mongodb/">
+                            <span class="chip bg-color">mongodb</span>
                         </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    Array.forEach(v,i,callback)
-作用 :循环数组
-形参：
-
-
-v : 当前循环项
-
-i :  当前循环项索引
-
-callback: 回调函数
-
-
-const array = [
-    &amp;#123;
-    
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-08-25
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
                         
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/javascript/"><span class="chip bg-color">javascript</span></a>
-                            
-                            <a href="/tags/%E5%89%8D%E7%AB%AF/"><span class="chip bg-color">前端</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>25</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2020/08/25/jsarray/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="jsArray">
-                                
-                                <span class="card-title">jsArray</span>
-                            </div>
+                        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                            <span class="chip bg-color">数据库</span>
                         </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    Array.forEach(v,i,callback)
-作用 :循环数组
-形参：
-
-
-v : 当前循环项
-
-i :  当前循环项索引
-
-callback: 回调函数
-
-
-const array = [
-    &amp;#123;
-    
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-08-25
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/javascript/"><span class="chip bg-color">javascript</span></a>
-                            
-                            <a href="/tags/%E5%89%8D%E7%AB%AF/"><span class="chip bg-color">前端</span></a>
-                            
-                        </div>
                         
                     </div>
+                    
                 </div>
-            </article>
+            </div>
+            
         </div>
-        
-    </div>
-
+    </article>
 </main>
 
 

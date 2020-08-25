@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-24T09:59:31.997Z</updated>
+  <updated>2020-08-25T09:22:24.922Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mongodb数据加密</title>
+    <link href="http://yoursite.com/2020/08/25/bei-fen-fu-ben/"/>
+    <id>http://yoursite.com/2020/08/25/bei-fen-fu-ben/</id>
+    <published>2020-08-25T08:41:51.963Z</published>
+    <updated>2020-08-25T09:22:24.922Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;打开终端&lt;/strong&gt; （如：cmd || powershell 等等…）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;输入  &lt;strong&gt;mongo&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;show</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="后端" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="mongodb" scheme="http://yoursite.com/tags/mongodb/"/>
+    
+    <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript关于数组方法</title>
