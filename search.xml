@@ -4,9 +4,38 @@
   
     
     <entry>
+      <title>node将明文密码加密</title>
+      <link href="//nobcrypt/"/>
+      <url>//nobcrypt/</url>
+      
+        <content type="html"><![CDATA[<h3 id="今天给大家介绍一款Node密码加密的模块-bcrypt"><a href="#今天给大家介绍一款Node密码加密的模块-bcrypt" class="headerlink" title="今天给大家介绍一款Node密码加密的模块 bcrypt"></a>今天给大家介绍一款Node密码加密的模块 bcrypt</h3><ol><li><p>使用bcrypt模块加密前确保本机存在python环境  </p><p><a href="https://www.python.org/">python官网</a></p></li><li><p>下载bacrypt模块</p><pre><code>npm install bcrypt</code></pre></li><li><p>在本地项目中导入bcrypt模块</p><pre><code>const bcrypt = require(&#39;bcrypt&#39;)</code></pre></li><li><p>生成盐  （理论下值于高，越不容易被破解）</p><pre><code>const salt = await bcrypt.genSalt(10) /*  * 注意:  *      1、生成的盐是异步操作  *      2、数值表示加密的强度 0-10  */ </code></pre></li><li><p>将密码进行加密处理</p><pre><code>const newPass=await bcrypt.hash(pass,salt)/* * 注意 *   1、 加密密码是异步操作 *   2、salt是第四步生生成的盐，pass是要加密的值，newPass是加密后的新密码 */</code></pre></li></ol><ol start="6"><li><p>验证密码是否加密成功</p><pre><code>const isOk= await bcrypt.compare(newPass,pass)console.log(isok) // false || true/* * 注意: *   1、验证密码是异步操作 *   2、新密码与旧密码比对，如果成功返回true,失败返回false */</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> node </category>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> bcrypt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>javascript关于数组方法</title>
-      <link href="/2020/08/25/jsarray/"/>
-      <url>/2020/08/25/jsarray/</url>
+      <link href="//jsarray/"/>
+      <url>//jsarray/</url>
       
         <content type="html"><![CDATA[<h3 id="Array-forEach-v-i-callback"><a href="#Array-forEach-v-i-callback" class="headerlink" title="Array.forEach(v,i,callback)"></a>Array.forEach(v,i,callback)</h3><ol><li>作用 :循环数组</li><li>形参：</li></ol><ul><li><p>v : 当前循环项</p></li><li><p>i :  当前循环项索引</p></li><li><p>callback: 回调函数</p></li></ul><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> array <span class="token operator">=</span> <span class="token punctuation">[</span>    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    id<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>    name<span class="token punctuation">:</span><span class="token string">'孙为空'</span>    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    id<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>    name<span class="token punctuation">:</span><span class="token string">'猪八戒'</span>    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    id<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>    name<span class="token punctuation">:</span><span class="token string">'沙悟净'</span>    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    id<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span>    name<span class="token punctuation">:</span><span class="token string">'唐三藏'</span>    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">]</span>array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    consoel<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">// 输出:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'孙悟空'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'猪八戒'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'沙悟净'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'唐三藏'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre><h3 id="Array-filter-v-i-callback"><a href="#Array-filter-v-i-callback" class="headerlink" title="Array.filter(v,i,callback)"></a>Array.filter(v,i,callback)</h3><ol><li>作用 : 过滤数组,并返回新数组</li><li>形参：</li></ol><ul><li>v : 当前循环项</li><li>i :  当前循环项索引</li><li>callback: 回调函数</li></ul><pre><code>const num = [10,15,20,25]const newNum = num.filter((v,i)=&gt;&#123;    return v &gt;= 15&#125;)console.log(newNum)//输出:    [15, 20, 25]</code></pre><h3 id="Array-map-v-i-callback"><a href="#Array-map-v-i-callback" class="headerlink" title="Array.map(v,i,callback)"></a>Array.map(v,i,callback)</h3><ol><li>作用 : 返回数组中指定的值</li><li>形参：*同上</li></ol><pre><code>const list = [    &#123;     name:&#39;张三&#39;,     age:20    &#125;,    &#123;     name:&#39;李四&#39;,     age:25    &#125;,    &#123;     name:&#39;王五&#39;,     age:27    &#125;]const newList = list.map((v,i)=&gt;&#123;    return v.name&#125;)console.log(newList)// 输出:    [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]</code></pre><h3 id="Array-findIndex-v-i-callback"><a href="#Array-findIndex-v-i-callback" class="headerlink" title="Array.findIndex(v,i,callback)"></a>Array.findIndex(v,i,callback)</h3><ol><li>作用 : 返回符合条件的索引 </li><li>形参：*同上</li><li>注意：如果找到符合条件的值，立即结束循环并返回索引</li><li>索引：索引是从0开始计算的</li></ol><pre><code>const num = [10,20,30,40]const index = num.findIndex((v,i)=&gt;&#123;    return v &gt; 25&#125;)console.log(index)// 输出:    2</code></pre><h3 id="Array-every-v-i-callback"><a href="#Array-every-v-i-callback" class="headerlink" title="Array.every(v,i,callback)"></a>Array.every(v,i,callback)</h3><ol><li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li><li>形参：*同上</li><li>注意：数组中只要有一个不符合条件，都会返回false,并立即结束循环</li></ol><pre><code>const num = [20,30,40,50]const bool = num.every((v,i)=&gt;&#123;    console.log(v)    return v &lt;= 30&#125;)console.log(bool)// 输出:    20    30    40    false</code></pre><h3 id="Array-some-v-i-callback"><a href="#Array-some-v-i-callback" class="headerlink" title="Array.some(v,i,callback)"></a>Array.some(v,i,callback)</h3><ol><li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li><li>形参：*同上</li><li>注意：数组中只要有一个符合条件，都会返回true,并立即结束循环</li></ol><pre><code>const num = [10,20,30,40]const bool=num.some((v,i)=&gt;&#123;    console.log(v)    return v&gt;=30&#125;)console.log(bool)// 输出:    10    20    30    true</code></pre>]]></content>
       
@@ -32,8 +61,8 @@
     
     <entry>
       <title>mongodb数据加密</title>
-      <link href="/2020/08/25/modb/"/>
-      <url>/2020/08/25/modb/</url>
+      <link href="//modb/"/>
+      <url>//modb/</url>
       
         <content type="html"><![CDATA[<ol><li><p><strong>打开终端</strong> （如：cmd || powershell 等等…）</p></li><li><p>输入  <strong>mongo</strong></p></li><li><p><strong>show dbs</strong>   //查询数据列表</p></li><li><p><strong>use admin</strong>  //切换至admin数据库</p></li><li><p><strong>db.createUser({user:’用户名’，pwd:’设置管理员密码’，roles:[‘root’]})</strong>  //创建超级管理员</p><ol><li><p>role: 管理权限</p></li><li><p>参数：</p><ul><li><p>root:超级管理员权限，可对任意数据库进行增删改查</p></li><li><p>read能读取该数据库的内容，但不能进心修改</p></li><li><p>readwrite:   可以对该数据库进行增删改查</p></li></ul></li></ol></li><li><p><strong>use text</strong>   //创建并进入text数据库</p></li><li><p><strong>db.createUser({user:’用户名‘，pwd:’密码’，roles:[‘readWhite’]})</strong>        //创建普通管理员</p><pre class=" language-mongodb"><code class="language-mongodb">// 创建代码    db.createUser(&#123;user:'text',pwd:'teal',roles:['readWrite']&#125;)// 成功提示    Successfully added user: &#123; "user" : "text", "roles" : [ "readWrite" ] &#125;</code></pre></li><li><p><strong>edit</strong>  //退出</p></li></ol>]]></content>
       
@@ -61,8 +90,8 @@
     
     <entry>
       <title>测试</title>
-      <link href="/2020/08/25/bei-fen/"/>
-      <url>/2020/08/25/bei-fen/</url>
+      <link href="//bei-fen/"/>
+      <url>//bei-fen/</url>
       
         <content type="html"><![CDATA[<h1 id="我是测试文章请勿评论"><a href="#我是测试文章请勿评论" class="headerlink" title="我是测试文章请勿评论"></a>我是测试文章请勿评论</h1>]]></content>
       

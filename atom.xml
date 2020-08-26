@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-08-26T06:54:13.512Z</updated>
+  <updated>2020-08-26T08:59:57.684Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -17,9 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>node将明文密码加密</title>
+    <link href="https://tealset.github.io/nobcrypt/"/>
+    <id>https://tealset.github.io/nobcrypt/</id>
+    <published>2020-08-26T07:58:48.768Z</published>
+    <updated>2020-08-26T08:59:57.684Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;今天给大家介绍一款Node密码加密的模块-bcrypt&quot;&gt;&lt;a href=&quot;#今天给大家介绍一款Node密码加密的模块-bcrypt&quot; class=&quot;headerlink&quot; title=&quot;今天给大家介绍一款Node密码加密的模块</summary>
+        
+      
+    
+    
+    
+    <category term="node" scheme="https://tealset.github.io/categories/node/"/>
+    
+    <category term="后端" scheme="https://tealset.github.io/categories/node/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="node" scheme="https://tealset.github.io/tags/node/"/>
+    
+    <category term="bcrypt" scheme="https://tealset.github.io/tags/bcrypt/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript关于数组方法</title>
-    <link href="https://tealset.github.io/2020/08/25/jsarray/"/>
-    <id>https://tealset.github.io/2020/08/25/jsarray/</id>
+    <link href="https://tealset.github.io/jsarray/"/>
+    <id>https://tealset.github.io/jsarray/</id>
     <published>2020-08-25T10:21:36.000Z</published>
     <updated>2020-08-26T06:54:13.512Z</updated>
     
@@ -45,8 +74,8 @@
   
   <entry>
     <title>mongodb数据加密</title>
-    <link href="https://tealset.github.io/2020/08/25/modb/"/>
-    <id>https://tealset.github.io/2020/08/25/modb/</id>
+    <link href="https://tealset.github.io/modb/"/>
+    <id>https://tealset.github.io/modb/</id>
     <published>2020-08-25T08:41:51.963Z</published>
     <updated>2020-08-25T09:22:24.922Z</updated>
     
@@ -79,8 +108,8 @@
   
   <entry>
     <title>测试</title>
-    <link href="https://tealset.github.io/2020/08/25/bei-fen/"/>
-    <id>https://tealset.github.io/2020/08/25/bei-fen/</id>
+    <link href="https://tealset.github.io/bei-fen/"/>
+    <id>https://tealset.github.io/bei-fen/</id>
     <published>2020-08-25T06:34:14.172Z</published>
     <updated>2020-08-26T07:54:06.258Z</updated>
     

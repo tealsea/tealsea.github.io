@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascript关于数组方法, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
+    <meta name="keywords" content="node将明文密码加密, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>javascript关于数组方法 | Teal</title>
+    <title>node将明文密码加密 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREhKP.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">javascript关于数组方法</h1>
+                    <h1 class="description center-align post-title">node将明文密码加密</h1>
                 </div>
             </div>
         </div>
@@ -459,12 +459,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/node/">
+                                <span class="chip bg-color">node</span>
                             </a>
                         
-                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                                <span class="chip bg-color">前端</span>
+                            <a href="/tags/bcrypt/">
+                                <span class="chip bg-color">bcrypt</span>
                             </a>
                         
                     </div>
@@ -475,8 +475,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/node/" class="post-category">
+                                node
+                            </a>
+                        
+                            <a href="/categories/node/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                后端
                             </a>
                         
                     </div>
@@ -488,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-25
+                    2020-08-26
                 </div>
                 
 
@@ -509,129 +513,44 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Array-forEach-v-i-callback"><a href="#Array-forEach-v-i-callback" class="headerlink" title="Array.forEach(v,i,callback)"></a>Array.forEach(v,i,callback)</h3><ol>
-<li>作用 :循环数组</li>
-<li>形参：</li>
-</ol>
-<ul>
-<li><p>v : 当前循环项</p>
+                <h3 id="今天给大家介绍一款Node密码加密的模块-bcrypt"><a href="#今天给大家介绍一款Node密码加密的模块-bcrypt" class="headerlink" title="今天给大家介绍一款Node密码加密的模块 bcrypt"></a>今天给大家介绍一款Node密码加密的模块 bcrypt</h3><ol>
+<li><p>使用bcrypt模块加密前确保本机存在python环境  </p>
+<p><a target="_blank" rel="noopener" href="https://www.python.org/">python官网</a></p>
 </li>
-<li><p>i :  当前循环项索引</p>
+<li><p>下载bacrypt模块</p>
+<pre><code>npm install bcrypt</code></pre>
 </li>
-<li><p>callback: 回调函数</p>
+<li><p>在本地项目中导入bcrypt模块</p>
+<pre><code>const bcrypt = require(&#39;bcrypt&#39;)</code></pre>
 </li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> array <span class="token operator">=</span> <span class="token punctuation">[</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'孙为空'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'猪八戒'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'沙悟净'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'唐三藏'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token punctuation">]</span>
-array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    consoel<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>i<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 输出:</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'孙悟空'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'猪八戒'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'沙悟净'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'唐三藏'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<h3 id="Array-filter-v-i-callback"><a href="#Array-filter-v-i-callback" class="headerlink" title="Array.filter(v,i,callback)"></a>Array.filter(v,i,callback)</h3><ol>
-<li>作用 : 过滤数组,并返回新数组</li>
-<li>形参：</li>
+<li><p>生成盐  （理论下值于高，越不容易被破解）</p>
+<pre><code>const salt = await bcrypt.genSalt(10)
+ /*
+  * 注意:
+  *      1、生成的盐是异步操作
+  *      2、数值表示加密的强度 0-10
+  */ </code></pre>
+</li>
+<li><p>将密码进行加密处理</p>
+<pre><code>const newPass=await bcrypt.hash(pass,salt)
+/*
+ * 注意
+ *   1、 加密密码是异步操作
+ *   2、salt是第四步生生成的盐，pass是要加密的值，newPass是加密后的新密码
+ */</code></pre>
+</li>
 </ol>
-<ul>
-<li>v : 当前循环项</li>
-<li>i :  当前循环项索引</li>
-<li>callback: 回调函数</li>
-</ul>
-<pre><code>const num = [10,15,20,25]
-const newNum = num.filter((v,i)=&gt;&#123;
-    return v &gt;= 15
-&#125;)
-console.log(newNum)
-//输出:
-    [15, 20, 25]</code></pre>
-<h3 id="Array-map-v-i-callback"><a href="#Array-map-v-i-callback" class="headerlink" title="Array.map(v,i,callback)"></a>Array.map(v,i,callback)</h3><ol>
-<li>作用 : 返回数组中指定的值</li>
-<li>形参：*同上</li>
+<ol start="6">
+<li><p>验证密码是否加密成功</p>
+<pre><code>const isOk= await bcrypt.compare(newPass,pass)
+console.log(isok) // false || true
+/*
+ * 注意:
+ *   1、验证密码是异步操作
+ *   2、新密码与旧密码比对，如果成功返回true,失败返回false
+ */</code></pre>
+</li>
 </ol>
-<pre><code>const list = [
-    &#123;
-     name:&#39;张三&#39;,
-     age:20
-    &#125;,
-    &#123;
-     name:&#39;李四&#39;,
-     age:25
-    &#125;,
-    &#123;
-     name:&#39;王五&#39;,
-     age:27
-    &#125;
-]
-const newList = list.map((v,i)=&gt;&#123;
-    return v.name
-&#125;)
-console.log(newList)
-// 输出:
-    [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]</code></pre>
-<h3 id="Array-findIndex-v-i-callback"><a href="#Array-findIndex-v-i-callback" class="headerlink" title="Array.findIndex(v,i,callback)"></a>Array.findIndex(v,i,callback)</h3><ol>
-<li>作用 : 返回符合条件的索引 </li>
-<li>形参：*同上</li>
-<li>注意：如果找到符合条件的值，立即结束循环并返回索引</li>
-<li>索引：索引是从0开始计算的</li>
-</ol>
-<pre><code>const num = [10,20,30,40]
-const index = num.findIndex((v,i)=&gt;&#123;
-    return v &gt; 25
-&#125;)
-console.log(index)
-// 输出:
-    2</code></pre>
-<h3 id="Array-every-v-i-callback"><a href="#Array-every-v-i-callback" class="headerlink" title="Array.every(v,i,callback)"></a>Array.every(v,i,callback)</h3><ol>
-<li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li>
-<li>形参：*同上</li>
-<li>注意：数组中只要有一个不符合条件，都会返回false,并立即结束循环</li>
-</ol>
-<pre><code>const num = [20,30,40,50]
-const bool = num.every((v,i)=&gt;&#123;
-    console.log(v)
-    return v &lt;= 30
-&#125;)
-console.log(bool)
-// 输出:
-    20
-    30
-    40
-    false</code></pre>
-<h3 id="Array-some-v-i-callback"><a href="#Array-some-v-i-callback" class="headerlink" title="Array.some(v,i,callback)"></a>Array.some(v,i,callback)</h3><ol>
-<li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li>
-<li>形参：*同上</li>
-<li>注意：数组中只要有一个符合条件，都会返回true,并立即结束循环</li>
-</ol>
-<pre><code>const num = [10,20,30,40]
-const bool=num.some((v,i)=&gt;&#123;
-    console.log(v)
-    return v&gt;=30
-&#125;)
-console.log(bool)
-// 输出:
-    10
-    20
-    30
-    true</code></pre>
 
             </div>
             <hr/>
@@ -657,7 +576,7 @@ console.log(bool)
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/2020/08/25/jsarray/">https://tealset.github.io/2020/08/25/jsarray/</a>
+                    <a href="https://tealset.github.io/nobcrypt/">https://tealset.github.io/nobcrypt/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -695,12 +614,12 @@ console.log(bool)
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/node/">
+                                    <span class="chip bg-color">node</span>
                                 </a>
                             
-                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                                    <span class="chip bg-color">前端</span>
+                                <a href="/tags/bcrypt/">
+                                    <span class="chip bg-color">bcrypt</span>
                                 </a>
                             
                         </div>
@@ -1136,7 +1055,73 @@ console.log(bool)
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/08/25/jsarray/">
+                <a href="/nobcrypt/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="node将明文密码加密">
+                        
+                        <span class="card-title">node将明文密码加密</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            今天给大家介绍一款Node密码加密的模块 bcrypt
+使用bcrypt模块加密前确保本机存在python环境  
+python官网
+
+下载bacrypt模块
+npm install bcrypt
+
+在本地项目中导入bcrypt模块
+con
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/node/" class="post-category">
+                                    node
+                                </a>
+                            
+                            <a href="/categories/node/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                    后端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/node/">
+                        <span class="chip bg-color">node</span>
+                    </a>
+                    
+                    <a href="/tags/bcrypt/">
+                        <span class="chip bg-color">bcrypt</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/jsarray/">
                     <div class="card-image">
                         
                         
@@ -1181,7 +1166,6 @@ const array = [
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1191,72 +1175,6 @@ const array = [
                     
                     <a href="/tags/%E5%89%8D%E7%AB%AF/">
                         <span class="chip bg-color">前端</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/08/25/modb/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://s1.ax1x.com/2020/08/26/dREWvt.jpg" class="responsive-img" alt="mongodb数据加密">
-                        
-                        <span class="card-title">mongodb数据加密</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-打开终端 （如：cmd || powershell 等等…）
-
-输入  mongo
-
-show dbs   //查询数据列表
-
-use admin  //切换至admin数据库
-
-db.createUser({user:’用户名’，pwd
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
-                                </a>
-                            
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                    后端
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mongodb/">
-                        <span class="chip bg-color">mongodb</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                        <span class="chip bg-color">数据库</span>
                     </a>
                     
                 </div>
