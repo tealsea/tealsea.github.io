@@ -475,11 +475,7 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/node/" class="post-category">
-                                node
-                            </a>
-                        
-                            <a href="/categories/node/%E5%90%8E%E7%AB%AF/" class="post-category">
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
                                 后端
                             </a>
                         
@@ -514,35 +510,27 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="今天给大家介绍一款Node密码加密的模块-bcrypt"><a href="#今天给大家介绍一款Node密码加密的模块-bcrypt" class="headerlink" title="今天给大家介绍一款Node密码加密的模块 bcrypt"></a>今天给大家介绍一款Node密码加密的模块 bcrypt</h3><ol>
-<li><p>使用bcrypt模块加密前确保本机存在python环境  </p>
-<p><a target="_blank" rel="noopener" href="https://www.python.org/">python官网</a></p>
+<li><h5 id="使用bcrypt模块加密前确保本机存在python环境"><a href="#使用bcrypt模块加密前确保本机存在python环境" class="headerlink" title="使用bcrypt模块加密前确保本机存在python环境"></a>使用bcrypt模块加密前确保本机存在python环境</h5><p><a target="_blank" rel="noopener" href="https://www.python.org/">python官网</a></p>
 </li>
-<li><p>下载bacrypt模块</p>
-<pre><code>npm install bcrypt</code></pre>
+<li><h5 id="下载bacrypt模块"><a href="#下载bacrypt模块" class="headerlink" title="下载bacrypt模块"></a>下载bacrypt模块</h5><pre><code>npm install bcrypt</code></pre>
 </li>
-<li><p>在本地项目中导入bcrypt模块</p>
-<pre><code>const bcrypt = require(&#39;bcrypt&#39;)</code></pre>
+<li><h5 id="在本地项目中导入bcrypt模块"><a href="#在本地项目中导入bcrypt模块" class="headerlink" title="在本地项目中导入bcrypt模块"></a>在本地项目中导入bcrypt模块</h5><pre><code>const bcrypt = require(&#39;bcrypt&#39;)</code></pre>
 </li>
-<li><p>生成盐  （理论下值于高，越不容易被破解）</p>
-<pre><code>const salt = await bcrypt.genSalt(10)
+<li><h5 id="生成盐-（理论下值于高，越不容易被破解）"><a href="#生成盐-（理论下值于高，越不容易被破解）" class="headerlink" title="生成盐  （理论下值于高，越不容易被破解）"></a>生成盐  （理论下值于高，越不容易被破解）</h5><pre><code>const salt = await bcrypt.genSalt(10)
  /*
   * 注意:
   *      1、生成的盐是异步操作
   *      2、数值表示加密的强度 0-10
   */ </code></pre>
 </li>
-<li><p>将密码进行加密处理</p>
-<pre><code>const newPass=await bcrypt.hash(pass,salt)
+<li><h5 id="将密码进行加密处理"><a href="#将密码进行加密处理" class="headerlink" title="将密码进行加密处理"></a>将密码进行加密处理</h5><pre><code>const newPass=await bcrypt.hash(pass,salt)
 /*
  * 注意
  *   1、 加密密码是异步操作
  *   2、salt是第四步生生成的盐，pass是要加密的值，newPass是加密后的新密码
  */</code></pre>
 </li>
-</ol>
-<ol start="6">
-<li><p>验证密码是否加密成功</p>
-<pre><code>const isOk= await bcrypt.compare(newPass,pass)
+<li><h5 id="验证密码是否加密成功"><a href="#验证密码是否加密成功" class="headerlink" title="验证密码是否加密成功"></a>验证密码是否加密成功</h5><pre><code>const isOk= await bcrypt.compare(newPass,pass)
 console.log(isok) // false || true
 /*
  * 注意:
@@ -1068,14 +1056,11 @@ console.log(isok) // false || true
                     <div class="summary block-with-text">
                         
                             今天给大家介绍一款Node密码加密的模块 bcrypt
-使用bcrypt模块加密前确保本机存在python环境  
-python官网
+使用bcrypt模块加密前确保本机存在python环境python官网
 
-下载bacrypt模块
-npm install bcrypt
+下载bacrypt模块npm install bcrypt
 
-在本地项目中导入bcrypt模块
-con
+在本地项目中导入bcrypt模块const bc
                         
                     </div>
                     <div class="publish-info">
@@ -1086,11 +1071,7 @@ con
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/node/" class="post-category">
-                                    node
-                                </a>
-                            
-                            <a href="/categories/node/%E5%90%8E%E7%AB%AF/" class="post-category">
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
                                     后端
                                 </a>
                             
@@ -1171,10 +1152,6 @@ const array = [
                     
                     <a href="/tags/javascript/">
                         <span class="chip bg-color">javascript</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
                     </a>
                     
                 </div>

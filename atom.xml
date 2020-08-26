@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-08-26T08:59:57.684Z</updated>
+  <updated>2020-08-26T09:12:02.629Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tealset.github.io/nobcrypt/"/>
     <id>https://tealset.github.io/nobcrypt/</id>
     <published>2020-08-26T07:58:48.768Z</published>
-    <updated>2020-08-26T08:59:57.684Z</updated>
+    <updated>2020-08-26T09:12:02.629Z</updated>
     
     
       
@@ -34,9 +34,7 @@
     
     
     
-    <category term="node" scheme="https://tealset.github.io/categories/node/"/>
-    
-    <category term="后端" scheme="https://tealset.github.io/categories/node/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://tealset.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
     <category term="node" scheme="https://tealset.github.io/tags/node/"/>
@@ -50,7 +48,7 @@
     <link href="https://tealset.github.io/jsarray/"/>
     <id>https://tealset.github.io/jsarray/</id>
     <published>2020-08-25T10:21:36.000Z</published>
-    <updated>2020-08-26T06:54:13.512Z</updated>
+    <updated>2020-08-26T09:14:03.015Z</updated>
     
     
       
@@ -68,8 +66,6 @@
     
     <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
-    <category term="前端" scheme="https://tealset.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
   </entry>
   
   <entry>
@@ -77,7 +73,7 @@
     <link href="https://tealset.github.io/modb/"/>
     <id>https://tealset.github.io/modb/</id>
     <published>2020-08-25T08:41:51.963Z</published>
-    <updated>2020-08-25T09:22:24.922Z</updated>
+    <updated>2020-08-26T09:07:18.896Z</updated>
     
     
       
@@ -102,16 +98,14 @@
     
     <category term="mongodb" scheme="https://tealset.github.io/tags/mongodb/"/>
     
-    <category term="数据库" scheme="https://tealset.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
   </entry>
   
   <entry>
     <title>测试</title>
-    <link href="https://tealset.github.io/bei-fen/"/>
-    <id>https://tealset.github.io/bei-fen/</id>
+    <link href="https://tealset.github.io/text/"/>
+    <id>https://tealset.github.io/text/</id>
     <published>2020-08-25T06:34:14.172Z</published>
-    <updated>2020-08-26T07:54:06.258Z</updated>
+    <updated>2020-08-26T09:14:41.443Z</updated>
     
     
       
