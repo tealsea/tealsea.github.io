@@ -489,11 +489,6 @@
                 
 
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-26
-                </div>
-                
 
                 
 
@@ -517,32 +512,32 @@
 <li><p>callback: 回调函数</p>
 </li>
 </ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> array <span class="token operator">=</span> <span class="token punctuation">[</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'孙为空'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'猪八戒'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'沙悟净'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    id<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span><span class="token string">'唐三藏'</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token punctuation">]</span>
-array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    consoel<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>i<span class="token punctuation">)</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 输出:</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'孙悟空'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'猪八戒'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'沙悟净'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>id<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span>name<span class="token punctuation">:</span><span class="token string">'唐三藏'</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<pre><code>const array = [
+    &#123;
+    id:0,
+    name:&#39;孙为空&#39;
+    &#125;,
+    &#123;
+    id:1,
+    name:&#39;猪八戒&#39;
+    &#125;,
+    &#123;
+    id:2,
+    name:&#39;沙悟净&#39;
+    &#125;,
+    &#123;
+    id:3,
+    name:&#39;唐三藏&#39;
+    &#125;
+]
+array.forEach((v,i)=&gt;&#123;
+    consoel.log(v,i)
+&#125;)
+// 输出:
+&#123;id:0,name:&#39;孙悟空&#39;&#125;,
+&#123;id:1,name:&#39;猪八戒&#39;&#125;,
+&#123;id:2,name:&#39;沙悟净&#39;&#125;,
+&#123;id:3,name:&#39;唐三藏&#39;&#125;</code></pre>
 <h3 id="Array-filter-v-i-callback"><a href="#Array-filter-v-i-callback" class="headerlink" title="Array.filter(v,i,callback)"></a>Array.filter(v,i,callback)</h3><ol>
 <li>作用 : 过滤数组,并返回新数组</li>
 <li>形参：</li>
