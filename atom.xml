@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-08-31T02:42:27.770Z</updated>
+  <updated>2020-09-03T09:25:35.903Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -15,6 +15,88 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用浏览器内核</title>
+    <link href="https://tealset.github.io/brower/"/>
+    <id>https://tealset.github.io/brower/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T09:25:35.903Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;1、以谷歌浏览器webkit内核为主（v8引擎）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1、以谷歌浏览器Webkit内核为主（v8引擎）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2、火狐的</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="内核" scheme="https://tealset.github.io/tags/%E5%86%85%E6%A0%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中的数据类型</title>
+    <link href="https://tealset.github.io/jsdataclass/"/>
+    <id>https://tealset.github.io/jsdataclass/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T10:06:29.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中常用的输出方式</title>
+    <link href="https://tealset.github.io/jsoutputmode/"/>
+    <id>https://tealset.github.io/jsoutputmode/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T12:21:43.544Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中常用的输出方式&quot;&gt;&lt;a href=&quot;#js中常用的输出方式&quot; class=&quot;headerlink&quot; title=&quot;js中常用的输出方式&quot;&gt;&lt;/a&gt;js中常用的输出方式&lt;/h1&gt;&lt;h2 id=&quot;1、console控制台：在浏览器控制台输出&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序的对云数据库的增删改查</title>

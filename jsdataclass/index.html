@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="增删改查,前端,小程序,云函数,微信">
+    <meta name="keywords" content="javascript,es6,js的数据类型">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>微信小程序的对云数据库的增删改查 | Teal</title>
+    <title>js中的数据类型 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE64H.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">微信小程序的对云数据库的增删改查</h1>
+                    <h1 class="description center-align post-title">js中的数据类型</h1>
                 </div>
             </div>
         </div>
@@ -459,8 +459,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                                <span class="chip bg-color">小程序</span>
+                            <a href="/tags/javascript/">
+                                <span class="chip bg-color">javascript</span>
                             </a>
                         
                     </div>
@@ -484,7 +484,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-30
+                    2020-09-03
                 </div>
                 
 
@@ -500,177 +500,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="微信小程序的对云数据库的增删改查"><a href="#微信小程序的对云数据库的增删改查" class="headerlink" title="微信小程序的对云数据库的增删改查"></a>微信小程序的对云数据库的增删改查</h1><h2 id="创建数据的类型"><a href="#创建数据的类型" class="headerlink" title="*创建数据的类型"></a>*创建数据的类型</h2><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Bumber</td>
-<td align="center">字符串类型  ‘a’ ,’b’</td>
-</tr>
-<tr>
-<td align="center">Number</td>
-<td align="center">数值类型  0 1 2 3</td>
-</tr>
-<tr>
-<td align="center">Boolean</td>
-<td align="center">布尔值类型  true || false</td>
-</tr>
-<tr>
-<td align="center">Object</td>
-<td align="center">对象类型 obj:{num:1,name:’哈利波特’}</td>
-</tr>
-<tr>
-<td align="center">Null</td>
-<td align="center">空值</td>
-</tr>
-<tr>
-<td align="center">Array</td>
-<td align="center">数组  list:[‘item1’,’item2]</td>
-</tr>
-<tr>
-<td align="center">Date</td>
-<td align="center">时间类型</td>
-</tr>
-<tr>
-<td align="center">Geopoint</td>
-<td align="center">位置类型</td>
-</tr>
-</tbody></table>
-<h2 id="一、查询数据"><a href="#一、查询数据" class="headerlink" title="一、查询数据"></a>一、查询数据</h2><h4 id="1、云函数查询数据库数据"><a href="#1、云函数查询数据库数据" class="headerlink" title="1、云函数查询数据库数据"></a>1、云函数查询数据库数据</h4><pre><code>// 文件名称为getData
-    // 云函数入口文件
-    const cloud=require(&#39;wx-server-sdk&#39;);
-    // 初始化
-    cloud.init()
-    // 连接数据库
-    const db=cloud.database();
-    导出数据
-    exports.main = async (event, context) =&gt;&#123;
-        // 查询数据库数据并返回
-        return await db.collection(&#39;数据库名称&#39;).get()
-    &#125;</code></pre>
-<h4 id="2、本地查询数据库数据"><a href="#2、本地查询数据库数据" class="headerlink" title="2、本地查询数据库数据"></a>2、本地查询数据库数据</h4><pre><code>// 调用云函数数据
-wx.cloud.callection(&#123;
-    // 云函数名称
-    name:&#39;getData&#39;
-&#125;).then(res=&gt;&#123;
-    console.log(res)
-&#125;)
--------------------------------------------
-//本地查询数据库数据
-    // 连接数据库
-    const db=wx.cloud.database()
-    // 查询数据
-    db.collection(&#39;数据库名称&#39;).get().then(res=&gt;&#123;
-        console.log(res)
-    &#125;)</code></pre>
-<h2 id="二、添加数据"><a href="#二、添加数据" class="headerlink" title="二、添加数据"></a>二、添加数据</h2><h4 id="1、云函数添加数据"><a href="#1、云函数添加数据" class="headerlink" title="1、云函数添加数据"></a>1、云函数添加数据</h4><pre><code>// 文件名为 getData
-// 云函数入口文件
-const cloud = require(&#39;wx-server-sdk&#39;)
-// 初始化
-cloud.init()
-// 连接数据库
-const db = cloud.database()
-// 云函数入口函数
-exports.main = async (event, context) =&gt; &#123;
-// 将添加完的数据返回到本地
-  return await db.collection(&#39;数据库名称&#39;).add(&#123;
-  // 要创建的数据
-    data: &#123;
-     name:&#39;哈利波特&#39;,
-     age:20,
-     sex:&#39;男&#39;，
-     marriage：false
-    &#125;
-  &#125;)
-&#125; </code></pre>
-<h4 id="2、本地添加数据和调用云函数"><a href="#2、本地添加数据和调用云函数" class="headerlink" title="2、本地添加数据和调用云函数"></a>2、本地添加数据和调用云函数</h4><pre><code>// 调用云函数创建的数据
- wx.cloud.callFunction(&#123;
- // 云函数名称
- name:&#39;getData&#39;
- &#125;).then(res=&gt;&#123;
-     conosle.log(res)  
- &#125;)
----------------------------------------------------------
- // 本地向数据库添加用户
- // 本地连接数据库
-    const db=wx.cloud.database();
-    db.collection(&#39;数据库名称&#39;).add(&#123;
-        // 要创建的数据
-        data: &#123;
-         name:&#39;哈利波特&#39;,
-         age:20,
-         sex:&#39;男&#39;，
-         marriage：false
-        &#125;
-    &#125;).then(res=&gt;&#123;
-        console.log(res)
-    &#125;)</code></pre>
-<h6 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h6><p>​    在云函数中添加数据是没有用户的openid的,在本地创建的数据自带用户openid</p>
-<h2 id="三、删除数据"><a href="#三、删除数据" class="headerlink" title="三、删除数据"></a>三、删除数据</h2><h4 id="1、云函数删除数据库数据"><a href="#1、云函数删除数据库数据" class="headerlink" title="1、云函数删除数据库数据"></a>1、云函数删除数据库数据</h4><pre><code>// 文件名为delData
-const cloud=require(wx-server-sdk);
-//初始化
-cloud.init();
-const db=cloud.database();
-exports.main= async (event,context)=&gt;&#123;
-    // 删除数据库数据并返回
-    return await db.collection(&#39;数据库名字&#39;).doc(&#39;要删除数据的id&#39;).remove()
-&#125;</code></pre>
-<h4 id="2、-本地删除数据库数据和调用云函数"><a href="#2、-本地删除数据库数据和调用云函数" class="headerlink" title="2、 本地删除数据库数据和调用云函数"></a>2、 本地删除数据库数据和调用云函数</h4><pre><code>// 调用云函数删除数据
-wx.cloud.callFuction(&#123;
-    // 要删除的问函数名称
-    name:&#39;delData&#39;
-&#125;).then(res=&gt;&#123;
-    console.log(res)
-&#125;)
------------------------------------------------------
-// 本地删除数据库数据、
-    //连接数据库
-    const db=wx.cloud.database();
-    db.collection(&#39;text&#39;).doc(&#39;要删除的数据id&#39;).remove().then(res=&gt;&#123;
-        console.log(res)
-    &#125;)</code></pre>
-<h6 id="总结：-1"><a href="#总结：-1" class="headerlink" title="总结："></a>总结：</h6><p>本地删除操作默认只能删除自己在本地创建的数据，不能删除云开发控制台和云函数中常见的数据，如：需求是在本地删除数据，请在云控制台中的数据库修改权限</p>
-<h2 id="四、修改数据"><a href="#四、修改数据" class="headerlink" title="四、修改数据"></a>四、修改数据</h2><h4 id="1、-云函数中修改数据"><a href="#1、-云函数中修改数据" class="headerlink" title="1、 云函数中修改数据"></a>1、 云函数中修改数据</h4><pre><code>// 文件名为updateData
-const cloud=require(&#39;wx-server-sdk&#39;);
-cloud.init()
-const db=cloud.database()
-exports.main= async (event, context) =&gt; &#123;
-    // 修改部分数据并返回
-    return await db.collection(&#39;数据库名称&#39;).doc(&#39;要修改的数据id&#39;).update(&#123;
-    // 要修改的值
-        data:&#123;
-            name:&#39;赫敏&#39;，
-            age:30
-        &#125;
-    &#125;)
-&#125;</code></pre>
-<h4 id="2、本地修改数据库数据和调用云函数"><a href="#2、本地修改数据库数据和调用云函数" class="headerlink" title="2、本地修改数据库数据和调用云函数"></a>2、本地修改数据库数据和调用云函数</h4><pre><code>// 调用云函数
-wx.cloud.callection(&#123;
-    name:&#39;updateData&#39;
-&#125;).then(res=&gt;&#123;
-    console.log(res)
-&#125;)
---------------------------------------------
-// 本地修改数据库数据
-const db=wx.cloud.database();
-db.collection(&#39;数据库名称&#39;).doc(&#39;要修改的数据id&#39;).update(&#123;
-    // 要修改的数据
-    data:&#123;
-        name:&#39;卢娜&#39;，
-        age:30
-    &#125;
-&#125;).then(res=&gt;&#123;
-    console.log(res)
-&#125;)</code></pre>
-<h6 id="总结：-2"><a href="#总结：-2" class="headerlink" title="总结："></a>总结：</h6><p>  本地调用和云函数的区别只在于</p>
-<ul>
-<li>云函数权限大</li>
-<li>本地操作要在代码前要添加wx.什么什么</li>
+                <h1 id="js中的数据类型"><a href="#js中的数据类型" class="headerlink" title="js中的数据类型"></a>js中的数据类型</h1><h2 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h2><ul>
+<li>数值 Number </li>
+<li>字符串 String </li>
+<li>布尔值 Boolean </li>
+<li>空值 Null //undefined</li>
+<li>未定义 Undefined </li>
+<li>ES6新增的唯一的类型 Symbol</li>
 </ul>
+<h2 id="2、引用数据类型"><a href="#2、引用数据类型" class="headerlink" title="2、引用数据类型"></a>2、引用数据类型</h2><ol>
+<li><p>对象数据类型 Object</p>
+<ul>
+<li>普通对象 {}</li>
+<li>数组对象 []</li>
+<li>正则表达式  /^$/</li>
+<li>日期对象 new Date</li>
+<li>数学函数对象 Math</li>
+<li>…</li>
+</ul>
+<p>2、函数数据类型 Function</p>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -696,7 +546,7 @@ db.collection(&#39;数据库名称&#39;).doc(&#39;要修改的数据id&#39;).upd
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/micrud/">https://tealset.github.io/micrud/</a>
+                    <a href="https://tealset.github.io/jsdataclass/">https://tealset.github.io/jsdataclass/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -734,8 +584,8 @@ db.collection(&#39;数据库名称&#39;).doc(&#39;要修改的数据id&#39;).upd
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                                    <span class="chip bg-color">小程序</span>
+                                <a href="/tags/javascript/">
+                                    <span class="chip bg-color">javascript</span>
                                 </a>
                             
                         </div>
@@ -1170,21 +1020,31 @@ db.collection(&#39;数据库名称&#39;).doc(&#39;要修改的数据id&#39;).upd
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/jsoutputmode/">
+                <a href="/brower/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE64H.jpg" class="responsive-img" alt="js中常用的输出方式">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREgCd.jpg" class="responsive-img" alt="常用浏览器内核">
                         
-                        <span class="card-title">js中常用的输出方式</span>
+                        <span class="card-title">常用浏览器内核</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中常用的输出方式1、console控制台：在浏览器控制台输出
-console.log; =&gt;可以输出任意数据类型，控制台展示的类型也是对应的数据类型
-console.log(&#39;a&#39;,10,&#123;name:&#
+                            
+1、以谷歌浏览器webkit内核为主（v8引擎）
+
+
+1、以谷歌浏览器Webkit内核为主（v8引擎）
+
+
+2、火狐的 Gecko内核
+
+
+3、IE浏览器的Trident内核
+
+
                         
                     </div>
                     <div class="publish-info">
@@ -1206,8 +1066,8 @@ console.log(&#39;a&#39;,10,&#123;name:&#
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
+                    <a href="/tags/%E5%86%85%E6%A0%B8/">
+                        <span class="chip bg-color">内核</span>
                     </a>
                     
                 </div>
@@ -1221,36 +1081,33 @@ console.log(&#39;a&#39;,10,&#123;name:&#
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/nobcrypt/">
+                <a href="/jsoutputmode/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="node将明文密码加密">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE64H.jpg" class="responsive-img" alt="js中常用的输出方式">
                         
-                        <span class="card-title">node将明文密码加密</span>
+                        <span class="card-title">js中常用的输出方式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            今天给大家介绍一款Node密码加密的模块 bcrypt
-使用bcrypt模块加密前确保本机存在python环境python官网
-
-下载bacrypt模块npm install bcrypt
-
-在本地项目中导入bcrypt模块const bc
+                            js中常用的输出方式1、console控制台：在浏览器控制台输出
+console.log; =&gt;可以输出任意数据类型，控制台展示的类型也是对应的数据类型
+console.log(&#39;a&#39;,10,&#123;name:&#
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                    后端
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1260,12 +1117,8 @@ console.log(&#39;a&#39;,10,&#123;name:&#
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node/">
-                        <span class="chip bg-color">node</span>
-                    </a>
-                    
-                    <a href="/tags/bcrypt/">
-                        <span class="chip bg-color">bcrypt</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
                 </div>
