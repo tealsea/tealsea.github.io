@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-09-03T09:25:35.903Z</updated>
+  <updated>2020-09-03T12:25:32.184Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tealset.github.io/brower/"/>
     <id>https://tealset.github.io/brower/</id>
     <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-03T09:25:35.903Z</updated>
+    <updated>2020-09-03T12:25:32.184Z</updated>
     
     
       
@@ -29,9 +29,6 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;1、以谷歌浏览器webkit内核为主（v8引擎）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
 &lt;p&gt;1、以谷歌浏览器Webkit内核为主（v8引擎）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -44,7 +41,7 @@
     <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="内核" scheme="https://tealset.github.io/tags/%E5%86%85%E6%A0%B8/"/>
+    <category term="其他" scheme="https://tealset.github.io/tags/%E5%85%B6%E4%BB%96/"/>
     
   </entry>
   

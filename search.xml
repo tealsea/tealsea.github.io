@@ -8,7 +8,7 @@
       <link href="//brower/"/>
       <url>//brower/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>1、以谷歌浏览器webkit内核为主（v8引擎）</p></blockquote><blockquote><p>1、以谷歌浏览器Webkit内核为主（v8引擎）</p></blockquote><blockquote><p>2、火狐的 Gecko内核</p></blockquote><blockquote><p>3、IE浏览器的Trident内核</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>1、以谷歌浏览器Webkit内核为主（v8引擎）</p></blockquote><blockquote><p>2、火狐的 Gecko内核</p></blockquote><blockquote><p>3、IE浏览器的Trident内核</p></blockquote>]]></content>
       
       
       <categories>
@@ -20,7 +20,7 @@
       
         <tags>
             
-            <tag> 内核 </tag>
+            <tag> 其他 </tag>
             
         </tags>
       
