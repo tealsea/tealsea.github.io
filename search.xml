@@ -54,6 +54,33 @@
     
     
     <entry>
+      <title>js中关于number的内容</title>
+      <link href="//jsnumber/"/>
+      <url>//jsnumber/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于javascript中关于number的学习内容"><a href="#关于javascript中关于number的学习内容" class="headerlink" title="关于javascript中关于number的学习内容"></a>关于javascript中关于number的学习内容</h1><h2 id="number数据类型包括那些"><a href="#number数据类型包括那些" class="headerlink" title="number数据类型包括那些"></a>number数据类型包括那些</h2><ul><li>正数、负数、浮点数、零</li><li>NaN  =&gt;NaN表示not a Number不是一个有效数字，但他属于number类型</li><li>Infinity:=&gt;表示无穷大的值 -Infinity=&gt;表示负的无穷的值</li></ul><h2 id="关于NaN"><a href="#关于NaN" class="headerlink" title="关于NaN"></a>关于NaN</h2><blockquote><p>NaN和任何数都不想等，包括他自己</p><pre><code>console.log(NaN=10); // =&gt;falseconsole.log(NaN==NaN); // =&gt;false</code></pre></blockquote><h2 id="强制将其他数据类型转换为数字"><a href="#强制将其他数据类型转换为数字" class="headerlink" title="强制将其他数据类型转换为数字"></a>强制将其他数据类型转换为数字</h2><ul><li><p>字符串：把字符串转换为数字，一旦发现字符串中出现非有效数字的字符，则结果为NaN.只有字符串中都是有效数字才能转换为具体的数字，空字符串换转换为0</p><pre><code>console.log(Number(&#39;10&#39;)); // =&gt;10console.log(Number(&#39;10px&#39;)); // =&gt;NuNconsole.log(Number()); // =&gt;0</code></pre></li><li><p>布尔值：把布尔值转换为数字=&gt; true转换为1 ，false转换为0</p><pre><code>console.log(Number(true)); // =&gt;1console.log(Number(false)); // =&gt;0</code></pre></li><li><p>空值： 把空值转换为数字=&gt; null转换为0    undefined转换为NaN</p><pre><code>console.log(Number(null)); // =&gt;0console.log(Number(undefined)); // =&gt;NaN</code></pre></li><li><p>symbol: 不能将symbol类型转换为数字，否则会报错</p><pre><code>console.log(Number(symbol)); // =&gt;Uncaught ReferenceError: symbol is not defined</code></pre></li><li><p>对象：=&gt;对象转换为数字=&gt;先把对象转换为字符串，再把字符串转换为数字</p><ol><li><p>普通对象转换为数字都为NaN</p></li><li><p>数组转换为数字，只有当数组长度为1，并且数组内的值为有效数字才能转换为对应的数字，或数组为空也可以转换为数字0，其余都转换为NaN</p><pre><code>console.log(Number([])); // =&gt;0console.log(Number([&#39;10&#39;])); // =&gt;10console.log(Number([&#39;aa&#39;])); // =&gt;NaNconsole.log(Number([10,12])); //=&gt;NaN</code></pre></li></ol></li><li><p>函数：函数转换为数字都为NaN</p><pre><code>console.log(Number(function fun()&#123;&#125;)); // =&gt;NaN</code></pre></li></ul><h2 id="Number将其他类型转换为数字的方法"><a href="#Number将其他类型转换为数字的方法" class="headerlink" title="Number将其他类型转换为数字的方法"></a>Number将其他类型转换为数字的方法</h2><ol><li>Number([value]); =&gt;而isNaN在检测是否为有效数字是就是使用的这种方法</li><li>parseInt([value]); </li><li>parsrFloat([value]);</li></ol><h2 id="检测一个数是否为NaN"><a href="#检测一个数是否为NaN" class="headerlink" title="检测一个数是否为NaN"></a>检测一个数是否为NaN</h2><blockquote><p>isNaN()=&gt;想要验证一个数是否是有效数字可以通过使用isNaN()这个方法，是有效数字返回false,不是有效数字返回true</p></blockquote><pre><code>console.log(isNaN(&#39;AA&#39;)); // =&gt; trueconsole.log(isNaN(&#39;12.5’)); // =&gt; falseconsole.log(isNaN(&#39;12.5PX&#39;)); // =&gt; trueconsole.log(isNaN([])); // =&gt; falseconsole.log(isNaN([10])); // =&gt; falseconsole.log(isNaN([10,20])); // =&gt; trueconsole.log(isNaN(&#123;&#125;)); // =&gt; trueconsole.log(isNaN(null)); // =&gt; falseconsole.log(isNaN(undefined)); // =&gt; trueconsole.log(isNaN(symbol)); // =&gt; 报错</code></pre><h2 id="parseInt-parseFloat将其他类型转换为数字"><a href="#parseInt-parseFloat将其他类型转换为数字" class="headerlink" title="parseInt/parseFloat将其他类型转换为数字"></a>parseInt/parseFloat将其他类型转换为数字</h2><ul><li>转换原理和Number转换不一样，他是把字符串转换为数字类型(如果处理的值不是字符串，需要先转换为字符串，然后再去转化为Number类型)</li><li>转换原理：从字符串左边开始查找，把找到得 有效数字转换为数字字符串转换为数字，一直遇到一个非有效数字字符为止，则结束查找</li><li>null/undefined类型都是NaN(先将null转换为普通字符串“null”在转换为数字，结果为NaN,=&gt;所有的字符都一样)</li><li>parseFloat比parseInt只是多识别一个小数点</li></ul><pre><code>console.log(parseInt(&#39;10&#39;));  // =&gt;10console.log(parseInt(&#39;10px&#39;)); // =&gt;10console.log(parseInt(&#39;wdith:20px&#39;)); // =&gt; NaNconsole.log(parseInt(&#39;12.5&#39;)); // =&gt;12console.log(parseFloat(&#39;12.5&#39;)); // =&gt;12.5console.log(parseInt(null)); // =&gt;NaNconsole.log(parseFloat(false)); // =&gt;NaN</code></pre><h2 id="最大安全数："><a href="#最大安全数：" class="headerlink" title="最大安全数："></a>最大安全数：</h2><pre><code>console.log(number_MAX_SAFE_INTEGER); //=&gt;9007199254740991 (Js中最大的安全数=&gt;Js能够识别得最大整数) console.log(9007199254740992==9007199254740993); //=&gt;true(理想结果应该是false,但超过了最大安全数，Js无法精确计算)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> number </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js中常用的输出方式</title>
       <link href="//jsoutputmode/"/>
       <url>//jsoutputmode/</url>
