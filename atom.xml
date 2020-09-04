@@ -75,7 +75,7 @@
     <link href="https://tealset.github.io/jsnumber/"/>
     <id>https://tealset.github.io/jsnumber/</id>
     <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-04T01:44:53.872Z</updated>
+    <updated>2020-09-04T01:47:12.921Z</updated>
     
     
       
@@ -89,6 +89,8 @@
     
     
     <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
     <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
