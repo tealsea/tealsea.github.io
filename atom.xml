@@ -75,31 +75,6 @@
   </entry>
   
   <entry>
-    <title>js中的数据类型</title>
-    <link href="https://tealset.github.io/jsdataclass/"/>
-    <id>https://tealset.github.io/jsdataclass/</id>
-    <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-03T10:06:29.390Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>js中关于number的内容</title>
     <link href="https://tealset.github.io/jsnumber/"/>
     <id>https://tealset.github.io/jsnumber/</id>
@@ -141,6 +116,31 @@
         
         
     <summary type="html">&lt;h1 id=&quot;js中常用的输出方式&quot;&gt;&lt;a href=&quot;#js中常用的输出方式&quot; class=&quot;headerlink&quot; title=&quot;js中常用的输出方式&quot;&gt;&lt;/a&gt;js中常用的输出方式&lt;/h1&gt;&lt;h2 id=&quot;1、console控制台：在浏览器控制台输出&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中的数据类型</title>
+    <link href="https://tealset.github.io/jsdataclass/"/>
+    <id>https://tealset.github.io/jsdataclass/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T10:06:29.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
         
       
     
