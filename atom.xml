@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-09-04T04:17:41.674Z</updated>
+  <updated>2020-09-05T01:32:48.825Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中boolean数据类型</title>
+    <link href="https://tealset.github.io/jsboolean/"/>
+    <id>https://tealset.github.io/jsboolean/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:32:48.825Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中boolean数据类型&quot;&gt;&lt;a href=&quot;#js中boolean数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中boolean数据类型&quot;&gt;&lt;/a&gt;js中boolean数据类型&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="boolean" scheme="https://tealset.github.io/tags/boolean/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中Object数据类型</title>
+    <link href="https://tealset.github.io/jsobject/"/>
+    <id>https://tealset.github.io/jsobject/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:33:14.221Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中object数据类型&quot;&gt;&lt;a href=&quot;#js中object数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中object数据类型&quot;&gt;&lt;/a&gt;js中object数据类型&lt;/h1&gt;&lt;h2 id=&quot;所有的对象都具备的特点&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="object" scheme="https://tealset.github.io/tags/object/"/>
+    
+  </entry>
   
   <entry>
     <title>js中关于String数据类型</title>
@@ -42,6 +100,35 @@
     <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
     <category term="String" scheme="https://tealset.github.io/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中typeof数据检测</title>
+    <link href="https://tealset.github.io/jstypeof/"/>
+    <id>https://tealset.github.io/jstypeof/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:29:46.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中typeof数据检测&quot;&gt;&lt;a href=&quot;#js中typeof数据检测&quot; class=&quot;headerlink&quot; title=&quot;js中typeof数据检测&quot;&gt;&lt;/a&gt;js中typeof数据检测&lt;/h1&gt;&lt;h2 id=&quot;js中的数据检测&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="typeof" scheme="https://tealset.github.io/tags/typeof/"/>
     
   </entry>
   
@@ -75,6 +162,31 @@
   </entry>
   
   <entry>
+    <title>js中的数据类型</title>
+    <link href="https://tealset.github.io/jsdataclass/"/>
+    <id>https://tealset.github.io/jsdataclass/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T10:06:29.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js中关于number的内容</title>
     <link href="https://tealset.github.io/jsnumber/"/>
     <id>https://tealset.github.io/jsnumber/</id>
@@ -104,18 +216,18 @@
   </entry>
   
   <entry>
-    <title>js中的数据类型</title>
-    <link href="https://tealset.github.io/jsdataclass/"/>
-    <id>https://tealset.github.io/jsdataclass/</id>
+    <title>js中常用的输出方式</title>
+    <link href="https://tealset.github.io/jsoutputmode/"/>
+    <id>https://tealset.github.io/jsoutputmode/</id>
     <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-03T10:06:29.390Z</updated>
+    <updated>2020-09-03T12:21:43.544Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;js中常用的输出方式&quot;&gt;&lt;a href=&quot;#js中常用的输出方式&quot; class=&quot;headerlink&quot; title=&quot;js中常用的输出方式&quot;&gt;&lt;/a&gt;js中常用的输出方式&lt;/h1&gt;&lt;h2 id=&quot;1、console控制台：在浏览器控制台输出&quot;&gt;&lt;a</summary>
         
       
     
@@ -129,18 +241,18 @@
   </entry>
   
   <entry>
-    <title>js中常用的输出方式</title>
-    <link href="https://tealset.github.io/jsoutputmode/"/>
-    <id>https://tealset.github.io/jsoutputmode/</id>
+    <title>js中定义变量的方法</title>
+    <link href="https://tealset.github.io/jsvariable/"/>
+    <id>https://tealset.github.io/jsvariable/</id>
     <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-03T12:21:43.544Z</updated>
+    <updated>2020-09-05T01:29:23.460Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;js中常用的输出方式&quot;&gt;&lt;a href=&quot;#js中常用的输出方式&quot; class=&quot;headerlink&quot; title=&quot;js中常用的输出方式&quot;&gt;&lt;/a&gt;js中常用的输出方式&lt;/h1&gt;&lt;h2 id=&quot;1、console控制台：在浏览器控制台输出&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;js中定义变量的方法&quot;&gt;&lt;a href=&quot;#js中定义变量的方法&quot; class=&quot;headerlink&quot; title=&quot;js中定义变量的方法&quot;&gt;&lt;/a&gt;js中定义变量的方法&lt;/h1&gt;&lt;h2 id=&quot;1、var&quot;&gt;&lt;a href=&quot;#1、var&quot;</summary>
         
       
     
@@ -210,7 +322,7 @@
     <link href="https://tealset.github.io/jsarray/"/>
     <id>https://tealset.github.io/jsarray/</id>
     <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-08-31T02:43:51.932Z</updated>
+    <updated>2020-09-05T01:28:40.670Z</updated>
     
     
       

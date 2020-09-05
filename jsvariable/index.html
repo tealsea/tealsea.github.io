@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascript,学习笔记,string">
+    <meta name="keywords" content="javascript,es6,变量">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中关于String数据类型 | Teal</title>
+    <title>js中定义变量的方法 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREWvt.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中关于String数据类型</h1>
+                    <h1 class="description center-align post-title">js中定义变量的方法</h1>
                 </div>
             </div>
         </div>
@@ -463,10 +463,6 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/String/">
-                                <span class="chip bg-color">String</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -479,10 +475,6 @@
                                 前端
                             </a>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                学习
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -492,7 +484,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-03
                 </div>
                 
 
@@ -508,61 +500,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中关于String数据类型"><a href="#js中关于String数据类型" class="headerlink" title="js中关于String数据类型"></a>js中关于String数据类型</h1><blockquote>
-<p>在js中用 ：单引号 双引号  反引号 包起来的都是字符串</p>
+                <h1 id="js中定义变量的方法"><a href="#js中定义变量的方法" class="headerlink" title="js中定义变量的方法"></a>js中定义变量的方法</h1><h2 id="1、var"><a href="#1、var" class="headerlink" title="1、var"></a>1、var</h2><blockquote>
+<p>基于var创建一个的变量叫N的值，让其指向具体的的值10</p>
 </blockquote>
-<h2 id="把其他类型的值转换为字符串类型"><a href="#把其他类型的值转换为字符串类型" class="headerlink" title="把其他类型的值转换为字符串类型"></a>把其他类型的值转换为字符串类型</h2><ul>
-<li>String([value])</li>
-<li>[value].toString()</li>
-</ul>
-<blockquote>
-<p>普通对象转换为字符串都是 ：”[object object]”</p>
-<p>数组对象转换为字符串是 ：”第一项，第二项，…” ; // =&gt;(以逗号分隔数组中的每一项)</p>
+<pre><code>var n=10;
+console.log(10); // =&gt;10</code></pre>
+<h2 id="2、let"><a href="#2、let" class="headerlink" title="2、let"></a>2、let</h2><blockquote>
+<p>基于ES6中的Let创建的一个变量，让其指向100，但后期让其重新指向了一个新值200</p>
 </blockquote>
-<h2 id="在js中常用的数学运算"><a href="#在js中常用的数学运算" class="headerlink" title="在js中常用的数学运算"></a>在js中常用的数学运算</h2><ul>
-<li><p>数学运算：+  -  *  /     //=&gt;加减乘除</p>
-</li>
-<li><p>％(膜) 取余数</p>
-<pre><code>console.log(4 / 2); // =&gt;2
-console.log(7 / 3); // =&gt;2.3333333333333335
-console.log(7 % 3); // =&gt;1</code></pre>
-</li>
-<li><p>除了加法以外，其余的情况都是数学运算（如果遇到非数字类型，需要将其利用Number方式转换为数字类型，然后在运算）</p>
-</li>
-<li><p>加号在Js中既有数学运算也有字符串拼接的意思（只要加号两边的任意一边出现字符串，则变为字符串拼接）</p>
-<pre><code>console.log(3-&#39;3px&#39;); // =&gt;NaN
-console.log(3+&#39;3px&#39;); // =&gt;&quot;33px&quot;
-console.log(1+&#39;1&#39;); // =&gt;&quot;11&quot;
-console.log(1+&#123;&#125;); // =&gt;&quot;1[object object]&quot;
-console.log(1+[]); // =&gt;&#39;1&#39;
-console.log([10]+true); // =&gt;&quot;10true&quot;  在转换为[10]到数字的过程中，先将其转换为字符串&quot;10&quot;，此后在进行字符串拼接(和数学运算没关系了)
-console.log(true+[10]); // =&gt;&quot;true10&quot;
-console.log(1+true); // =&gt;2
-console.log(100+true+21.2+null+undefined+&quot;tencent&quot;+[]+null+9+false); // =&gt;&quot;NaNtencentnull9falset&quot;</code></pre>
-</li>
-</ul>
-<h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><h3 id="传统字符串拼接"><a href="#传统字符串拼接" class="headerlink" title="传统字符串拼接"></a>传统字符串拼接</h3><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出
-let year=&quot;2020&quot;;
-let month=&quot;09&quot;;
-let day=&quot;04&quot;;
-let hours=&quot;12&quot;;
-let minute=&quot;00&quot;;
-let second=&quot;00&quot;;
-let result=year+&#39;-&#39;+month+&#39;-&#39;+day+&#39; &#39;+hours+&quot;:&quot;+minute+&quot;:&quot;+second;
-console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
-<h3 id="ES6模板字符串拼接"><a href="#ES6模板字符串拼接" class="headerlink" title="ES6模板字符串拼接"></a>ES6模板字符串拼接</h3><blockquote>
-<p>es6中的模板字符串就是解决了传统字符串拼接的问题（反引号 Tab键上面的~）</p>
-<p>${}中存方变量或其他js表达式即可，不用考虑单引号和双引号问题</p>
+<pre><code>let a=100;
+    a=200;
+console.log(a); // =&gt;200</code></pre>
+<h2 id="3、const"><a href="#3、const" class="headerlink" title="3、const"></a>3、const</h2><blockquote>
+<p>基于ES6中的const创建一个变量，让其指向1000，但后期让其指向2000，会报错，因此const创建的值是不能改变，所以const是常量</p>
 </blockquote>
-<pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出
-let year=&quot;2020&quot;;
-let month=&quot;09&quot;;
-let day=&quot;04&quot;;
-let hours=&quot;12&quot;;
-let minute=&quot;00&quot;;
-let second=&quot;00&quot;;
-let result =`$&#123;year&#125;-$&#123;month&#125;-$&#123;day&#125; $&#123;hours&#125;:$&#123;minute&#125;:$&#123;second&#125;`;
-console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
+<pre><code>const b=1000;
+      b=2000;
+console.log(b); // =&gt;TypeError: Assignment to constant variable.</code></pre>
+<h2 id="4、function"><a href="#4、function" class="headerlink" title="4、function"></a>4、function</h2><blockquote>
+<p>创建一个函数，也可以理解为创建了一个fun，让其指向这个函数</p>
+</blockquote>
+<pre><code>function fun()&#123;&#125;;
+conosle.log(fun); // =&gt;ƒ fun() &#123;&#125;</code></pre>
+<h2 id="5、class类"><a href="#5、class类" class="headerlink" title="5、class类"></a>5、class类</h2><blockquote>
+<p>创建一个类也可以理解创建了一个变量Parent,让其指向这个类</p>
+</blockquote>
+<pre><code>class Parent&#123;&#125;;
+cosnole.log(Parent); // =&gt; class Parent &#123; &#125;</code></pre>
+<h2 id="6、import-require"><a href="#6、import-require" class="headerlink" title="6、import/require"></a>6、import/require</h2><blockquote>
+<p>基于模块规范来导入具体的某个模块，定义一个axios的变量，用来指向导入的这个模块</p>
+</blockquote>
+<pre><code>// 导入axios模块
+import axios from &#39;axios&#39;;
+// 导入axios模块
+let axios=require(&#39;./axions&#39;)</code></pre>
 
             </div>
             <hr/>
@@ -588,7 +559,7 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsstring/">https://tealset.github.io/jsstring/</a>
+                    <a href="https://tealset.github.io/jsvariable/">https://tealset.github.io/jsvariable/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -628,10 +599,6 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                             
                                 <a href="/tags/javascript/">
                                     <span class="chip bg-color">javascript</span>
-                                </a>
-                            
-                                <a href="/tags/String/">
-                                    <span class="chip bg-color">String</span>
                                 </a>
                             
                         </div>
@@ -1066,27 +1033,26 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/jsobject/">
+                <a href="/jsoutputmode/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中Object数据类型">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE64H.jpg" class="responsive-img" alt="js中常用的输出方式">
                         
-                        <span class="card-title">js中Object数据类型</span>
+                        <span class="card-title">js中常用的输出方式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中object数据类型所有的对象都具备的特点
-用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）
-
-{[key:value,…]}每一组键值对是key:value的格式，多组键
+                            js中常用的输出方式1、console控制台：在浏览器控制台输出
+console.log; =&gt;可以输出任意数据类型，控制台展示的类型也是对应的数据类型
+console.log(&#39;a&#39;,10,&#123;name:&#
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
                         </span>
                         <span class="publish-author">
                             
@@ -1094,10 +1060,6 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                             
                             <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
                                     前端
-                                </a>
-                            
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    学习
                                 </a>
                             
                             
@@ -1109,10 +1071,6 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                     
                     <a href="/tags/javascript/">
                         <span class="chip bg-color">javascript</span>
-                    </a>
-                    
-                    <a href="/tags/object/">
-                        <span class="chip bg-color">object</span>
                     </a>
                     
                 </div>
@@ -1126,27 +1084,44 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jstypeof/">
+                <a href="/micrud/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="js中typeof数据检测">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE64H.jpg" class="responsive-img" alt="微信小程序的对云数据库的增删改查">
                         
-                        <span class="card-title">js中typeof数据检测</span>
+                        <span class="card-title">微信小程序的对云数据库的增删改查</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中typeof数据检测js中的数据检测
-typeof [value]; 检测数据的类型
-[example] instanceof [class]; 检测数据类型
-[example].constructor===[class];检测实例和
+                            微信小程序的对云数据库的增删改查*创建数据的类型
+
+
+类型
+介绍
+
+
+
+Bumber
+字符串类型  ‘a’ ,’b’
+
+
+Number
+数值类型  0 1 2 3
+
+
+Boolean
+布尔值类型  true || false
+
+
+Objec
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
                             </span>
                         <span class="publish-author">
                             
@@ -1156,10 +1131,6 @@ typeof [value]; 检测数据的类型
                                     前端
                                 </a>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    学习
-                                </a>
-                            
                             
                         </span>
                     </div>
@@ -1167,12 +1138,8 @@ typeof [value]; 检测数据的类型
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
-                    </a>
-                    
-                    <a href="/tags/typeof/">
-                        <span class="chip bg-color">typeof</span>
+                    <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                        <span class="chip bg-color">小程序</span>
                     </a>
                     
                 </div>

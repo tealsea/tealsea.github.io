@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascript,学习笔记,string">
+    <meta name="keywords" content="javascrpt,typeof">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中关于String数据类型 | Teal</title>
+    <title>js中typeof数据检测 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREhKP.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中关于String数据类型</h1>
+                    <h1 class="description center-align post-title">js中typeof数据检测</h1>
                 </div>
             </div>
         </div>
@@ -463,8 +463,8 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/String/">
-                                <span class="chip bg-color">String</span>
+                            <a href="/tags/typeof/">
+                                <span class="chip bg-color">typeof</span>
                             </a>
                         
                     </div>
@@ -508,61 +508,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中关于String数据类型"><a href="#js中关于String数据类型" class="headerlink" title="js中关于String数据类型"></a>js中关于String数据类型</h1><blockquote>
-<p>在js中用 ：单引号 双引号  反引号 包起来的都是字符串</p>
-</blockquote>
-<h2 id="把其他类型的值转换为字符串类型"><a href="#把其他类型的值转换为字符串类型" class="headerlink" title="把其他类型的值转换为字符串类型"></a>把其他类型的值转换为字符串类型</h2><ul>
-<li>String([value])</li>
-<li>[value].toString()</li>
+                <h1 id="js中typeof数据检测"><a href="#js中typeof数据检测" class="headerlink" title="js中typeof数据检测"></a>js中typeof数据检测</h1><h2 id="js中的数据检测"><a href="#js中的数据检测" class="headerlink" title="js中的数据检测"></a>js中的数据检测</h2><ul>
+<li>typeof [value]; 检测数据的类型</li>
+<li>[example] instanceof [class]; 检测数据类型</li>
+<li>[example].constructor===[class];检测实例和类关系的，从而检测数据类型</li>
+<li>Object.prototype.toString.call([value]);检测数据类型</li>
 </ul>
+<h2 id="typeof的细节点："><a href="#typeof的细节点：" class="headerlink" title="typeof的细节点："></a>typeof的细节点：</h2><ol>
+<li><p>typeof检测的结果首先是一个字符串，字符串中包含了对应的数据类型（如：’number’、‘string’、’boolean’、’undefined’、’object’、’function’、‘symbol’、’bigint’)</p>
+</li>
+<li><p>特殊的检测结果；</p>
+<ul>
+<li><p>NaN/Infinity都是数字类型的，检测结果都为：”number”</p>
+</li>
+<li><p>null的结果是”object”(这是浏览器的BUG：所有的值在计算中都已二进制存储，浏览器中把前三位000的最为对象，而null的二进制前三位就是000，所以被识别为对象，但事实上他不是对象，他是对象指针，是基本数据类型）</p>
+</li>
+<li><p>普通对象/数组对象/正则对象都是”object”类型，这样就无法基于typeof区分普通对象还是数组对象了</p>
+</li>
+<li><p>检测小技巧</p>
+<pre><code>console.log(typeof []); // =&gt;&quot;object&quot;
+console.log(typeof typeof typeof []); //=&gt;&quot;string&quot;</code></pre>
 <blockquote>
-<p>普通对象转换为字符串都是 ：”[object object]”</p>
-<p>数组对象转换为字符串是 ：”第一项，第二项，…” ; // =&gt;(以逗号分隔数组中的每一项)</p>
+<p>由于typeof返回的结果是一个字符串（字符串中包含了对应的类型），所以连续出现两次及两次以上的typeof检测的结果都是“string”</p>
 </blockquote>
-<h2 id="在js中常用的数学运算"><a href="#在js中常用的数学运算" class="headerlink" title="在js中常用的数学运算"></a>在js中常用的数学运算</h2><ul>
-<li><p>数学运算：+  -  *  /     //=&gt;加减乘除</p>
-</li>
-<li><p>％(膜) 取余数</p>
-<pre><code>console.log(4 / 2); // =&gt;2
-console.log(7 / 3); // =&gt;2.3333333333333335
-console.log(7 % 3); // =&gt;1</code></pre>
-</li>
-<li><p>除了加法以外，其余的情况都是数学运算（如果遇到非数字类型，需要将其利用Number方式转换为数字类型，然后在运算）</p>
-</li>
-<li><p>加号在Js中既有数学运算也有字符串拼接的意思（只要加号两边的任意一边出现字符串，则变为字符串拼接）</p>
-<pre><code>console.log(3-&#39;3px&#39;); // =&gt;NaN
-console.log(3+&#39;3px&#39;); // =&gt;&quot;33px&quot;
-console.log(1+&#39;1&#39;); // =&gt;&quot;11&quot;
-console.log(1+&#123;&#125;); // =&gt;&quot;1[object object]&quot;
-console.log(1+[]); // =&gt;&#39;1&#39;
-console.log([10]+true); // =&gt;&quot;10true&quot;  在转换为[10]到数字的过程中，先将其转换为字符串&quot;10&quot;，此后在进行字符串拼接(和数学运算没关系了)
-console.log(true+[10]); // =&gt;&quot;true10&quot;
-console.log(1+true); // =&gt;2
-console.log(100+true+21.2+null+undefined+&quot;tencent&quot;+[]+null+9+false); // =&gt;&quot;NaNtencentnull9falset&quot;</code></pre>
 </li>
 </ul>
-<h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><h3 id="传统字符串拼接"><a href="#传统字符串拼接" class="headerlink" title="传统字符串拼接"></a>传统字符串拼接</h3><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出
-let year=&quot;2020&quot;;
-let month=&quot;09&quot;;
-let day=&quot;04&quot;;
-let hours=&quot;12&quot;;
-let minute=&quot;00&quot;;
-let second=&quot;00&quot;;
-let result=year+&#39;-&#39;+month+&#39;-&#39;+day+&#39; &#39;+hours+&quot;:&quot;+minute+&quot;:&quot;+second;
-console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
-<h3 id="ES6模板字符串拼接"><a href="#ES6模板字符串拼接" class="headerlink" title="ES6模板字符串拼接"></a>ES6模板字符串拼接</h3><blockquote>
-<p>es6中的模板字符串就是解决了传统字符串拼接的问题（反引号 Tab键上面的~）</p>
-<p>${}中存方变量或其他js表达式即可，不用考虑单引号和双引号问题</p>
-</blockquote>
-<pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出
-let year=&quot;2020&quot;;
-let month=&quot;09&quot;;
-let day=&quot;04&quot;;
-let hours=&quot;12&quot;;
-let minute=&quot;00&quot;;
-let second=&quot;00&quot;;
-let result =`$&#123;year&#125;-$&#123;month&#125;-$&#123;day&#125; $&#123;hours&#125;:$&#123;minute&#125;:$&#123;second&#125;`;
-console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -588,7 +560,7 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsstring/">https://tealset.github.io/jsstring/</a>
+                    <a href="https://tealset.github.io/jstypeof/">https://tealset.github.io/jstypeof/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -630,8 +602,8 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                                     <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/String/">
-                                    <span class="chip bg-color">String</span>
+                                <a href="/tags/typeof/">
+                                    <span class="chip bg-color">typeof</span>
                                 </a>
                             
                         </div>
@@ -1066,22 +1038,27 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/jsobject/">
+                <a href="/jsstring/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中Object数据类型">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREsED.jpg" class="responsive-img" alt="js中关于String数据类型">
                         
-                        <span class="card-title">js中Object数据类型</span>
+                        <span class="card-title">js中关于String数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中object数据类型所有的对象都具备的特点
-用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）
+                            js中关于String数据类型
+在js中用 ：单引号 双引号  反引号 包起来的都是字符串
 
-{[key:value,…]}每一组键值对是key:value的格式，多组键
+把其他类型的值转换为字符串类型
+String([value])
+[value].toString()
+
+
+普通对象转换为字符串都是 ：”[obje
                         
                     </div>
                     <div class="publish-info">
@@ -1111,8 +1088,8 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/object/">
-                        <span class="chip bg-color">object</span>
+                    <a href="/tags/String/">
+                        <span class="chip bg-color">String</span>
                     </a>
                     
                 </div>
@@ -1126,27 +1103,33 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jstypeof/">
+                <a href="/brower/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="js中typeof数据检测">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREgCd.jpg" class="responsive-img" alt="常用浏览器内核">
                         
-                        <span class="card-title">js中typeof数据检测</span>
+                        <span class="card-title">常用浏览器内核</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中typeof数据检测js中的数据检测
-typeof [value]; 检测数据的类型
-[example] instanceof [class]; 检测数据类型
-[example].constructor===[class];检测实例和
+                            
+1、以谷歌浏览器Webkit内核为主（v8引擎）
+
+
+2、火狐的 Gecko内核
+
+
+3、IE浏览器的Trident内核
+
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
                             </span>
                         <span class="publish-author">
                             
@@ -1156,10 +1139,6 @@ typeof [value]; 检测数据的类型
                                     前端
                                 </a>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    学习
-                                </a>
-                            
                             
                         </span>
                     </div>
@@ -1167,12 +1146,8 @@ typeof [value]; 检测数据的类型
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
-                    </a>
-                    
-                    <a href="/tags/typeof/">
-                        <span class="chip bg-color">typeof</span>
+                    <a href="/tags/%E5%85%B6%E4%BB%96/">
+                        <span class="chip bg-color">其他</span>
                     </a>
                     
                 </div>

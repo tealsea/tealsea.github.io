@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascript,学习笔记,string">
+    <meta name="keywords" content="javascrpt,object">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中关于String数据类型 | Teal</title>
+    <title>js中Object数据类型 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE4Df.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中关于String数据类型</h1>
+                    <h1 class="description center-align post-title">js中Object数据类型</h1>
                 </div>
             </div>
         </div>
@@ -463,8 +463,8 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/String/">
-                                <span class="chip bg-color">String</span>
+                            <a href="/tags/object/">
+                                <span class="chip bg-color">object</span>
                             </a>
                         
                     </div>
@@ -508,61 +508,125 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中关于String数据类型"><a href="#js中关于String数据类型" class="headerlink" title="js中关于String数据类型"></a>js中关于String数据类型</h1><blockquote>
-<p>在js中用 ：单引号 双引号  反引号 包起来的都是字符串</p>
-</blockquote>
-<h2 id="把其他类型的值转换为字符串类型"><a href="#把其他类型的值转换为字符串类型" class="headerlink" title="把其他类型的值转换为字符串类型"></a>把其他类型的值转换为字符串类型</h2><ul>
-<li>String([value])</li>
-<li>[value].toString()</li>
+                <h1 id="js中object数据类型"><a href="#js中object数据类型" class="headerlink" title="js中object数据类型"></a>js中object数据类型</h1><h2 id="所有的对象都具备的特点"><a href="#所有的对象都具备的特点" class="headerlink" title="所有的对象都具备的特点"></a>所有的对象都具备的特点</h2><ol>
+<li><p>用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）</p>
+</li>
+<li><p>{[key:value,…]}每一组键值对是key:value的格式，多组键值对用逗号分隔</p>
+</li>
+<li><p>key不能是引用数据类型，value可以是任意数据类型</p>
+<pre><code>let obj=&#123;
+    name:&#39;teal&#39;,
+    age:20,
+    hobby:[&#39;吃饭&#39;,&#39;睡觉&#39;],
+    skill:function()&#123;&#125;
+&#125;
+console.log(obj);&gt;&#123;name: &quot;teal&quot;, age: 20, hobby: Array(2), skill: ƒ&#125;</code></pre>
+</li>
+</ol>
+<h2 id="关于对象中的键值对的增删改查"><a href="#关于对象中的键值对的增删改查" class="headerlink" title="关于对象中的键值对的增删改查"></a>关于对象中的键值对的增删改查</h2><ul>
+<li><p>新增或修改属性和属性值</p>
+<p>操作属性的两种方式</p>
+<ol>
+<li><p>对象.属性名=属性值</p>
+</li>
+<li><p>对象[属性名]=属性值</p>
+<pre><code>let obj=&#123;&#125;;
+//新增属性
+console.log(obj.name=&#39;teal&#39;); // =&gt;&#39;teal&#39;
+console.log(obj[&#39;age&#39;]=20); // =&gt;20
+//修改属性值
+console.log(obj.age=30); // =&gt;30
+console.log(obj[&#39;name&#39;]=&#39;red&#39;); // =&gt;&#39;red&#39;</code></pre>
+</li>
+</ol>
+</li>
+<li><p>获取对象中的属性和属性值</p>
+<ol>
+<li><p>​    获取指定属性名的属性值</p>
+<pre><code>let obj=&#123;
+    name:&#39;teal&#39;,
+    age:20
+&#125;
+console.log(obj.name); // =&gt;&quot;teal&quot;
+console.log(obj[&#39;age&#39;]); // =&gt;20</code></pre>
+</li>
+<li><p>如果指定的属性不存在，获取到的值为undefined(不会报错)</p>
+<pre><code>let obj=&#123;&#125;;
+console.log(obj.name); // =&gt;undefined
+console.log(obj[&#39;age&#39;]); // =&gt;undefined</code></pre>
+</li>
+<li><p>获取当前对象中所有的属性名=&gt;返回的结果包含所有属性名的数组</p>
+<pre><code>let obj=&#123;
+    name:&#39;teal&#39;,
+    age:20,
+    hobby:[&#39;吃饭&#39;,&#39;睡觉&#39;]
+    &#125;
+console.log(obj); // =&gt;&#123;name: &quot;teal&quot;, age: 20, hobby: Array(2)&#125;</code></pre>
+</li>
+</ol>
+</li>
+<li><p>删除对象中指定的属性</p>
+<ol>
+<li><p>假删除：当前属性还存在，只不过属性值为空</p>
+<pre><code>let obj=&#123;
+    name:&#39;teal&#39;
+&#125;
+obj.name=null
+console.log(obj.name); // =&gt;null </code></pre>
+</li>
+<li><p>真删除：彻底将对象中的属性删除</p>
+<pre><code>let obj=&#123;
+    name:&#39;teal&#39;
+&#125;;
+delete obj.name
+console.log(obj[&#39;name&#39;]); // =&gt;undefined</code></pre>
+</li>
+</ol>
+</li>
 </ul>
+<h2 id="对象中的属性名不能是引用数据类型"><a href="#对象中的属性名不能是引用数据类型" class="headerlink" title="对象中的属性名不能是引用数据类型"></a>对象中的属性名不能是引用数据类型</h2><pre><code>let n=10;
+let obj=&#123;&#125;;
+obj.n=200;// =&gt;相当于在obj中添加一个名为n的值为200的属性
+console.log(obj[&#39;n&#39;]); // =&gt;200
+obj[&#39;n&#39;]=300;// =&gt;相当于将刚创建名为n的属性值改为了300
+console.log(obj.n); // =&gt;300
+obj[n]=400;// =&gt;将创建的变量的值当作了属性名
+console.log(obj); // =&gt;&#123;10: 400, n: 300&#125;</code></pre>
 <blockquote>
-<p>普通对象转换为字符串都是 ：”[object object]”</p>
-<p>数组对象转换为字符串是 ：”第一项，第二项，…” ; // =&gt;(以逗号分隔数组中的每一项)</p>
+<p>n本身是一个变量（n和”n”的区别：前者是一个变量，后者是一个字符串的值），他代表的是所存储的值为100(是一个数字格式)</p>
 </blockquote>
-<h2 id="在js中常用的数学运算"><a href="#在js中常用的数学运算" class="headerlink" title="在js中常用的数学运算"></a>在js中常用的数学运算</h2><ul>
-<li><p>数学运算：+  -  *  /     //=&gt;加减乘除</p>
+<ul>
+<li><p>基于对象[属性名]的方式操作，需要保证属性名是一个变量（字符串  数字  布尔等都可以），如果不是值而是一个变量，他会把变量存储的值作为对象的属性名进行操作</p>
 </li>
-<li><p>％(膜) 取余数</p>
-<pre><code>console.log(4 / 2); // =&gt;2
-console.log(7 / 3); // =&gt;2.3333333333333335
-console.log(7 % 3); // =&gt;1</code></pre>
+<li><p>基于对象.属性名的方式操作，属性名就是点后面的</p>
+<pre><code>let obj=&#123;
+    1:100
+&#125;;
+console.log(obj[&#39;1&#39;]); // =&gt;100
+console.log(obj.1);//=&gt;Uncaught SyntaxError: missing ) after argument list</code></pre>
+<blockquote>
+<p>基于点的方式操作自己的有局限性，属性名不能是数字。此时只能用对象[属性名]的方式获取</p>
+</blockquote>
 </li>
-<li><p>除了加法以外，其余的情况都是数学运算（如果遇到非数字类型，需要将其利用Number方式转换为数字类型，然后在运算）</p>
-</li>
-<li><p>加号在Js中既有数学运算也有字符串拼接的意思（只要加号两边的任意一边出现字符串，则变为字符串拼接）</p>
-<pre><code>console.log(3-&#39;3px&#39;); // =&gt;NaN
-console.log(3+&#39;3px&#39;); // =&gt;&quot;33px&quot;
-console.log(1+&#39;1&#39;); // =&gt;&quot;11&quot;
-console.log(1+&#123;&#125;); // =&gt;&quot;1[object object]&quot;
-console.log(1+[]); // =&gt;&#39;1&#39;
-console.log([10]+true); // =&gt;&quot;10true&quot;  在转换为[10]到数字的过程中，先将其转换为字符串&quot;10&quot;，此后在进行字符串拼接(和数学运算没关系了)
-console.log(true+[10]); // =&gt;&quot;true10&quot;
-console.log(1+true); // =&gt;2
-console.log(100+true+21.2+null+undefined+&quot;tencent&quot;+[]+null+9+false); // =&gt;&quot;NaNtencentnull9falset&quot;</code></pre>
+<li><p>对象作为属性名操作的后果</p>
+<pre><code>let n=&#123;a:20&#125;;
+let m=[100,200];
+let obj=&#123;&#125;;
+obj[n]=&#39;teal&#39;;// =&gt;obj[&#123;n:100&#125;]但是对象不能最为属性名，所以需要把其转换为字符串
+console.log(obj); // =&gt;&#123;[object Object]: &quot;teal&quot;&#125;
+obj[m]=100;
+console.log(obj); // =&gt;&#123;[object Object]: &quot;teal&quot;, 100,200: 100&#125;</code></pre>
 </li>
 </ul>
-<h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><h3 id="传统字符串拼接"><a href="#传统字符串拼接" class="headerlink" title="传统字符串拼接"></a>传统字符串拼接</h3><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出
-let year=&quot;2020&quot;;
-let month=&quot;09&quot;;
-let day=&quot;04&quot;;
-let hours=&quot;12&quot;;
-let minute=&quot;00&quot;;
-let second=&quot;00&quot;;
-let result=year+&#39;-&#39;+month+&#39;-&#39;+day+&#39; &#39;+hours+&quot;:&quot;+minute+&quot;:&quot;+second;
-console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
-<h3 id="ES6模板字符串拼接"><a href="#ES6模板字符串拼接" class="headerlink" title="ES6模板字符串拼接"></a>ES6模板字符串拼接</h3><blockquote>
-<p>es6中的模板字符串就是解决了传统字符串拼接的问题（反引号 Tab键上面的~）</p>
-<p>${}中存方变量或其他js表达式即可，不用考虑单引号和双引号问题</p>
-</blockquote>
-<pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出
-let year=&quot;2020&quot;;
-let month=&quot;09&quot;;
-let day=&quot;04&quot;;
-let hours=&quot;12&quot;;
-let minute=&quot;00&quot;;
-let second=&quot;00&quot;;
-let result =`$&#123;year&#125;-$&#123;month&#125;-$&#123;day&#125; $&#123;hours&#125;:$&#123;minute&#125;:$&#123;second&#125;`;
-console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
+<h2 id="数组是特殊的对象"><a href="#数组是特殊的对象" class="headerlink" title="数组是特殊的对象"></a>数组是特殊的对象</h2><ol>
+<li><p>他的属性名是数字，数字从零开始，逐级递增，每一个数字都代表当前的位置(我们将这种数字属性名称为”索引”</p>
+</li>
+<li><p>默认有一个length属性存储数组的长度</p>
+<pre><code>let arr=[10,20,30];
+console.log(arr[0],arr[1],arr[2]);// =&gt;10,20,30
+console.log(arr.length); //=&gt; 3</code></pre>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -588,7 +652,7 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsstring/">https://tealset.github.io/jsstring/</a>
+                    <a href="https://tealset.github.io/jsobject/">https://tealset.github.io/jsobject/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -630,8 +694,8 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                                     <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/String/">
-                                    <span class="chip bg-color">String</span>
+                                <a href="/tags/object/">
+                                    <span class="chip bg-color">object</span>
                                 </a>
                             
                         </div>
@@ -1066,22 +1130,22 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/jsobject/">
+                <a href="/jsboolean/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中Object数据类型">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREsED.jpg" class="responsive-img" alt="js中boolean数据类型">
                         
-                        <span class="card-title">js中Object数据类型</span>
+                        <span class="card-title">js中boolean数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中object数据类型所有的对象都具备的特点
-用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）
-
-{[key:value,…]}每一组键值对是key:value的格式，多组键
+                            js中boolean数据类型将其他数据类型转换为布尔类型
+Boolean([value])
+![value]; 把指定的值转换为布尔类型，在取反
+!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而
                         
                     </div>
                     <div class="publish-info">
@@ -1111,8 +1175,8 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/object/">
-                        <span class="chip bg-color">object</span>
+                    <a href="/tags/boolean/">
+                        <span class="chip bg-color">boolean</span>
                     </a>
                     
                 </div>
@@ -1126,22 +1190,27 @@ console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jstypeof/">
+                <a href="/jsstring/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="js中typeof数据检测">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREsED.jpg" class="responsive-img" alt="js中关于String数据类型">
                         
-                        <span class="card-title">js中typeof数据检测</span>
+                        <span class="card-title">js中关于String数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中typeof数据检测js中的数据检测
-typeof [value]; 检测数据的类型
-[example] instanceof [class]; 检测数据类型
-[example].constructor===[class];检测实例和
+                            js中关于String数据类型
+在js中用 ：单引号 双引号  反引号 包起来的都是字符串
+
+把其他类型的值转换为字符串类型
+String([value])
+[value].toString()
+
+
+普通对象转换为字符串都是 ：”[obje
                         
                     </div>
                     <div class="publish-info">
@@ -1171,8 +1240,8 @@ typeof [value]; 检测数据的类型
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/typeof/">
-                        <span class="chip bg-color">typeof</span>
+                    <a href="/tags/String/">
+                        <span class="chip bg-color">String</span>
                     </a>
                     
                 </div>

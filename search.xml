@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>js中boolean数据类型</title>
+      <link href="//jsboolean/"/>
+      <url>//jsboolean/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中boolean数据类型"><a href="#js中boolean数据类型" class="headerlink" title="js中boolean数据类型"></a>js中boolean数据类型</h1><h2 id="将其他数据类型转换为布尔类型"><a href="#将其他数据类型转换为布尔类型" class="headerlink" title="将其他数据类型转换为布尔类型"></a>将其他数据类型转换为布尔类型</h2><ul><li>Boolean([value])</li><li>![value]; 把指定的值转换为布尔类型，在取反</li><li>!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而已）</li></ul><blockquote><p>规则：只有 “ 0  NaN  null undefined  空字符串 “最后会转换为false ,其余都为true</p></blockquote><pre><code>conosle.log(!!-1); // =&gt;trueconsole.log(!!0); // =&gt;falseconsole.log(!!undefined); // =&gt;falseconsole.log(!!Number(&#39;12px&#39;)); // =&gt;falseconsole.log(!![]); // =&gt;trueconsole.log(!! &#39;&#39;); // =&gt;falseconsole.log(!!&#123;&#125;); // =&gt;true</code></pre><blockquote><p>条件判断中，每一个条件最后都会被转换为 true || false</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> boolean </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中Object数据类型</title>
+      <link href="//jsobject/"/>
+      <url>//jsobject/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中object数据类型"><a href="#js中object数据类型" class="headerlink" title="js中object数据类型"></a>js中object数据类型</h1><h2 id="所有的对象都具备的特点"><a href="#所有的对象都具备的特点" class="headerlink" title="所有的对象都具备的特点"></a>所有的对象都具备的特点</h2><ol><li><p>用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）</p></li><li><p>{[key:value,…]}每一组键值对是key:value的格式，多组键值对用逗号分隔</p></li><li><p>key不能是引用数据类型，value可以是任意数据类型</p><pre><code>let obj=&#123;    name:&#39;teal&#39;,    age:20,    hobby:[&#39;吃饭&#39;,&#39;睡觉&#39;],    skill:function()&#123;&#125;&#125;console.log(obj);&gt;&#123;name: &quot;teal&quot;, age: 20, hobby: Array(2), skill: ƒ&#125;</code></pre></li></ol><h2 id="关于对象中的键值对的增删改查"><a href="#关于对象中的键值对的增删改查" class="headerlink" title="关于对象中的键值对的增删改查"></a>关于对象中的键值对的增删改查</h2><ul><li><p>新增或修改属性和属性值</p><p>操作属性的两种方式</p><ol><li><p>对象.属性名=属性值</p></li><li><p>对象[属性名]=属性值</p><pre><code>let obj=&#123;&#125;;//新增属性console.log(obj.name=&#39;teal&#39;); // =&gt;&#39;teal&#39;console.log(obj[&#39;age&#39;]=20); // =&gt;20//修改属性值console.log(obj.age=30); // =&gt;30console.log(obj[&#39;name&#39;]=&#39;red&#39;); // =&gt;&#39;red&#39;</code></pre></li></ol></li><li><p>获取对象中的属性和属性值</p><ol><li><p>​    获取指定属性名的属性值</p><pre><code>let obj=&#123;    name:&#39;teal&#39;,    age:20&#125;console.log(obj.name); // =&gt;&quot;teal&quot;console.log(obj[&#39;age&#39;]); // =&gt;20</code></pre></li><li><p>如果指定的属性不存在，获取到的值为undefined(不会报错)</p><pre><code>let obj=&#123;&#125;;console.log(obj.name); // =&gt;undefinedconsole.log(obj[&#39;age&#39;]); // =&gt;undefined</code></pre></li><li><p>获取当前对象中所有的属性名=&gt;返回的结果包含所有属性名的数组</p><pre><code>let obj=&#123;    name:&#39;teal&#39;,    age:20,    hobby:[&#39;吃饭&#39;,&#39;睡觉&#39;]    &#125;console.log(obj); // =&gt;&#123;name: &quot;teal&quot;, age: 20, hobby: Array(2)&#125;</code></pre></li></ol></li><li><p>删除对象中指定的属性</p><ol><li><p>假删除：当前属性还存在，只不过属性值为空</p><pre><code>let obj=&#123;    name:&#39;teal&#39;&#125;obj.name=nullconsole.log(obj.name); // =&gt;null </code></pre></li><li><p>真删除：彻底将对象中的属性删除</p><pre><code>let obj=&#123;    name:&#39;teal&#39;&#125;;delete obj.nameconsole.log(obj[&#39;name&#39;]); // =&gt;undefined</code></pre></li></ol></li></ul><h2 id="对象中的属性名不能是引用数据类型"><a href="#对象中的属性名不能是引用数据类型" class="headerlink" title="对象中的属性名不能是引用数据类型"></a>对象中的属性名不能是引用数据类型</h2><pre><code>let n=10;let obj=&#123;&#125;;obj.n=200;// =&gt;相当于在obj中添加一个名为n的值为200的属性console.log(obj[&#39;n&#39;]); // =&gt;200obj[&#39;n&#39;]=300;// =&gt;相当于将刚创建名为n的属性值改为了300console.log(obj.n); // =&gt;300obj[n]=400;// =&gt;将创建的变量的值当作了属性名console.log(obj); // =&gt;&#123;10: 400, n: 300&#125;</code></pre><blockquote><p>n本身是一个变量（n和”n”的区别：前者是一个变量，后者是一个字符串的值），他代表的是所存储的值为100(是一个数字格式)</p></blockquote><ul><li><p>基于对象[属性名]的方式操作，需要保证属性名是一个变量（字符串  数字  布尔等都可以），如果不是值而是一个变量，他会把变量存储的值作为对象的属性名进行操作</p></li><li><p>基于对象.属性名的方式操作，属性名就是点后面的</p><pre><code>let obj=&#123;    1:100&#125;;console.log(obj[&#39;1&#39;]); // =&gt;100console.log(obj.1);//=&gt;Uncaught SyntaxError: missing ) after argument list</code></pre><blockquote><p>基于点的方式操作自己的有局限性，属性名不能是数字。此时只能用对象[属性名]的方式获取</p></blockquote></li><li><p>对象作为属性名操作的后果</p><pre><code>let n=&#123;a:20&#125;;let m=[100,200];let obj=&#123;&#125;;obj[n]=&#39;teal&#39;;// =&gt;obj[&#123;n:100&#125;]但是对象不能最为属性名，所以需要把其转换为字符串console.log(obj); // =&gt;&#123;[object Object]: &quot;teal&quot;&#125;obj[m]=100;console.log(obj); // =&gt;&#123;[object Object]: &quot;teal&quot;, 100,200: 100&#125;</code></pre></li></ul><h2 id="数组是特殊的对象"><a href="#数组是特殊的对象" class="headerlink" title="数组是特殊的对象"></a>数组是特殊的对象</h2><ol><li><p>他的属性名是数字，数字从零开始，逐级递增，每一个数字都代表当前的位置(我们将这种数字属性名称为”索引”</p></li><li><p>默认有一个length属性存储数组的长度</p><pre><code>let arr=[10,20,30];console.log(arr[0],arr[1],arr[2]);// =&gt;10,20,30console.log(arr.length); //=&gt; 3</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> object </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js中关于String数据类型</title>
       <link href="//jsstring/"/>
       <url>//jsstring/</url>
@@ -33,6 +91,35 @@
     
     
     <entry>
+      <title>js中typeof数据检测</title>
+      <link href="//jstypeof/"/>
+      <url>//jstypeof/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中typeof数据检测"><a href="#js中typeof数据检测" class="headerlink" title="js中typeof数据检测"></a>js中typeof数据检测</h1><h2 id="js中的数据检测"><a href="#js中的数据检测" class="headerlink" title="js中的数据检测"></a>js中的数据检测</h2><ul><li>typeof [value]; 检测数据的类型</li><li>[example] instanceof [class]; 检测数据类型</li><li>[example].constructor===[class];检测实例和类关系的，从而检测数据类型</li><li>Object.prototype.toString.call([value]);检测数据类型</li></ul><h2 id="typeof的细节点："><a href="#typeof的细节点：" class="headerlink" title="typeof的细节点："></a>typeof的细节点：</h2><ol><li><p>typeof检测的结果首先是一个字符串，字符串中包含了对应的数据类型（如：’number’、‘string’、’boolean’、’undefined’、’object’、’function’、‘symbol’、’bigint’)</p></li><li><p>特殊的检测结果；</p><ul><li><p>NaN/Infinity都是数字类型的，检测结果都为：”number”</p></li><li><p>null的结果是”object”(这是浏览器的BUG：所有的值在计算中都已二进制存储，浏览器中把前三位000的最为对象，而null的二进制前三位就是000，所以被识别为对象，但事实上他不是对象，他是对象指针，是基本数据类型）</p></li><li><p>普通对象/数组对象/正则对象都是”object”类型，这样就无法基于typeof区分普通对象还是数组对象了</p></li><li><p>检测小技巧</p><pre><code>console.log(typeof []); // =&gt;&quot;object&quot;console.log(typeof typeof typeof []); //=&gt;&quot;string&quot;</code></pre><blockquote><p>由于typeof返回的结果是一个字符串（字符串中包含了对应的类型），所以连续出现两次及两次以上的typeof检测的结果都是“string”</p></blockquote></li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> typeof </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用浏览器内核</title>
       <link href="//brower/"/>
       <url>//brower/</url>
@@ -50,6 +137,31 @@
         <tags>
             
             <tag> 其他 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中的数据类型</title>
+      <link href="//jsdataclass/"/>
+      <url>//jsdataclass/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中的数据类型"><a href="#js中的数据类型" class="headerlink" title="js中的数据类型"></a>js中的数据类型</h1><h2 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h2><ul><li>数值 Number </li><li>字符串 String </li><li>布尔值 Boolean </li><li>空值 Null //undefined</li><li>未定义 Undefined </li><li>ES6新增的唯一的类型 Symbol</li></ul><h2 id="2、引用数据类型"><a href="#2、引用数据类型" class="headerlink" title="2、引用数据类型"></a>2、引用数据类型</h2><ol><li><p>对象数据类型 Object</p><ul><li>普通对象 {}</li><li>数组对象 []</li><li>正则表达式  /^$/</li><li>日期对象 new Date</li><li>数学函数对象 Math</li><li>…</li></ul><p>2、函数数据类型 Function</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
             
         </tags>
       
@@ -87,11 +199,11 @@
     
     
     <entry>
-      <title>js中的数据类型</title>
-      <link href="//jsdataclass/"/>
-      <url>//jsdataclass/</url>
+      <title>js中常用的输出方式</title>
+      <link href="//jsoutputmode/"/>
+      <url>//jsoutputmode/</url>
       
-        <content type="html"><![CDATA[<h1 id="js中的数据类型"><a href="#js中的数据类型" class="headerlink" title="js中的数据类型"></a>js中的数据类型</h1><h2 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h2><ul><li>数值 Number </li><li>字符串 String </li><li>布尔值 Boolean </li><li>空值 Null //undefined</li><li>未定义 Undefined </li><li>ES6新增的唯一的类型 Symbol</li></ul><h2 id="2、引用数据类型"><a href="#2、引用数据类型" class="headerlink" title="2、引用数据类型"></a>2、引用数据类型</h2><ol><li><p>对象数据类型 Object</p><ul><li>普通对象 {}</li><li>数组对象 []</li><li>正则表达式  /^$/</li><li>日期对象 new Date</li><li>数学函数对象 Math</li><li>…</li></ul><p>2、函数数据类型 Function</p></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="js中常用的输出方式"><a href="#js中常用的输出方式" class="headerlink" title="js中常用的输出方式"></a>js中常用的输出方式</h1><h2 id="1、console控制台：在浏览器控制台输出"><a href="#1、console控制台：在浏览器控制台输出" class="headerlink" title="1、console控制台：在浏览器控制台输出"></a>1、console控制台：在浏览器控制台输出</h2><ul><li><p>console.log; =&gt;可以输出任意数据类型，控制台展示的类型也是对应的数据类型</p><pre><code>console.log(&#39;a&#39;,10,&#123;name:&#39;Teal&#39;&#125;,[10,20],false); // =&gt;a 10 &#123;name: &quot;Teal&quot;&#125; (2) [10, 20] false</code></pre></li><li><p>console.dir; =&gt;输出一个对象或一个值得详细信息</p><pre><code>console.dir(&#123;name:&#39;Teal&#39;,age:20&#125;); // =&gt;Object age: 20 name: &quot;Teal&quot; __proto__: Object</code></pre></li><li><p>console.wran; =&gt;输出一个黄色背景的提示信息</p><pre><code>cosnole.wran(&#39;当前操作不符合规范&#39;); // =&gt; 黄色背景：‘当前操作不符合规范’</code></pre></li><li><p>console.table; =&gt;将json数据转化为表格输出</p><pre><code>console.table(&#123;name:&#39;teal&#39;,age:20&#125;)// =&gt;</code></pre><table><thead><tr><th>(index)</th><th>Value</th></tr></thead><tbody><tr><td>name</td><td>“teal”</td></tr><tr><td>age</td><td>20</td></tr></tbody></table></li><li><p>console.time/timeEnd; =&gt;计算中间程序运行的预估时间（预估时间：会受到当前电脑性能的影响）</p><pre><code>console.time(&#39;a&#39;); //a表示当前计算的任务名称for(let i=0;i&lt;99999999;i++)&#123;&#125;console.timeEnd(&#39;a&#39;); // =&gt; a: 51.40185546875 ms</code></pre></li></ul><h2 id="2、window提示框"><a href="#2、window提示框" class="headerlink" title="2、window提示框"></a>2、window提示框</h2><ul><li><p>alert; =&gt;alert是浏览器窗口弹出一个提示框，提示框中输出指定的信息，但输出的是字符串</p><pre><code>alert(20); // =&gt;&quot;20&quot;</code></pre></li><li><p>config;=&gt;相对于alert来说，给用户添加了两个选择按钮，第一个就是确定按钮第二个是取消按钮，我们可以通过用户点击的按钮拿到用户点击了那个按钮</p><pre><code>const bool=confirm(&#39;是否点击&#39;);console.log(bool); // =&gt;点击按钮输出true,点击取消输出false</code></pre></li><li><p>prompt; =&gt;相对于confirm来说在提供按钮的基础上还添加了输入框供用户输入信息，我们可以通过用户点击按钮来拿到用户输入的数据</p><pre><code>const data=prompt(&#39;请输入内容&#39;);cosnole.log(date); // =&gt;如果用户点击了确定按钮就会输出用户输入的值，如果点击了取消就会输出null</code></pre></li></ul><h2 id="3、向页面写入数据"><a href="#3、向页面写入数据" class="headerlink" title="3、向页面写入数据"></a>3、向页面写入数据</h2><ul><li><p>document.write;=&gt;把内容写入到页面中</p><pre><code>document.write(123); // =&gt;&quot;123&quot;</code></pre></li><li><p>innerHTML/innerText；向指定的容器中插入信息，基于这两种方法会把原有的数据给覆盖掉，想要追加内容采用+=方式，innerHTML还可以将语义化标签解析成代码，而innerText会将其当作字符串直接输出</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;ZH-CN&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;text&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;div id=&quot;box&quot;&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;script&gt;    // 读取内容    console.log(document.querySelector(&#39;#box&#39;).innerHTML); // =&gt;&quot;123&quot;    console.log(document.querySelector(&#39;#box&#39;).innerText); //=&gt;&quot;123    //覆盖原有数据    console.log(document.querySelector(&#39;#box&#39;).innerHTML=456) // =&gt;456    console.log(document.querySelector(&#39;#box&#39;).innerText=456) // =&gt;456    //追加内容    console.log(document.querySelector(&#39;#box&#39;).innerHTML+=&#39;aaa&#39;); // =&gt;456aaa    console.log(document.querySelector(&#39;#box&#39;).innerText+=&#39;aaa&#39;); // =&gt;456aaaaaa    //渲染语义化标签    console.log(document.querySelector(&#39;#box&#39;).innerHTML=&#39;&lt;h1&gt;123&lt;/h1&gt;&#39;); // =&gt;一级标题下的123    console.log(document.querySelector(&#39;#box&#39;).innerText=&#39;&lt;h1&gt;123&lt;/h1&gt;&#39;); // =&gt;&quot;&lt;h1&gt;123&lt;/h1&gt;&quot;&lt;/script&gt;</code></pre></li><li><p>value;=&gt;给页面中的input赋值</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;ZH-CN&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;text&lt;/title&gt;&lt;/head&gt;&lt;body&gt;   &lt;input type=&quot;text&quot; id=&quot;output&quot;&gt;&lt;/body&gt;&lt;/html&gt;&lt;script&gt;    document.querySelector(&#39;#output&#39;).value=&#39;我是输入框中的内容&#39;; // =&gt;在输入框中有“我是输入框中的内容”这几个字&lt;/script&gt;</code></pre></li></ul>]]></content>
       
       
       <categories>
@@ -112,11 +224,11 @@
     
     
     <entry>
-      <title>js中常用的输出方式</title>
-      <link href="//jsoutputmode/"/>
-      <url>//jsoutputmode/</url>
+      <title>js中定义变量的方法</title>
+      <link href="//jsvariable/"/>
+      <url>//jsvariable/</url>
       
-        <content type="html"><![CDATA[<h1 id="js中常用的输出方式"><a href="#js中常用的输出方式" class="headerlink" title="js中常用的输出方式"></a>js中常用的输出方式</h1><h2 id="1、console控制台：在浏览器控制台输出"><a href="#1、console控制台：在浏览器控制台输出" class="headerlink" title="1、console控制台：在浏览器控制台输出"></a>1、console控制台：在浏览器控制台输出</h2><ul><li><p>console.log; =&gt;可以输出任意数据类型，控制台展示的类型也是对应的数据类型</p><pre><code>console.log(&#39;a&#39;,10,&#123;name:&#39;Teal&#39;&#125;,[10,20],false); // =&gt;a 10 &#123;name: &quot;Teal&quot;&#125; (2) [10, 20] false</code></pre></li><li><p>console.dir; =&gt;输出一个对象或一个值得详细信息</p><pre><code>console.dir(&#123;name:&#39;Teal&#39;,age:20&#125;); // =&gt;Object age: 20 name: &quot;Teal&quot; __proto__: Object</code></pre></li><li><p>console.wran; =&gt;输出一个黄色背景的提示信息</p><pre><code>cosnole.wran(&#39;当前操作不符合规范&#39;); // =&gt; 黄色背景：‘当前操作不符合规范’</code></pre></li><li><p>console.table; =&gt;将json数据转化为表格输出</p><pre><code>console.table(&#123;name:&#39;teal&#39;,age:20&#125;)// =&gt;</code></pre><table><thead><tr><th>(index)</th><th>Value</th></tr></thead><tbody><tr><td>name</td><td>“teal”</td></tr><tr><td>age</td><td>20</td></tr></tbody></table></li><li><p>console.time/timeEnd; =&gt;计算中间程序运行的预估时间（预估时间：会受到当前电脑性能的影响）</p><pre><code>console.time(&#39;a&#39;); //a表示当前计算的任务名称for(let i=0;i&lt;99999999;i++)&#123;&#125;console.timeEnd(&#39;a&#39;); // =&gt; a: 51.40185546875 ms</code></pre></li></ul><h2 id="2、window提示框"><a href="#2、window提示框" class="headerlink" title="2、window提示框"></a>2、window提示框</h2><ul><li><p>alert; =&gt;alert是浏览器窗口弹出一个提示框，提示框中输出指定的信息，但输出的是字符串</p><pre><code>alert(20); // =&gt;&quot;20&quot;</code></pre></li><li><p>config;=&gt;相对于alert来说，给用户添加了两个选择按钮，第一个就是确定按钮第二个是取消按钮，我们可以通过用户点击的按钮拿到用户点击了那个按钮</p><pre><code>const bool=confirm(&#39;是否点击&#39;);console.log(bool); // =&gt;点击按钮输出true,点击取消输出false</code></pre></li><li><p>prompt; =&gt;相对于confirm来说在提供按钮的基础上还添加了输入框供用户输入信息，我们可以通过用户点击按钮来拿到用户输入的数据</p><pre><code>const data=prompt(&#39;请输入内容&#39;);cosnole.log(date); // =&gt;如果用户点击了确定按钮就会输出用户输入的值，如果点击了取消就会输出null</code></pre></li></ul><h2 id="3、向页面写入数据"><a href="#3、向页面写入数据" class="headerlink" title="3、向页面写入数据"></a>3、向页面写入数据</h2><ul><li><p>document.write;=&gt;把内容写入到页面中</p><pre><code>document.write(123); // =&gt;&quot;123&quot;</code></pre></li><li><p>innerHTML/innerText；向指定的容器中插入信息，基于这两种方法会把原有的数据给覆盖掉，想要追加内容采用+=方式，innerHTML还可以将语义化标签解析成代码，而innerText会将其当作字符串直接输出</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;ZH-CN&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;text&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;div id=&quot;box&quot;&gt;123&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;script&gt;    // 读取内容    console.log(document.querySelector(&#39;#box&#39;).innerHTML); // =&gt;&quot;123&quot;    console.log(document.querySelector(&#39;#box&#39;).innerText); //=&gt;&quot;123    //覆盖原有数据    console.log(document.querySelector(&#39;#box&#39;).innerHTML=456) // =&gt;456    console.log(document.querySelector(&#39;#box&#39;).innerText=456) // =&gt;456    //追加内容    console.log(document.querySelector(&#39;#box&#39;).innerHTML+=&#39;aaa&#39;); // =&gt;456aaa    console.log(document.querySelector(&#39;#box&#39;).innerText+=&#39;aaa&#39;); // =&gt;456aaaaaa    //渲染语义化标签    console.log(document.querySelector(&#39;#box&#39;).innerHTML=&#39;&lt;h1&gt;123&lt;/h1&gt;&#39;); // =&gt;一级标题下的123    console.log(document.querySelector(&#39;#box&#39;).innerText=&#39;&lt;h1&gt;123&lt;/h1&gt;&#39;); // =&gt;&quot;&lt;h1&gt;123&lt;/h1&gt;&quot;&lt;/script&gt;</code></pre></li><li><p>value;=&gt;给页面中的input赋值</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;ZH-CN&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;text&lt;/title&gt;&lt;/head&gt;&lt;body&gt;   &lt;input type=&quot;text&quot; id=&quot;output&quot;&gt;&lt;/body&gt;&lt;/html&gt;&lt;script&gt;    document.querySelector(&#39;#output&#39;).value=&#39;我是输入框中的内容&#39;; // =&gt;在输入框中有“我是输入框中的内容”这几个字&lt;/script&gt;</code></pre></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="js中定义变量的方法"><a href="#js中定义变量的方法" class="headerlink" title="js中定义变量的方法"></a>js中定义变量的方法</h1><h2 id="1、var"><a href="#1、var" class="headerlink" title="1、var"></a>1、var</h2><blockquote><p>基于var创建一个的变量叫N的值，让其指向具体的的值10</p></blockquote><pre><code>var n=10;console.log(10); // =&gt;10</code></pre><h2 id="2、let"><a href="#2、let" class="headerlink" title="2、let"></a>2、let</h2><blockquote><p>基于ES6中的Let创建的一个变量，让其指向100，但后期让其重新指向了一个新值200</p></blockquote><pre><code>let a=100;    a=200;console.log(a); // =&gt;200</code></pre><h2 id="3、const"><a href="#3、const" class="headerlink" title="3、const"></a>3、const</h2><blockquote><p>基于ES6中的const创建一个变量，让其指向1000，但后期让其指向2000，会报错，因此const创建的值是不能改变，所以const是常量</p></blockquote><pre><code>const b=1000;      b=2000;console.log(b); // =&gt;TypeError: Assignment to constant variable.</code></pre><h2 id="4、function"><a href="#4、function" class="headerlink" title="4、function"></a>4、function</h2><blockquote><p>创建一个函数，也可以理解为创建了一个fun，让其指向这个函数</p></blockquote><pre><code>function fun()&#123;&#125;;conosle.log(fun); // =&gt;ƒ fun() &#123;&#125;</code></pre><h2 id="5、class类"><a href="#5、class类" class="headerlink" title="5、class类"></a>5、class类</h2><blockquote><p>创建一个类也可以理解创建了一个变量Parent,让其指向这个类</p></blockquote><pre><code>class Parent&#123;&#125;;cosnole.log(Parent); // =&gt; class Parent &#123; &#125;</code></pre><h2 id="6、import-require"><a href="#6、import-require" class="headerlink" title="6、import/require"></a>6、import/require</h2><blockquote><p>基于模块规范来导入具体的某个模块，定义一个axios的变量，用来指向导入的这个模块</p></blockquote><pre><code>// 导入axios模块import axios from &#39;axios&#39;;// 导入axios模块let axios=require(&#39;./axions&#39;)</code></pre>]]></content>
       
       
       <categories>
