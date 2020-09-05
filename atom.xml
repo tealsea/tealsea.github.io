@@ -46,6 +46,31 @@
   </entry>
   
   <entry>
+    <title>js面试题一</title>
+    <link href="https://tealset.github.io/jswor/"/>
+    <id>https://tealset.github.io/jswor/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-05T11:41:39.484Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;栈内存与堆内存&quot;&gt;&lt;a href=&quot;#栈内存与堆内存&quot; class=&quot;headerlink&quot; title=&quot;栈内存与堆内存&quot;&gt;&lt;/a&gt;栈内存与堆内存&lt;/h1&gt;&lt;h1 id=&quot;js练习面试题一&quot;&gt;&lt;a href=&quot;#js练习面试题一&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="练习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="试题" scheme="https://tealset.github.io/tags/%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js中boolean数据类型</title>
     <link href="https://tealset.github.io/jsboolean/"/>
     <id>https://tealset.github.io/jsboolean/</id>
@@ -104,35 +129,6 @@
   </entry>
   
   <entry>
-    <title>js中关于String数据类型</title>
-    <link href="https://tealset.github.io/jsstring/"/>
-    <id>https://tealset.github.io/jsstring/</id>
-    <published>2020-09-04T00:00:00.000Z</published>
-    <updated>2020-09-04T04:17:41.674Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;js中关于String数据类型&quot;&gt;&lt;a href=&quot;#js中关于String数据类型&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
-    
-    <category term="String" scheme="https://tealset.github.io/tags/String/"/>
-    
-  </entry>
-  
-  <entry>
     <title>js中typeof数据检测</title>
     <link href="https://tealset.github.io/jstypeof/"/>
     <id>https://tealset.github.io/jstypeof/</id>
@@ -158,6 +154,35 @@
     <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
     <category term="typeof" scheme="https://tealset.github.io/tags/typeof/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中关于String数据类型</title>
+    <link href="https://tealset.github.io/jsstring/"/>
+    <id>https://tealset.github.io/jsstring/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-04T04:17:41.674Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中关于String数据类型&quot;&gt;&lt;a href=&quot;#js中关于String数据类型&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="String" scheme="https://tealset.github.io/tags/String/"/>
     
   </entry>
   

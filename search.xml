@@ -33,6 +33,31 @@
     
     
     <entry>
+      <title>js面试题一</title>
+      <link href="//jswor/"/>
+      <url>//jswor/</url>
+      
+        <content type="html"><![CDATA[<h1 id="栈内存与堆内存"><a href="#栈内存与堆内存" class="headerlink" title="栈内存与堆内存"></a>栈内存与堆内存</h1><h1 id="js练习面试题一"><a href="#js练习面试题一" class="headerlink" title="js练习面试题一"></a>js练习面试题一</h1><h2 id="一、问答题"><a href="#一、问答题" class="headerlink" title="一、问答题"></a>一、问答题</h2><ol><li><h3 id="js中常用的数据类型都有哪些？"><a href="#js中常用的数据类型都有哪些？" class="headerlink" title="js中常用的数据类型都有哪些？"></a>js中常用的数据类型都有哪些？</h3><blockquote><h4 id="基本数据类型：string-number-boolean-null-undefined-symbol-bigint"><a href="#基本数据类型：string-number-boolean-null-undefined-symbol-bigint" class="headerlink" title="基本数据类型：string number boolean null undefined symbol bigint"></a>基本数据类型：string number boolean null undefined symbol bigint</h4><h4 id="引用数据类型："><a href="#引用数据类型：" class="headerlink" title="引用数据类型："></a>引用数据类型：</h4><h5 id="object-普通对象-数组对象-正则对象"><a href="#object-普通对象-数组对象-正则对象" class="headerlink" title="object: 普通对象  数组对象  正则对象"></a>object: 普通对象  数组对象  正则对象</h5><h5 id="function"><a href="#function" class="headerlink" title="function"></a>function</h5></blockquote></li><li><h3 id="浏览器中常用的内核有哪些？"><a href="#浏览器中常用的内核有哪些？" class="headerlink" title="浏览器中常用的内核有哪些？"></a>浏览器中常用的内核有哪些？</h3><blockquote><h4 id="Webkit内核、Gecko内核、Trident内核、Blink内核"><a href="#Webkit内核、Gecko内核、Trident内核、Blink内核" class="headerlink" title="Webkit内核、Gecko内核、Trident内核、Blink内核"></a>Webkit内核、Gecko内核、Trident内核、Blink内核</h4></blockquote></li><li><h3 id="数据类型直接的区别？"><a href="#数据类型直接的区别？" class="headerlink" title="数据类型直接的区别？"></a>数据类型直接的区别？</h3><blockquote><h4 id="基本数据类型存储在栈内存中，而引用数据类型存储在堆内存中"><a href="#基本数据类型存储在栈内存中，而引用数据类型存储在堆内存中" class="headerlink" title="基本数据类型存储在栈内存中，而引用数据类型存储在堆内存中"></a>基本数据类型存储在栈内存中，而引用数据类型存储在堆内存中</h4></blockquote></li><li><h3 id="列举常用的关键字和保留字"><a href="#列举常用的关键字和保留字" class="headerlink" title="列举常用的关键字和保留字"></a>列举常用的关键字和保留字</h3><blockquote><p><strong>关键字</strong>：break、else、new、var、case、finally，return，void、catch、for、switch、while、continue、function、this、with、default、if、throw、delete、in、try、do、instanceof、typeof</p><p><strong>保留字</strong>：abstract、enum、int 、short、boolean、export、interface、static、byte、extends、long、super、char、final、native、synchronized、class、float、package、throws、const、goto、private、transient、debugger、implements、protected、volatile、double、import、public</p></blockquote></li><li><h3 id="js中创建变量的几种常用方式？"><a href="#js中创建变量的几种常用方式？" class="headerlink" title="js中创建变量的几种常用方式？"></a>js中创建变量的几种常用方式？</h3><blockquote><p>var   </p><p>let</p><p>const </p><p>class</p><p>function</p><p>import</p></blockquote></li></ol><h2 id="二、练习题"><a href="#二、练习题" class="headerlink" title="二、练习题"></a>二、练习题</h2><ol><li><h3 id="写出下面结果输出答案（阿里面试题）"><a href="#写出下面结果输出答案（阿里面试题）" class="headerlink" title="写出下面结果输出答案（阿里面试题）"></a>写出下面结果输出答案（阿里面试题）</h3><pre><code>let a=&#123;    n:1&#125;;let b=a;a.x=a=&#123;    n:2&#125;;console.log(a.x);// undefinedconsole.log(b); // &#123;n:1,x:&#123;n:2&#125;&#125;</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p><strong>考试点：连等号的运用</strong></p><p><strong>分析图</strong></p><p><img src="https://s1.ax1x.com/2020/09/05/wVC3Tg.md.png" alt="解题过程图"></p></li><li><h3 id="分别写出下列表式输出的结果（腾讯面试题）"><a href="#分别写出下列表式输出的结果（腾讯面试题）" class="headerlink" title="分别写出下列表式输出的结果（腾讯面试题）"></a>分别写出下列表式输出的结果（腾讯面试题）</h3><pre><code>var a=&#39;abc&#39;+123+456; // =&gt;加号不经有数学运算还有字符串的拼接,只要字符串中有非法数字，就直接进行字符串拼接var b=&#39;456&#39;-&#39;123&#39;; // =&gt;将字符串中内容转换为数字类型( 456-123 )，在进行数学运算var c=100+true+21.2+null+undefined+&#39;Tencent&#39;+[]+null+9+false; // =&gt;看到加号先将字符串转换为数字(100+1+21.2+null+NaN+&#39;Tencent&#39;+&#39;&#39;+&#39;null&#39;+&#39;9&#39;+&#39;false&#39;),看到转换后为NaN的后面的不会再转数字类型，而是转字符串，然后在进行字符串拼接console.log(a);//&quot;abc123456&quot;console.log(b);//333console.log(c);//&quot;NaNTencentnull9false&quot;</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p><strong>考点：</strong>字符串的拼接及类型间的转换</p></li></ol><ol start="2"><li><h3 id="写出下列代码的输出结果（腾讯面试题）"><a href="#写出下列代码的输出结果（腾讯面试题）" class="headerlink" title="写出下列代码的输出结果（腾讯面试题）"></a>写出下列代码的输出结果（腾讯面试题）</h3><pre><code>var str=&#39;abc123&#39;;var num=parseInt(str); // =&gt;parseInt()转换规则和Number()不一样,他是先将内容(非数字内容)转换为字符串，从字符串左边开始查找，把找到的有效数字转换为数字，一直到非有效数字字符为止，则结束查找。如开始就是非有效数字直接转换为数字NaNif(num==NaN)&#123; // =&gt;NaN和任何数都不想等    alert(NaN);&#125;else if(num==123)&#123;    alert(123);&#125;else if(typeof num==&#39;number&#39;)&#123;   // =&gt;typeof 输出的值都会被转换为字符串    alert(&#39;number&#39;); //正确的输出结果&#125;else&#123;    alert(&#39;str&#39;);&#125;;</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p><strong>考点：</strong>parseInt()转换规则  </p></li></ol><ol start="3"><li><h3 id="写出下列代码的输出结果（腾讯面试题）-1"><a href="#写出下列代码的输出结果（腾讯面试题）-1" class="headerlink" title="写出下列代码的输出结果（腾讯面试题）"></a>写出下列代码的输出结果（腾讯面试题）</h3><pre><code>var a=0;var b=a;b++;alert(a);var o=&#123;&#125;;o.a=0;var c=o;c.a=10;alert(o.a);</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p><strong>考点：</strong> 基本数据类型和引用数据类型的区别</p><p><strong>分析图</strong></p><p><img src="https://s1.ax1x.com/2020/09/05/wVelnA.md.png" alt="分析过程图"></p></li></ol><ol start="4"><li><h3 id="下列输出”1”的有哪些？"><a href="#下列输出”1”的有哪些？" class="headerlink" title="下列输出”1”的有哪些？"></a>下列输出”1”的有哪些？</h3><pre><code>A:alert(1) // &quot;1&quot; =&gt;alert输出的内容都会被转换为字符串B:console.log(parseInt(1.3)); // 1  =&gt;parseInt会将非数字转换为字符串，然后将有自左向右按个查找有效数字，一直遇到非有效数字停止检查，然后将有效数字转换为数字类型C:console.log(1);//1 =&gt;consoel.log输出的是值原本的类型不会被转换D:console.log(isNaN(1));// false =&gt;isNaN检测内容是否为NaN,它会将非数字类型，通过Number转换为数字类型，是NaN输出true,不是NaN输出falseE:console.log(parseInt(&quot;1&quot;)); // 1答案：A</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>考点：parsrInt()转换  isNaN()判断</p></li></ol><ol start="5"><li><h3 id="下面结果是”undefined”的是"><a href="#下面结果是”undefined”的是" class="headerlink" title="下面结果是”undefined”的是"></a>下面结果是”undefined”的是</h3><pre><code>A:console.log(alert(1));// undefined =&gt;先输出alert的值(&quot;1&quot;),然后将alert执行后的返回值在控制台输出，而alert没有返回值B:typeof undefined // &quot;undefined&quot; =&gt;typeof输出的值类型都会被转换为字符串C:console.log(parseInt(undefined));// NaN =&gt;先将undefined转换为数字类型(NaN)，然后在进行输出D:isNaN(undefined);// true  =&gt;先将undefined通过Number转换为最后NaN,最后判断是否为NaN答案：B</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>考点：typeof 输出结果类型  嵌套输出结果</p></li></ol><ol start="6"><li><h3 id="下面结果能得到true的是"><a href="#下面结果能得到true的是" class="headerlink" title="下面结果能得到true的是"></a>下面结果能得到true的是</h3><pre><code>A:isNaN(null); // false =&gt;先将null通过Number转换为数字类型(0),在判断是否为NaNB:isNaN(parseInt(null));// true =&gt;parseInt先将null转换字符串，然后将有效数字转换为数字类型(NaN),然后判断是否为NaNC:Number(null);// 0 =&gt;直接将内容转换为数字类型(0)D:parseFloat(null);// NaN //将内容转换为字符串然后将有效字符转换为数字类型(NaN)答案:B</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>考点：isNaN判断  parseInt转换  Number转换  parseFloat转换</p></li></ol><ol start="7"><li><h3 id="输出下面程序的结果"><a href="#输出下面程序的结果" class="headerlink" title="输出下面程序的结果"></a>输出下面程序的结果</h3><pre><code>parseInt(&quot;&quot;);// NaN =&gt;将内容转换为字符串，然后将有效字符转换为数字类型(NaN)Number(&quot;&quot;);// 0 =&gt;将内容直接转换为数字类型(0)isNaN(&quot;&quot;);// false =&gt;先将内容转换数字类型(0),然后在判断是否为NaNparseInt(null);// NaN =&gt;将内容转换为字符串，然后自左往右查询有效数字，一直遇到非有效数字为止，结束查询，将有效数字转换为数字类型(NaN)Number(null);// 0 =&gt; 直接将转换为数字类型(0)isNaN(null);// false =&gt;直接转换为数字内容(0),然后判断是否为NaNuparseInt(&quot;12px&quot;);// 12 =&gt;先将内容转化为字符串然后自左往右查询，一直查询到非有效数字为止，结束查询。将有效数字转换为数字类型(12)Number(&#39;12px&#39;);// NaN =&gt;直接内容转换为数字类型(NaN)isNaN(&quot;12px&quot;);//true =&gt;直接将内容转换为数字类型(NaN),然后判断是否为NaN</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>考点：各数据类型间的数据转换</p></li></ol><ol start="8"><li><h3 id="下面程序数据的结果"><a href="#下面程序数据的结果" class="headerlink" title="下面程序数据的结果"></a>下面程序数据的结果</h3><pre><code>if(isNaN(NaN)==&quot;&quot;)&#123;     // =&gt;先判断是否为NaN(true),=&gt; true==&quot;&quot; ,然后将true转化为字符串,在进行比对    console.log(&#39;teal&#39;);&#125;else&#123;    console.log(&#39;red&#39;); // &quot;red&quot;&#125;;</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>考点：相等和全等</p></li></ol><ol start="9"><li><h3 id="下面程序的输出的结果"><a href="#下面程序的输出的结果" class="headerlink" title="下面程序的输出的结果"></a>下面程序的输出的结果</h3><pre><code>let x=[1,2,3];let y=x;let z=[4,5,6];y[0]=10;y=z;z[1]=20;x[2]=z=30;console.log(x,y,z)</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>考点： 栈与堆内存</p><p>分析图</p><p><img src="https://s1.ax1x.com/2020/09/05/wVYgdU.md.png" alt="分析过程图"></p></li></ol><ol start="10"><li><h2 id="下面程序的输出结果（阿里面试题）"><a href="#下面程序的输出结果（阿里面试题）" class="headerlink" title="下面程序的输出结果（阿里面试题）"></a>下面程序的输出结果（阿里面试题）</h2><pre><code>let a=&#123;    n:1&#125;;let b=a;a.x=a=&#123;    n:2&#125;;conosle.log(a.x);console.log(b)</code></pre><blockquote><p><strong>解析：</strong></p></blockquote><p>分析图</p><p><img src="https://s1.ax1x.com/2020/09/05/wVtbXq.md.png" alt="分析过程图"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 练习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js中boolean数据类型</title>
       <link href="//jsboolean/"/>
       <url>//jsboolean/</url>
@@ -91,35 +116,6 @@
     
     
     <entry>
-      <title>js中关于String数据类型</title>
-      <link href="//jsstring/"/>
-      <url>//jsstring/</url>
-      
-        <content type="html"><![CDATA[<h1 id="js中关于String数据类型"><a href="#js中关于String数据类型" class="headerlink" title="js中关于String数据类型"></a>js中关于String数据类型</h1><blockquote><p>在js中用 ：单引号 双引号  反引号 包起来的都是字符串</p></blockquote><h2 id="把其他类型的值转换为字符串类型"><a href="#把其他类型的值转换为字符串类型" class="headerlink" title="把其他类型的值转换为字符串类型"></a>把其他类型的值转换为字符串类型</h2><ul><li>String([value])</li><li>[value].toString()</li></ul><blockquote><p>普通对象转换为字符串都是 ：”[object object]”</p><p>数组对象转换为字符串是 ：”第一项，第二项，…” ; // =&gt;(以逗号分隔数组中的每一项)</p></blockquote><h2 id="在js中常用的数学运算"><a href="#在js中常用的数学运算" class="headerlink" title="在js中常用的数学运算"></a>在js中常用的数学运算</h2><ul><li><p>数学运算：+  -  *  /     //=&gt;加减乘除</p></li><li><p>％(膜) 取余数</p><pre><code>console.log(4 / 2); // =&gt;2console.log(7 / 3); // =&gt;2.3333333333333335console.log(7 % 3); // =&gt;1</code></pre></li><li><p>除了加法以外，其余的情况都是数学运算（如果遇到非数字类型，需要将其利用Number方式转换为数字类型，然后在运算）</p></li><li><p>加号在Js中既有数学运算也有字符串拼接的意思（只要加号两边的任意一边出现字符串，则变为字符串拼接）</p><pre><code>console.log(3-&#39;3px&#39;); // =&gt;NaNconsole.log(3+&#39;3px&#39;); // =&gt;&quot;33px&quot;console.log(1+&#39;1&#39;); // =&gt;&quot;11&quot;console.log(1+&#123;&#125;); // =&gt;&quot;1[object object]&quot;console.log(1+[]); // =&gt;&#39;1&#39;console.log([10]+true); // =&gt;&quot;10true&quot;  在转换为[10]到数字的过程中，先将其转换为字符串&quot;10&quot;，此后在进行字符串拼接(和数学运算没关系了)console.log(true+[10]); // =&gt;&quot;true10&quot;console.log(1+true); // =&gt;2console.log(100+true+21.2+null+undefined+&quot;tencent&quot;+[]+null+9+false); // =&gt;&quot;NaNtencentnull9falset&quot;</code></pre></li></ul><h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><h3 id="传统字符串拼接"><a href="#传统字符串拼接" class="headerlink" title="传统字符串拼接"></a>传统字符串拼接</h3><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出let year=&quot;2020&quot;;let month=&quot;09&quot;;let day=&quot;04&quot;;let hours=&quot;12&quot;;let minute=&quot;00&quot;;let second=&quot;00&quot;;let result=year+&#39;-&#39;+month+&#39;-&#39;+day+&#39; &#39;+hours+&quot;:&quot;+minute+&quot;:&quot;+second;console.log(result); // =&gt;2020-09-04 12:00:00</code></pre><h3 id="ES6模板字符串拼接"><a href="#ES6模板字符串拼接" class="headerlink" title="ES6模板字符串拼接"></a>ES6模板字符串拼接</h3><blockquote><p>es6中的模板字符串就是解决了传统字符串拼接的问题（反引号 Tab键上面的~）</p><p>${}中存方变量或其他js表达式即可，不用考虑单引号和双引号问题</p></blockquote><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出let year=&quot;2020&quot;;let month=&quot;09&quot;;let day=&quot;04&quot;;let hours=&quot;12&quot;;let minute=&quot;00&quot;;let second=&quot;00&quot;;let result =`$&#123;year&#125;-$&#123;month&#125;-$&#123;day&#125; $&#123;hours&#125;:$&#123;minute&#125;:$&#123;second&#125;`;console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> javascript </tag>
-            
-            <tag> String </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>js中typeof数据检测</title>
       <link href="//jstypeof/"/>
       <url>//jstypeof/</url>
@@ -141,6 +137,35 @@
             <tag> javascript </tag>
             
             <tag> typeof </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中关于String数据类型</title>
+      <link href="//jsstring/"/>
+      <url>//jsstring/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中关于String数据类型"><a href="#js中关于String数据类型" class="headerlink" title="js中关于String数据类型"></a>js中关于String数据类型</h1><blockquote><p>在js中用 ：单引号 双引号  反引号 包起来的都是字符串</p></blockquote><h2 id="把其他类型的值转换为字符串类型"><a href="#把其他类型的值转换为字符串类型" class="headerlink" title="把其他类型的值转换为字符串类型"></a>把其他类型的值转换为字符串类型</h2><ul><li>String([value])</li><li>[value].toString()</li></ul><blockquote><p>普通对象转换为字符串都是 ：”[object object]”</p><p>数组对象转换为字符串是 ：”第一项，第二项，…” ; // =&gt;(以逗号分隔数组中的每一项)</p></blockquote><h2 id="在js中常用的数学运算"><a href="#在js中常用的数学运算" class="headerlink" title="在js中常用的数学运算"></a>在js中常用的数学运算</h2><ul><li><p>数学运算：+  -  *  /     //=&gt;加减乘除</p></li><li><p>％(膜) 取余数</p><pre><code>console.log(4 / 2); // =&gt;2console.log(7 / 3); // =&gt;2.3333333333333335console.log(7 % 3); // =&gt;1</code></pre></li><li><p>除了加法以外，其余的情况都是数学运算（如果遇到非数字类型，需要将其利用Number方式转换为数字类型，然后在运算）</p></li><li><p>加号在Js中既有数学运算也有字符串拼接的意思（只要加号两边的任意一边出现字符串，则变为字符串拼接）</p><pre><code>console.log(3-&#39;3px&#39;); // =&gt;NaNconsole.log(3+&#39;3px&#39;); // =&gt;&quot;33px&quot;console.log(1+&#39;1&#39;); // =&gt;&quot;11&quot;console.log(1+&#123;&#125;); // =&gt;&quot;1[object object]&quot;console.log(1+[]); // =&gt;&#39;1&#39;console.log([10]+true); // =&gt;&quot;10true&quot;  在转换为[10]到数字的过程中，先将其转换为字符串&quot;10&quot;，此后在进行字符串拼接(和数学运算没关系了)console.log(true+[10]); // =&gt;&quot;true10&quot;console.log(1+true); // =&gt;2console.log(100+true+21.2+null+undefined+&quot;tencent&quot;+[]+null+9+false); // =&gt;&quot;NaNtencentnull9falset&quot;</code></pre></li></ul><h2 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h2><h3 id="传统字符串拼接"><a href="#传统字符串拼接" class="headerlink" title="传统字符串拼接"></a>传统字符串拼接</h3><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出let year=&quot;2020&quot;;let month=&quot;09&quot;;let day=&quot;04&quot;;let hours=&quot;12&quot;;let minute=&quot;00&quot;;let second=&quot;00&quot;;let result=year+&#39;-&#39;+month+&#39;-&#39;+day+&#39; &#39;+hours+&quot;:&quot;+minute+&quot;:&quot;+second;console.log(result); // =&gt;2020-09-04 12:00:00</code></pre><h3 id="ES6模板字符串拼接"><a href="#ES6模板字符串拼接" class="headerlink" title="ES6模板字符串拼接"></a>ES6模板字符串拼接</h3><blockquote><p>es6中的模板字符串就是解决了传统字符串拼接的问题（反引号 Tab键上面的~）</p><p>${}中存方变量或其他js表达式即可，不用考虑单引号和双引号问题</p></blockquote><pre><code>// 将下列变量拼接成 2020-09-04 12:00:00这种格式输出let year=&quot;2020&quot;;let month=&quot;09&quot;;let day=&quot;04&quot;;let hours=&quot;12&quot;;let minute=&quot;00&quot;;let second=&quot;00&quot;;let result =`$&#123;year&#125;-$&#123;month&#125;-$&#123;day&#125; $&#123;hours&#125;:$&#123;minute&#125;:$&#123;second&#125;`;console.log(result); // =&gt;2020-09-04 12:00:00</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> String </tag>
             
         </tags>
       
