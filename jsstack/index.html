@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascrpt,boolean">
+    <meta name="keywords" content="javascrpt,stack,栈与堆">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中boolean数据类型 | Teal</title>
+    <title>栈内存与堆内存 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREyUe.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中boolean数据类型</h1>
+                    <h1 class="description center-align post-title">栈内存与堆内存</h1>
                 </div>
             </div>
         </div>
@@ -463,8 +463,8 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/boolean/">
-                                <span class="chip bg-color">boolean</span>
+                            <a href="/tags/stack/">
+                                <span class="chip bg-color">stack</span>
                             </a>
                         
                     </div>
@@ -492,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-05
                 </div>
                 
 
@@ -508,24 +508,108 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中boolean数据类型"><a href="#js中boolean数据类型" class="headerlink" title="js中boolean数据类型"></a>js中boolean数据类型</h1><h2 id="将其他数据类型转换为布尔类型"><a href="#将其他数据类型转换为布尔类型" class="headerlink" title="将其他数据类型转换为布尔类型"></a>将其他数据类型转换为布尔类型</h2><ul>
-<li>Boolean([value])</li>
-<li>![value]; 把指定的值转换为布尔类型，在取反</li>
-<li>!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而已）</li>
+                <h1 id="栈内存与堆内存"><a href="#栈内存与堆内存" class="headerlink" title="栈内存与堆内存"></a>栈内存与堆内存</h1><h2 id="内存分类"><a href="#内存分类" class="headerlink" title="内存分类"></a>内存分类</h2><ul>
+<li>栈内存  stack</li>
+<li>堆内存  heap </li>
 </ul>
-<blockquote>
-<p>规则：只有 “ 0  NaN  null undefined  空字符串 “最后会转换为false ,其余都为true</p>
-</blockquote>
-<pre><code>conosle.log(!!-1); // =&gt;true
-console.log(!!0); // =&gt;false
-console.log(!!undefined); // =&gt;false
-console.log(!!Number(&#39;12px&#39;)); // =&gt;false
-console.log(!![]); // =&gt;true
-console.log(!! &#39;&#39;); // =&gt;false
-console.log(!!&#123;&#125;); // =&gt;true</code></pre>
-<blockquote>
-<p>条件判断中，每一个条件最后都会被转换为 true || false</p>
-</blockquote>
+<h2 id="栈内存与堆内存区别"><a href="#栈内存与堆内存区别" class="headerlink" title="栈内存与堆内存区别"></a>栈内存与堆内存区别</h2><ol>
+<li>栈内存是储存基本数据类型值和为执行上下文提供的环境</li>
+<li>堆内存是存储引用数据类型的，他会在内存中开辟一条新的内存来储存值，并生成一个16进制的地址</li>
+</ol>
+<h2 id="浏览器渲染机制"><a href="#浏览器渲染机制" class="headerlink" title="浏览器渲染机制"></a>浏览器渲染机制</h2><ul>
+<li><p>当当浏览器中打开页面，浏览器引擎会渲染相关的代码（包含js代码），换句话说就是把代码从上往下执行</p>
+</li>
+<li><p>浏览器想要执行代码，会提供一个代码执行环境，(ECStack 全称 Execution Context Stack  =&gt;栈内存 Stack)</p>
+</li>
+<li><p>在全局的执行上下文中有一个VO(GLOBAL)全局变量对象，可以把代码中的变量和对应的值存储到这里面</p>
+<h4 id="创建变量的顺序"><a href="#创建变量的顺序" class="headerlink" title="创建变量的顺序"></a>创建变量的顺序</h4><ul>
+<li><p>先将值存到真内存中（值是基本类型的值）</p>
+</li>
+<li><p>创建一个变量 ,把变量存到VO(GLOBAL)中</p>
+</li>
+<li><p>让创建的变量和值进行关联在一起</p>
+<p><img src="https://s1.ax1x.com/2020/09/05/wE9LDS.md.png" alt="创建一个变量过程图"></p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    //练习
+    let a=12;
+    let b=a;
+        b=13;
+    console.log(a)</code></pre>
+<h4 id="解析："><a href="#解析：" class="headerlink" title="解析："></a>解析：</h4><ul>
+<li><p>首先浏览器创建一个会提供一个代码运行环境栈内存</p>
+</li>
+<li><p>在栈内存中有一个VO全局变量，来储存变量和基本数据类型的值</p>
+</li>
+<li><p>开始运运行代码，let a=12</p>
+<ol>
+<li>现在VO中创建值12</li>
+<li>然后在创建一个变量a</li>
+<li>最后将a和12关联在一起</li>
+</ol>
+</li>
+<li><p>继续执行代码，let b=a;</p>
+<ol>
+<li>首先创建值a（a是一个变量，已经创建过了所以直接跳过）</li>
+<li>创建变量b</li>
+<li>最后将b和a关联在一起，（现在a的值是12，所以b的值也是12）</li>
+</ol>
+</li>
+<li><p>继续执行代码,  b=13;</p>
+<ol>
+<li>将b的值重新赋值为13</li>
+<li>因一个变量只能指向同一个变量所以切断了和a的关联（也就是12）</li>
+</ol>
+</li>
+<li><p>最后代码输出 ， console.log(a)</p>
+<ul>
+<li>此时可以得出a还是那个值12，而b的值已经变为了13</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://s1.ax1x.com/2020/09/05/wAXiRS.md.png" alt="代码执行过程图"></p>
+<pre><code>//练习
+let n=&#123;
+    name:&#39;teal&#39;
+&#125;;
+let m=n;
+m.name=&#39;red&#39;;
+console.log(a.name);</code></pre>
+<h4 id="解析：-1"><a href="#解析：-1" class="headerlink" title="解析："></a>解析：</h4><ul>
+<li><p>首先浏览器提供一个代码执行环境栈内存</p>
+</li>
+<li><p>在栈内存中有一个VO全局变量存储</p>
+</li>
+<li><p>代码执行 ，let n={name:’teal’}</p>
+<ol>
+<li>首先创建值，因创建的值不是基本数据类型，所以在内存中开辟一个堆内存，堆内存的地址为AAAFFF111</li>
+<li>在VO中存储堆内存的地址</li>
+<li>创建一个变量n</li>
+<li>让变量n指向这个堆内存的地址</li>
+</ol>
+</li>
+<li><p>代码继续执行，let m=n;</p>
+<ol>
+<li>创建值n,因n是一个变量已经被创建，所以跳过</li>
+<li>创建变量b</li>
+<li>让变量b和变量a关联(也是执行堆内存的地址)</li>
+</ol>
+</li>
+<li><p>代码继续执行， m.name=’red’</p>
+<ol>
+<li>让变量m中的name属性重新赋值为:‘red’</li>
+<li>此时m和n是执行的是同一个堆内存地址，所以堆内存中的nama属性值变为了：’red’</li>
+</ol>
+</li>
+<li><p>最后输出代码值，console.log(n,name);</p>
+<ol>
+<li>此时n.name的值不再是 ‘teal’,而是新值 ’red‘</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://s1.ax1x.com/2020/09/05/wAXPG8.md.png" alt="代码执行过程图"></p>
 
             </div>
             <hr/>
@@ -551,7 +635,7 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsboolean/">https://tealset.github.io/jsboolean/</a>
+                    <a href="https://tealset.github.io/jsstack/">https://tealset.github.io/jsstack/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,8 +677,8 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                                     <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/boolean/">
-                                    <span class="chip bg-color">boolean</span>
+                                <a href="/tags/stack/">
+                                    <span class="chip bg-color">stack</span>
                                 </a>
                             
                         </div>
@@ -1025,9 +1109,10 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/jsstack/">
                     <div class="card-image">
@@ -1053,9 +1138,9 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1072,6 +1157,7 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1094,22 +1180,22 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jsobject/">
+                <a href="/jsboolean/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中Object数据类型">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREsED.jpg" class="responsive-img" alt="js中boolean数据类型">
                         
-                        <span class="card-title">js中Object数据类型</span>
+                        <span class="card-title">js中boolean数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中object数据类型所有的对象都具备的特点
-用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）
-
-{[key:value,…]}每一组键值对是key:value的格式，多组键
+                            js中boolean数据类型将其他数据类型转换为布尔类型
+Boolean([value])
+![value]; 把指定的值转换为布尔类型，在取反
+!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而
                         
                     </div>
                     <div class="publish-info">
@@ -1139,8 +1225,8 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/object/">
-                        <span class="chip bg-color">object</span>
+                    <a href="/tags/boolean/">
+                        <span class="chip bg-color">boolean</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-09-05T01:32:48.825Z</updated>
+  <updated>2020-09-05T03:19:55.573Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>栈内存与堆内存</title>
+    <link href="https://tealset.github.io/jsstack/"/>
+    <id>https://tealset.github.io/jsstack/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-05T03:19:55.573Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;栈内存与堆内存&quot;&gt;&lt;a href=&quot;#栈内存与堆内存&quot; class=&quot;headerlink&quot; title=&quot;栈内存与堆内存&quot;&gt;&lt;/a&gt;栈内存与堆内存&lt;/h1&gt;&lt;h2 id=&quot;内存分类&quot;&gt;&lt;a href=&quot;#内存分类&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="stack" scheme="https://tealset.github.io/tags/stack/"/>
+    
+  </entry>
   
   <entry>
     <title>js中boolean数据类型</title>
