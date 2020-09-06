@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascrpt,boolean">
+    <meta name="keywords" content="javascrpt,判断">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中boolean数据类型 | Teal</title>
+    <title>js中的判断方法 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE4Df.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中boolean数据类型</h1>
+                    <h1 class="description center-align post-title">js中的判断方法</h1>
                 </div>
             </div>
         </div>
@@ -463,8 +463,8 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/boolean/">
-                                <span class="chip bg-color">boolean</span>
+                            <a href="/tags/%E5%88%A4%E6%96%AD/">
+                                <span class="chip bg-color">判断</span>
                             </a>
                         
                     </div>
@@ -492,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-05
                 </div>
                 
 
@@ -508,24 +508,44 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中boolean数据类型"><a href="#js中boolean数据类型" class="headerlink" title="js中boolean数据类型"></a>js中boolean数据类型</h1><h2 id="将其他数据类型转换为布尔类型"><a href="#将其他数据类型转换为布尔类型" class="headerlink" title="将其他数据类型转换为布尔类型"></a>将其他数据类型转换为布尔类型</h2><ul>
-<li>Boolean([value])</li>
-<li>![value]; 把指定的值转换为布尔类型，在取反</li>
-<li>!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而已）</li>
+                <h1 id="js中的判断方式"><a href="#js中的判断方式" class="headerlink" title="js中的判断方式"></a>js中的判断方式</h1><ul>
+<li><p>if…else…else if….else这种方式进行判断</p>
+<pre><code>let a=10;
+if(a&gt;10)&#123;
+    console.log(a++)
+&#125;else if(a&lt;10)&#123;
+    console.log(a--)
+&#125;else&#123;
+    consolelog(20) //20
+&#125;</code></pre>
+</li>
+<li><p>三元运算符判断</p>
+<blockquote>
+<p>格式：条件表达式？成立所做的事情：失败所做的事情</p>
+</blockquote>
+<pre><code>let a=10;
+a&gt;10?a++:a--;
+console.log(a);//9</code></pre>
+<blockquote>
+<p>复杂数据三元表达式判断，可以用括号包起来，让后以逗号分隔</p>
+</blockquote>
+<pre><code>let a=10;
+a&gt;10?(a++,console.log(a)):(null,console.log(a));//10</code></pre>
+</li>
+<li><p>switch case 判断</p>
+<pre><code>let a=10;
+switch(a)&#123; // 表达式
+    case 5: //case表示条件分支 ，只有两个数全等的情况才会执行里面的代码
+    consoel.log(5);
+    break; //如果条件成立以下代码不在执行
+    case 10:
+    console.log(10); // 10
+    break;
+    default:// default 表示没有符合条件的时候
+    console.log(30)
+&#125;</code></pre>
+</li>
 </ul>
-<blockquote>
-<p>规则：只有 “ 0  NaN  null undefined  空字符串 “最后会转换为false ,其余都为true</p>
-</blockquote>
-<pre><code>conosle.log(!!-1); // =&gt;true
-console.log(!!0); // =&gt;false
-console.log(!!undefined); // =&gt;false
-console.log(!!Number(&#39;12px&#39;)); // =&gt;false
-console.log(!![]); // =&gt;true
-console.log(!! &#39;&#39;); // =&gt;false
-console.log(!!&#123;&#125;); // =&gt;true</code></pre>
-<blockquote>
-<p>条件判断中，每一个条件最后都会被转换为 true || false</p>
-</blockquote>
 
             </div>
             <hr/>
@@ -551,7 +571,7 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsboolean/">https://tealset.github.io/jsboolean/</a>
+                    <a href="https://tealset.github.io/jsjudge/">https://tealset.github.io/jsjudge/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,8 +613,8 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                                     <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/boolean/">
-                                    <span class="chip bg-color">boolean</span>
+                                <a href="/tags/%E5%88%A4%E6%96%AD/">
+                                    <span class="chip bg-color">判断</span>
                                 </a>
                             
                         </div>
@@ -1025,42 +1045,45 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/jswor2/">
+                <a href="/jsjudge/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="面试练习二">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中的判断方法">
                         
-                        <span class="card-title">面试练习二</span>
+                        <span class="card-title">js中的判断方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            试题二数据类型基础知识!(!&quot;Number(undefined)&quot;);//true
-
-》过程: !(false)=&gt;true
-》解析: 先将字符串进行取反为false,然后在取反true
-isNaN(parseIn
+                            js中的判断方式
+if…else…else if….else这种方式进行判断
+let a=10;
+if(a&gt;10)&#123;
+    console.log(a++)
+&#125;else if(a&lt;10)&#123;
+   
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BB%83%E4%B9%A0/" class="post-category">
-                                    练习
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/categories/%E7%BB%83%E4%B9%A0/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
                                     学习
                                 </a>
                             
@@ -1068,11 +1091,16 @@ isNaN(parseIn
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AF%95%E9%A2%98/">
-                        <span class="chip bg-color">试题</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%88%A4%E6%96%AD/">
+                        <span class="chip bg-color">判断</span>
                     </a>
                     
                 </div>
@@ -1086,27 +1114,32 @@ isNaN(parseIn
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jsobject/">
+                <a href="/jsstack/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中Object数据类型">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREyUe.jpg" class="responsive-img" alt="栈内存与堆内存">
                         
-                        <span class="card-title">js中Object数据类型</span>
+                        <span class="card-title">栈内存与堆内存</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中object数据类型所有的对象都具备的特点
-用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）
+                            栈内存与堆内存内存分类
+栈内存  stack
+堆内存  heap 
 
-{[key:value,…]}每一组键值对是key:value的格式，多组键
+栈内存与堆内存区别
+栈内存是储存基本数据类型值和为执行上下文提供的环境
+堆内存是存储引用数据类型的，他会在内存中开辟一条新的内存来储存值，并生成一个16进制的地址
+
+浏览
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
                             </span>
                         <span class="publish-author">
                             
@@ -1131,8 +1164,8 @@ isNaN(parseIn
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/object/">
-                        <span class="chip bg-color">object</span>
+                    <a href="/tags/stack/">
+                        <span class="chip bg-color">stack</span>
                     </a>
                     
                 </div>

@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>js中的判断方法</title>
+      <link href="//jsjudge/"/>
+      <url>//jsjudge/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中的判断方式"><a href="#js中的判断方式" class="headerlink" title="js中的判断方式"></a>js中的判断方式</h1><ul><li><p>if…else…else if….else这种方式进行判断</p><pre><code>let a=10;if(a&gt;10)&#123;    console.log(a++)&#125;else if(a&lt;10)&#123;    console.log(a--)&#125;else&#123;    consolelog(20) //20&#125;</code></pre></li><li><p>三元运算符判断</p><blockquote><p>格式：条件表达式？成立所做的事情：失败所做的事情</p></blockquote><pre><code>let a=10;a&gt;10?a++:a--;console.log(a);//9</code></pre><blockquote><p>复杂数据三元表达式判断，可以用括号包起来，让后以逗号分隔</p></blockquote><pre><code>let a=10;a&gt;10?(a++,console.log(a)):(null,console.log(a));//10</code></pre></li><li><p>switch case 判断</p><pre><code>let a=10;switch(a)&#123; // 表达式    case 5: //case表示条件分支 ，只有两个数全等的情况才会执行里面的代码    consoel.log(5);    break; //如果条件成立以下代码不在执行    case 10:    console.log(10); // 10    break;    default:// default 表示没有符合条件的时候    console.log(30)&#125;</code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> 判断 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>栈内存与堆内存</title>
       <link href="//jsstack/"/>
       <url>//jsstack/</url>
@@ -43,6 +72,33 @@
       <categories>
           
           <category> 练习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>面试练习二</title>
+      <link href="//jswor2/"/>
+      <url>//jswor2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="试题二"><a href="#试题二" class="headerlink" title="试题二"></a>试题二</h1><h2 id="数据类型基础知识"><a href="#数据类型基础知识" class="headerlink" title="数据类型基础知识"></a>数据类型基础知识</h2><pre><code>!(!&quot;Number(undefined)&quot;);//true》过程: !(false)=&gt;true》解析: 先将字符串进行取反为false,然后在取反true</code></pre><pre><code>isNaN(parseInt(new Date()))+Number([1])+typeof undefined;//&quot;2undefined&quot;》过程: isNaN(NaN)+1+&quot;undefined&quot; =&gt; true+1+&quot;undefined&quot; =&gt; 1+1+“undefined&quot; =&gt; &quot;2undefined&quot;》解析: 先计算括号内的parseInt(new Date()),结果为NaN,然后在计算外面在判断NaN是否为NaN结果为true。在计算Number([1])里的值，结果为1。在判断undefined为undefined类型，最后将所有值运算&quot;2undefined&quot;</code></pre><pre><code>Boolean(Number(&quot;&quot;))+!isNaN(Number(null))+Boolean(&quot;parseInt([])&quot;)+typeof !(null);//&quot;2boolean&quot;》过程：Boolean(0)+!isNaN(0)+true+typeof true =&gt;false+true+true+&quot;boolean&quot;&gt;&quot;2boolean&quot;》解析：先计算括号里的Number(&quot;&quot;)的值为0，然后在转换为布尔类型false。在计算Number(null)的结果为0，然后在判断是否为NaN结果为false,然后再取反为true。将boolean括号里的内容转换为布尔类型true.判断!null为什么类型结果为boolean,最后计算结果为&quot;2boolean&quot;</code></pre><pre><code>parseFloat(&#39;1.6px&#39;)+parseInt(&#39;1.2px&#39;)+typeof parseInt(null);//&quot;2.6number&quot;》过程：1.6+1+”number&quot;=&gt;&quot;2.6number&quot;》解析：先将parseFloat里的内容转换为浮点数1。然后再将parseInt里的字符串转换为数字类型1。在判断parseInt(null)的类型为number,最后将结果进行运算的&quot;2.number&quot;</code></pre><pre><code>isNaN(Number(!!Number(parseInt(&quot;0.8&quot;))));//false》过程：isNaN(Number(!!Number(0))) =&gt;isNaN(Number(false)) =&gt;isNaN(0)=&gt;false》解析：先计算parserInt(&quot;0.8&quot;),结果为0，然后在将0通过Number转换为数字类型，取反再取反为false,然后将false通过Number转换为数字类型0，最后判断0是否是NaN,结果为false</code></pre><pre><code>console.log(1+&#39;2&#39;+&#39;2&#39;);//&quot;122&quot;》过程：&quot;122&quot;》解析：直接将内容进行拼接结果运算为&quot;122&quot;</code></pre><pre><code>!typeof parseFloat(&quot;0&quot;);//false》过程：!typeof 0 =&gt;!number =&gt;false》解析：先计算psrseFloat里的浮点数为0，在判断0是number类型，最后将number类型转换为布尔类型false</code></pre><pre><code>Number(&quot;&quot;);//0》过程：&quot;0&quot;》解析：直接将结果运算&quot;0&quot;</code></pre><pre><code>typeof &quot;parseInt(null)&quot; +12+!!Number(NaN);//&quot;string12false&quot;》过程：&quot;string12&quot;+false =&gt;&quot;stringfalse&quot;》解析：先判断是否为类型为&quot;string&quot;类型，然后将&quot;string&quot;和12进行拼接，最后判断number(NaN)，转换为数字为NaN,取反在取反，得到布尔类型false,最后将拼接字符串”string12false“</code></pre><pre><code>!typeof (isNaN(&quot;&quot;))+parseInt(NaN);//NaN》过程：!typeof (false)+NaN =&gt;!boolean+NaN =&gt;false+NaN =&gt;NaN》解析：先判断isNaN(&quot;&quot;)是否为NaN,结果为false,然后在判断false的类型为&quot;boolean&quot;,然后转换为布尔类型false，在判断parseInt(Nan)的结果为NaN,最后再将结果进行运算为NaN</code></pre><pre><code>typeof !parseInt(null)+!isNaN(null);//&quot;booleabtrue&quot;》过程：typeof !NaN+!false =&gt;typeof true+true =&gt;&quot;boolean&quot;+true =&gt;&quot;booleantrue&quot;》解析：先将psrseInt(null)转换为数字类型NaN,在取反的true,在判断true的类型为&quot;boolean&quot;,判断isNaN(null)的结果为false,然后取反结果为true,最后将字符串进行拼接的&quot;booleantrue&quot;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 练习 </category>
+          
+          <category> 学习 </category>
           
       </categories>
       
@@ -116,35 +172,6 @@
     
     
     <entry>
-      <title>js中typeof数据检测</title>
-      <link href="//jstypeof/"/>
-      <url>//jstypeof/</url>
-      
-        <content type="html"><![CDATA[<h1 id="js中typeof数据检测"><a href="#js中typeof数据检测" class="headerlink" title="js中typeof数据检测"></a>js中typeof数据检测</h1><h2 id="js中的数据检测"><a href="#js中的数据检测" class="headerlink" title="js中的数据检测"></a>js中的数据检测</h2><ul><li>typeof [value]; 检测数据的类型</li><li>[example] instanceof [class]; 检测数据类型</li><li>[example].constructor===[class];检测实例和类关系的，从而检测数据类型</li><li>Object.prototype.toString.call([value]);检测数据类型</li></ul><h2 id="typeof的细节点："><a href="#typeof的细节点：" class="headerlink" title="typeof的细节点："></a>typeof的细节点：</h2><ol><li><p>typeof检测的结果首先是一个字符串，字符串中包含了对应的数据类型（如：’number’、‘string’、’boolean’、’undefined’、’object’、’function’、‘symbol’、’bigint’)</p></li><li><p>特殊的检测结果；</p><ul><li><p>NaN/Infinity都是数字类型的，检测结果都为：”number”</p></li><li><p>null的结果是”object”(这是浏览器的BUG：所有的值在计算中都已二进制存储，浏览器中把前三位000的最为对象，而null的二进制前三位就是000，所以被识别为对象，但事实上他不是对象，他是对象指针，是基本数据类型）</p></li><li><p>普通对象/数组对象/正则对象都是”object”类型，这样就无法基于typeof区分普通对象还是数组对象了</p></li><li><p>检测小技巧</p><pre><code>console.log(typeof []); // =&gt;&quot;object&quot;console.log(typeof typeof typeof []); //=&gt;&quot;string&quot;</code></pre><blockquote><p>由于typeof返回的结果是一个字符串（字符串中包含了对应的类型），所以连续出现两次及两次以上的typeof检测的结果都是“string”</p></blockquote></li></ul></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> javascript </tag>
-            
-            <tag> typeof </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>js中关于String数据类型</title>
       <link href="//jsstring/"/>
       <url>//jsstring/</url>
@@ -166,6 +193,35 @@
             <tag> javascript </tag>
             
             <tag> String </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中typeof数据检测</title>
+      <link href="//jstypeof/"/>
+      <url>//jstypeof/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中typeof数据检测"><a href="#js中typeof数据检测" class="headerlink" title="js中typeof数据检测"></a>js中typeof数据检测</h1><h2 id="js中的数据检测"><a href="#js中的数据检测" class="headerlink" title="js中的数据检测"></a>js中的数据检测</h2><ul><li>typeof [value]; 检测数据的类型</li><li>[example] instanceof [class]; 检测数据类型</li><li>[example].constructor===[class];检测实例和类关系的，从而检测数据类型</li><li>Object.prototype.toString.call([value]);检测数据类型</li></ul><h2 id="typeof的细节点："><a href="#typeof的细节点：" class="headerlink" title="typeof的细节点："></a>typeof的细节点：</h2><ol><li><p>typeof检测的结果首先是一个字符串，字符串中包含了对应的数据类型（如：’number’、‘string’、’boolean’、’undefined’、’object’、’function’、‘symbol’、’bigint’)</p></li><li><p>特殊的检测结果；</p><ul><li><p>NaN/Infinity都是数字类型的，检测结果都为：”number”</p></li><li><p>null的结果是”object”(这是浏览器的BUG：所有的值在计算中都已二进制存储，浏览器中把前三位000的最为对象，而null的二进制前三位就是000，所以被识别为对象，但事实上他不是对象，他是对象指针，是基本数据类型）</p></li><li><p>普通对象/数组对象/正则对象都是”object”类型，这样就无法基于typeof区分普通对象还是数组对象了</p></li><li><p>检测小技巧</p><pre><code>console.log(typeof []); // =&gt;&quot;object&quot;console.log(typeof typeof typeof []); //=&gt;&quot;string&quot;</code></pre><blockquote><p>由于typeof返回的结果是一个字符串（字符串中包含了对应的类型），所以连续出现两次及两次以上的typeof检测的结果都是“string”</p></blockquote></li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> typeof </tag>
             
         </tags>
       

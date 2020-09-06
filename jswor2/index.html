@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascrpt,boolean">
+    <meta name="keywords" content="面试练习二, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中boolean数据类型 | Teal</title>
+    <title>面试练习二 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREhKP.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中boolean数据类型</h1>
+                    <h1 class="description center-align post-title">面试练习二</h1>
                 </div>
             </div>
         </div>
@@ -459,12 +459,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
-                            </a>
-                        
-                            <a href="/tags/boolean/">
-                                <span class="chip bg-color">boolean</span>
+                            <a href="/tags/%E8%AF%95%E9%A2%98/">
+                                <span class="chip bg-color">试题</span>
                             </a>
                         
                     </div>
@@ -475,11 +471,11 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/%E7%BB%83%E4%B9%A0/" class="post-category">
+                                练习
                             </a>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                            <a href="/categories/%E7%BB%83%E4%B9%A0/%E5%AD%A6%E4%B9%A0/" class="post-category">
                                 学习
                             </a>
                         
@@ -492,7 +488,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-05
                 </div>
                 
 
@@ -508,24 +504,50 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中boolean数据类型"><a href="#js中boolean数据类型" class="headerlink" title="js中boolean数据类型"></a>js中boolean数据类型</h1><h2 id="将其他数据类型转换为布尔类型"><a href="#将其他数据类型转换为布尔类型" class="headerlink" title="将其他数据类型转换为布尔类型"></a>将其他数据类型转换为布尔类型</h2><ul>
-<li>Boolean([value])</li>
-<li>![value]; 把指定的值转换为布尔类型，在取反</li>
-<li>!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而已）</li>
-</ul>
-<blockquote>
-<p>规则：只有 “ 0  NaN  null undefined  空字符串 “最后会转换为false ,其余都为true</p>
-</blockquote>
-<pre><code>conosle.log(!!-1); // =&gt;true
-console.log(!!0); // =&gt;false
-console.log(!!undefined); // =&gt;false
-console.log(!!Number(&#39;12px&#39;)); // =&gt;false
-console.log(!![]); // =&gt;true
-console.log(!! &#39;&#39;); // =&gt;false
-console.log(!!&#123;&#125;); // =&gt;true</code></pre>
-<blockquote>
-<p>条件判断中，每一个条件最后都会被转换为 true || false</p>
-</blockquote>
+                <h1 id="试题二"><a href="#试题二" class="headerlink" title="试题二"></a>试题二</h1><h2 id="数据类型基础知识"><a href="#数据类型基础知识" class="headerlink" title="数据类型基础知识"></a>数据类型基础知识</h2><pre><code>!(!&quot;Number(undefined)&quot;);//true
+
+》过程: !(false)=&gt;true
+》解析: 先将字符串进行取反为false,然后在取反true</code></pre>
+<pre><code>isNaN(parseInt(new Date()))+Number([1])+typeof undefined;//&quot;2undefined&quot;
+
+》过程: isNaN(NaN)+1+&quot;undefined&quot; =&gt; true+1+&quot;undefined&quot; =&gt; 1+1+“undefined&quot; =&gt; &quot;2undefined&quot;
+》解析: 先计算括号内的parseInt(new Date()),结果为NaN,然后在计算外面在判断NaN是否为NaN结果为true。在计算Number([1])里的值，结果为1。在判断undefined为undefined类型，最后将所有值运算&quot;2undefined&quot;</code></pre>
+<pre><code>Boolean(Number(&quot;&quot;))+!isNaN(Number(null))+Boolean(&quot;parseInt([])&quot;)+typeof !(null);//&quot;2boolean&quot;
+
+》过程：Boolean(0)+!isNaN(0)+true+typeof true =&gt;false+true+true+&quot;boolean&quot;&gt;&quot;2boolean&quot;
+》解析：先计算括号里的Number(&quot;&quot;)的值为0，然后在转换为布尔类型false。在计算Number(null)的结果为0，然后在判断是否为NaN结果为false,然后再取反为true。将boolean括号里的内容转换为布尔类型true.判断!null为什么类型结果为boolean,最后计算结果为&quot;2boolean&quot;</code></pre>
+<pre><code>parseFloat(&#39;1.6px&#39;)+parseInt(&#39;1.2px&#39;)+typeof parseInt(null);//&quot;2.6number&quot;
+
+》过程：1.6+1+”number&quot;=&gt;&quot;2.6number&quot;
+》解析：先将parseFloat里的内容转换为浮点数1。然后再将parseInt里的字符串转换为数字类型1。在判断parseInt(null)的类型为number,最后将结果进行运算的&quot;2.number&quot;</code></pre>
+<pre><code>isNaN(Number(!!Number(parseInt(&quot;0.8&quot;))));//false
+
+》过程：isNaN(Number(!!Number(0))) =&gt;isNaN(Number(false)) =&gt;isNaN(0)=&gt;false
+》解析：先计算parserInt(&quot;0.8&quot;),结果为0，然后在将0通过Number转换为数字类型，取反再取反为false,然后将false通过Number转换为数字类型0，最后判断0是否是NaN,结果为false</code></pre>
+<pre><code>console.log(1+&#39;2&#39;+&#39;2&#39;);//&quot;122&quot;
+
+》过程：&quot;122&quot;
+》解析：直接将内容进行拼接结果运算为&quot;122&quot;</code></pre>
+<pre><code>!typeof parseFloat(&quot;0&quot;);//false
+
+》过程：!typeof 0 =&gt;!number =&gt;false
+》解析：先计算psrseFloat里的浮点数为0，在判断0是number类型，最后将number类型转换为布尔类型false</code></pre>
+<pre><code>Number(&quot;&quot;);//0
+
+》过程：&quot;0&quot;
+》解析：直接将结果运算&quot;0&quot;</code></pre>
+<pre><code>typeof &quot;parseInt(null)&quot; +12+!!Number(NaN);//&quot;string12false&quot;
+
+》过程：&quot;string12&quot;+false =&gt;&quot;stringfalse&quot;
+》解析：先判断是否为类型为&quot;string&quot;类型，然后将&quot;string&quot;和12进行拼接，最后判断number(NaN)，转换为数字为NaN,取反在取反，得到布尔类型false,最后将拼接字符串”string12false“</code></pre>
+<pre><code>!typeof (isNaN(&quot;&quot;))+parseInt(NaN);//NaN
+
+》过程：!typeof (false)+NaN =&gt;!boolean+NaN =&gt;false+NaN =&gt;NaN
+》解析：先判断isNaN(&quot;&quot;)是否为NaN,结果为false,然后在判断false的类型为&quot;boolean&quot;,然后转换为布尔类型false，在判断parseInt(Nan)的结果为NaN,最后再将结果进行运算为NaN</code></pre>
+<pre><code>typeof !parseInt(null)+!isNaN(null);//&quot;booleabtrue&quot;
+
+》过程：typeof !NaN+!false =&gt;typeof true+true =&gt;&quot;boolean&quot;+true =&gt;&quot;booleantrue&quot;
+》解析：先将psrseInt(null)转换为数字类型NaN,在取反的true,在判断true的类型为&quot;boolean&quot;,判断isNaN(null)的结果为false,然后取反结果为true,最后将字符串进行拼接的&quot;booleantrue&quot;</code></pre>
 
             </div>
             <hr/>
@@ -551,7 +573,7 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsboolean/">https://tealset.github.io/jsboolean/</a>
+                    <a href="https://tealset.github.io/jswor2/">https://tealset.github.io/jswor2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,12 +611,8 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
-                                </a>
-                            
-                                <a href="/tags/boolean/">
-                                    <span class="chip bg-color">boolean</span>
+                                <a href="/tags/%E8%AF%95%E9%A2%98/">
+                                    <span class="chip bg-color">试题</span>
                                 </a>
                             
                         </div>
@@ -1029,23 +1047,21 @@ console.log(!!&#123;&#125;); // =&gt;true</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/jswor2/">
+                <a href="/jswor/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="面试练习二">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREWvt.jpg" class="responsive-img" alt="js面试题一">
                         
-                        <span class="card-title">面试练习二</span>
+                        <span class="card-title">js面试题一</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            试题二数据类型基础知识!(!&quot;Number(undefined)&quot;);//true
-
-》过程: !(false)=&gt;true
-》解析: 先将字符串进行取反为false,然后在取反true
-isNaN(parseIn
+                            栈内存与堆内存js练习面试题一一、问答题
+js中常用的数据类型都有哪些？
+基本数据类型：string number boolean null undefined symbol bigint引用数据类型：object: 普通对象  数组对象 
                         
                     </div>
                     <div class="publish-info">
@@ -1058,10 +1074,6 @@ isNaN(parseIn
                             
                             <a href="/categories/%E7%BB%83%E4%B9%A0/" class="post-category">
                                     练习
-                                </a>
-                            
-                            <a href="/categories/%E7%BB%83%E4%B9%A0/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    学习
                                 </a>
                             
                             
@@ -1086,22 +1098,22 @@ isNaN(parseIn
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jsobject/">
+                <a href="/jsboolean/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中Object数据类型">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREsED.jpg" class="responsive-img" alt="js中boolean数据类型">
                         
-                        <span class="card-title">js中Object数据类型</span>
+                        <span class="card-title">js中boolean数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            js中object数据类型所有的对象都具备的特点
-用键值对（key:value俗称属性和属性值）来描述一个对象的特征（每一个对象都会综合体,存在零到多个键值对）
-
-{[key:value,…]}每一组键值对是key:value的格式，多组键
+                            js中boolean数据类型将其他数据类型转换为布尔类型
+Boolean([value])
+![value]; 把指定的值转换为布尔类型，在取反
+!![value]; 把指定的值转换为布尔类型然后取反在取反（相当于将指定的值转换为布尔类型而
                         
                     </div>
                     <div class="publish-info">
@@ -1131,8 +1143,8 @@ isNaN(parseIn
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/object/">
-                        <span class="chip bg-color">object</span>
+                    <a href="/tags/boolean/">
+                        <span class="chip bg-color">boolean</span>
                     </a>
                     
                 </div>

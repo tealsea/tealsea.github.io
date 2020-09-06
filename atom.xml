@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-09-05T03:19:55.573Z</updated>
+  <updated>2020-09-05T14:19:52.522Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中的判断方法</title>
+    <link href="https://tealset.github.io/jsjudge/"/>
+    <id>https://tealset.github.io/jsjudge/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-05T14:19:52.522Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的判断方式&quot;&gt;&lt;a href=&quot;#js中的判断方式&quot; class=&quot;headerlink&quot; title=&quot;js中的判断方式&quot;&gt;&lt;/a&gt;js中的判断方式&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;if…else…else</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="判断" scheme="https://tealset.github.io/tags/%E5%88%A4%E6%96%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>栈内存与堆内存</title>
@@ -64,6 +94,33 @@
     
     
     <category term="练习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="试题" scheme="https://tealset.github.io/tags/%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试练习二</title>
+    <link href="https://tealset.github.io/jswor2/"/>
+    <id>https://tealset.github.io/jswor2/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-06T02:13:24.238Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;试题二&quot;&gt;&lt;a href=&quot;#试题二&quot; class=&quot;headerlink&quot; title=&quot;试题二&quot;&gt;&lt;/a&gt;试题二&lt;/h1&gt;&lt;h2 id=&quot;数据类型基础知识&quot;&gt;&lt;a href=&quot;#数据类型基础知识&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="练习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/%E5%AD%A6%E4%B9%A0/"/>
     
     
     <category term="试题" scheme="https://tealset.github.io/tags/%E8%AF%95%E9%A2%98/"/>
@@ -129,35 +186,6 @@
   </entry>
   
   <entry>
-    <title>js中typeof数据检测</title>
-    <link href="https://tealset.github.io/jstypeof/"/>
-    <id>https://tealset.github.io/jstypeof/</id>
-    <published>2020-09-04T00:00:00.000Z</published>
-    <updated>2020-09-05T01:29:46.841Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;js中typeof数据检测&quot;&gt;&lt;a href=&quot;#js中typeof数据检测&quot; class=&quot;headerlink&quot; title=&quot;js中typeof数据检测&quot;&gt;&lt;/a&gt;js中typeof数据检测&lt;/h1&gt;&lt;h2 id=&quot;js中的数据检测&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
-    
-    <category term="typeof" scheme="https://tealset.github.io/tags/typeof/"/>
-    
-  </entry>
-  
-  <entry>
     <title>js中关于String数据类型</title>
     <link href="https://tealset.github.io/jsstring/"/>
     <id>https://tealset.github.io/jsstring/</id>
@@ -183,6 +211,35 @@
     <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
     <category term="String" scheme="https://tealset.github.io/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中typeof数据检测</title>
+    <link href="https://tealset.github.io/jstypeof/"/>
+    <id>https://tealset.github.io/jstypeof/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:29:46.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中typeof数据检测&quot;&gt;&lt;a href=&quot;#js中typeof数据检测&quot; class=&quot;headerlink&quot; title=&quot;js中typeof数据检测&quot;&gt;&lt;/a&gt;js中typeof数据检测&lt;/h1&gt;&lt;h2 id=&quot;js中的数据检测&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+    <category term="typeof" scheme="https://tealset.github.io/tags/typeof/"/>
     
   </entry>
   
@@ -376,7 +433,7 @@
     <link href="https://tealset.github.io/jsarray/"/>
     <id>https://tealset.github.io/jsarray/</id>
     <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-09-05T01:28:40.670Z</updated>
+    <updated>2020-09-05T11:50:53.316Z</updated>
     
     
       
