@@ -429,31 +429,6 @@
   </entry>
   
   <entry>
-    <title>javascript关于数组方法</title>
-    <link href="https://tealset.github.io/jsarray/"/>
-    <id>https://tealset.github.io/jsarray/</id>
-    <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-09-05T11:50:53.316Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;Array-forEach-v-i-callback&quot;&gt;&lt;a href=&quot;#Array-forEach-v-i-callback&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>mongodb数据加密</title>
     <link href="https://tealset.github.io/modb/"/>
     <id>https://tealset.github.io/modb/</id>
@@ -484,25 +459,27 @@
   </entry>
   
   <entry>
-    <title>测试</title>
-    <link href="https://tealset.github.io/text/"/>
-    <id>https://tealset.github.io/text/</id>
+    <title>javascript关于数组方法</title>
+    <link href="https://tealset.github.io/jsarray/"/>
+    <id>https://tealset.github.io/jsarray/</id>
     <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-08-26T09:27:18.836Z</updated>
+    <updated>2020-09-06T02:19:32.173Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;我是测试文章请勿评论&quot;&gt;&lt;a href=&quot;#我是测试文章请勿评论&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;javascript关于数组方法&quot;&gt;&lt;a href=&quot;#javascript关于数组方法&quot; class=&quot;headerlink&quot; title=&quot;javascript关于数组方法&quot;&gt;&lt;/a&gt;javascript关于数组方法&lt;/h1&gt;&lt;h3</summary>
         
       
     
     
     
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="测试" scheme="https://tealset.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
   </entry>
   

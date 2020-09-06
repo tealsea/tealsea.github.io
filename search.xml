@@ -411,31 +411,6 @@
     
     
     <entry>
-      <title>javascript关于数组方法</title>
-      <link href="//jsarray/"/>
-      <url>//jsarray/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Array-forEach-v-i-callback"><a href="#Array-forEach-v-i-callback" class="headerlink" title="Array.forEach(v,i,callback)"></a>Array.forEach(v,i,callback)</h3><ol><li>作用 :循环数组</li><li>形参：</li></ol><ul><li><p>v : 当前循环项</p></li><li><p>i :  当前循环项索引</p></li><li><p>callback: 回调函数</p></li></ul><pre><code>const array = [    &#123;    id:0,    name:&#39;孙为空&#39;    &#125;,    &#123;    id:1,    name:&#39;猪八戒&#39;    &#125;,    &#123;    id:2,    name:&#39;沙悟净&#39;    &#125;,    &#123;    id:3,    name:&#39;唐三藏&#39;    &#125;]array.forEach((v,i)=&gt;&#123;    consoel.log(v,i)&#125;)// 输出:&#123;id:0,name:&#39;孙悟空&#39;&#125;,&#123;id:1,name:&#39;猪八戒&#39;&#125;,&#123;id:2,name:&#39;沙悟净&#39;&#125;,&#123;id:3,name:&#39;唐三藏&#39;&#125;</code></pre><h3 id="Array-filter-v-i-callback"><a href="#Array-filter-v-i-callback" class="headerlink" title="Array.filter(v,i,callback)"></a>Array.filter(v,i,callback)</h3><ol><li>作用 : 过滤数组,并返回新数组</li><li>形参：</li></ol><ul><li>v : 当前循环项</li><li>i :  当前循环项索引</li><li>callback: 回调函数</li></ul><pre><code>const num = [10,15,20,25]const newNum = num.filter((v,i)=&gt;&#123;    return v &gt;= 15&#125;)console.log(newNum)//输出:    [15, 20, 25]</code></pre><h3 id="Array-map-v-i-callback"><a href="#Array-map-v-i-callback" class="headerlink" title="Array.map(v,i,callback)"></a>Array.map(v,i,callback)</h3><ol><li>作用 : 返回数组中指定的值</li><li>形参：*同上</li></ol><pre><code>const list = [    &#123;     name:&#39;张三&#39;,     age:20    &#125;,    &#123;     name:&#39;李四&#39;,     age:25    &#125;,    &#123;     name:&#39;王五&#39;,     age:27    &#125;]const newList = list.map((v,i)=&gt;&#123;    return v.name&#125;)console.log(newList)// 输出:    [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]</code></pre><h3 id="Array-findIndex-v-i-callback"><a href="#Array-findIndex-v-i-callback" class="headerlink" title="Array.findIndex(v,i,callback)"></a>Array.findIndex(v,i,callback)</h3><ol><li>作用 : 返回符合条件的索引 </li><li>形参：*同上</li><li>注意：如果找到符合条件的值，立即结束循环并返回索引</li><li>索引：索引是从0开始计算的</li></ol><pre><code>const num = [10,20,30,40]const index = num.findIndex((v,i)=&gt;&#123;    return v &gt; 25&#125;)console.log(index)// 输出:    2</code></pre><h3 id="Array-every-v-i-callback"><a href="#Array-every-v-i-callback" class="headerlink" title="Array.every(v,i,callback)"></a>Array.every(v,i,callback)</h3><ol><li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li><li>形参：*同上</li><li>注意：数组中只要有一个不符合条件，都会返回false,并立即结束循环</li></ol><pre><code>const num = [20,30,40,50]const bool = num.every((v,i)=&gt;&#123;    console.log(v)    return v &lt;= 30&#125;)console.log(bool)// 输出:    20    30    40    false</code></pre><h3 id="Array-some-v-i-callback"><a href="#Array-some-v-i-callback" class="headerlink" title="Array.some(v,i,callback)"></a>Array.some(v,i,callback)</h3><ol><li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li><li>形参：*同上</li><li>注意：数组中只要有一个符合条件，都会返回true,并立即结束循环</li></ol><pre><code>const num = [10,20,30,40]const bool=num.some((v,i)=&gt;&#123;    console.log(v)    return v&gt;=30&#125;)console.log(bool)// 输出:    10    20    30    true</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> javascript </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>mongodb数据加密</title>
       <link href="//modb/"/>
       <url>//modb/</url>
@@ -461,17 +436,23 @@
     
     
     <entry>
-      <title>测试</title>
-      <link href="//text/"/>
-      <url>//text/</url>
+      <title>javascript关于数组方法</title>
+      <link href="//jsarray/"/>
+      <url>//jsarray/</url>
       
-        <content type="html"><![CDATA[<h1 id="我是测试文章请勿评论"><a href="#我是测试文章请勿评论" class="headerlink" title="我是测试文章请勿评论"></a>我是测试文章请勿评论</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="javascript关于数组方法"><a href="#javascript关于数组方法" class="headerlink" title="javascript关于数组方法"></a>javascript关于数组方法</h1><h3 id="Array-forEach-v-i-callback"><a href="#Array-forEach-v-i-callback" class="headerlink" title="Array.forEach(v, i, callback)"></a>Array.forEach(v, i, callback)</h3><ol><li>作用 :循环数组</li><li>形参：</li></ol><ul><li><p>v : 当前循环项</p></li><li><p>i :  当前循环项索引</p></li><li><p>callback: 回调函数</p></li></ul><pre><code>const array = [    &#123;    id:0,    name:&#39;孙为空&#39;    &#125;,    &#123;    id:1,    name:&#39;猪八戒&#39;    &#125;,    &#123;    id:2,    name:&#39;沙悟净&#39;    &#125;,    &#123;    id:3,    name:&#39;唐三藏&#39;    &#125;]array.forEach((v,i)=&gt;&#123;    consoel.log(v,i)&#125;)// 输出:&#123;id:0,name:&#39;孙悟空&#39;&#125;,&#123;id:1,name:&#39;猪八戒&#39;&#125;,&#123;id:2,name:&#39;沙悟净&#39;&#125;,&#123;id:3,name:&#39;唐三藏&#39;&#125;</code></pre><h3 id="Array-filter-v-i-callback"><a href="#Array-filter-v-i-callback" class="headerlink" title="Array.filter(v, i, callback)"></a>Array.filter(v, i, callback)</h3><ol><li>作用 : 过滤数组,并返回新数组</li><li>形参：</li></ol><ul><li>v : 当前循环项</li><li>i :  当前循环项索引</li><li>callback: 回调函数</li></ul><pre><code>const num = [10,15,20,25]const newNum = num.filter((v,i)=&gt;&#123;    return v &gt;= 15&#125;)console.log(newNum)//输出:    [15, 20, 25]</code></pre><h3 id="Array-map-v-i-callback"><a href="#Array-map-v-i-callback" class="headerlink" title="Array.map(v, i, callback)"></a>Array.map(v, i, callback)</h3><ol><li>作用 : 返回数组中指定的值</li><li>形参：*同上</li></ol><pre><code>const list = [    &#123;     name:&#39;张三&#39;,     age:20    &#125;,    &#123;     name:&#39;李四&#39;,     age:25    &#125;,    &#123;     name:&#39;王五&#39;,     age:27    &#125;]const newList = list.map((v,i)=&gt;&#123;    return v.name&#125;)console.log(newList)// 输出:    [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]</code></pre><h3 id="Array-findIndex-v-i-callback"><a href="#Array-findIndex-v-i-callback" class="headerlink" title="Array.findIndex(v, i, callback)"></a>Array.findIndex(v, i, callback)</h3><ol><li>作用 : 返回符合条件的索引 </li><li>形参：*同上</li><li>注意：如果找到符合条件的值，立即结束循环并返回索引</li><li>索引：索引是从0开始计算的</li></ol><pre><code>const num = [10,20,30,40]const index = num.findIndex((v,i)=&gt;&#123;    return v &gt; 25&#125;)console.log(index)// 输出:    2</code></pre><h3 id="Array-every-v-i-callback"><a href="#Array-every-v-i-callback" class="headerlink" title="Array.every(v, i, callback)"></a>Array.every(v, i, callback)</h3><ol><li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li><li>形参：*同上</li><li>注意：数组中只要有一个不符合条件，都会返回false,并立即结束循环</li></ol><pre><code>const num = [20,30,40,50]const bool = num.every((v,i)=&gt;&#123;    console.log(v)    return v &lt;= 30&#125;)console.log(bool)// 输出:    20    30    40    false</code></pre><h3 id="Array-some-v-i-callback"><a href="#Array-some-v-i-callback" class="headerlink" title="Array.some(v, i, callback)"></a>Array.some(v, i, callback)</h3><ol><li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li><li>形参：*同上</li><li>注意：数组中只要有一个符合条件，都会返回true,并立即结束循环</li></ol><pre><code>const num = [10,20,30,40]const bool=num.some((v,i)=&gt;&#123;    console.log(v)    return v&gt;=30&#125;)console.log(bool)// 输出:    10    20    30    true</code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 测试 </tag>
+            <tag> javascript </tag>
             
         </tags>
       
