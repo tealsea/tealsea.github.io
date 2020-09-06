@@ -105,7 +105,7 @@
     <link href="https://tealset.github.io/jswor2/"/>
     <id>https://tealset.github.io/jswor2/</id>
     <published>2020-09-05T00:00:00.000Z</published>
-    <updated>2020-09-06T02:13:24.238Z</updated>
+    <updated>2020-09-06T02:22:54.629Z</updated>
     
     
       
@@ -119,8 +119,6 @@
     
     
     <category term="练习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
-    
-    <category term="学习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/%E5%AD%A6%E4%B9%A0/"/>
     
     
     <category term="试题" scheme="https://tealset.github.io/tags/%E8%AF%95%E9%A2%98/"/>
@@ -429,6 +427,31 @@
   </entry>
   
   <entry>
+    <title>javascript关于数组方法</title>
+    <link href="https://tealset.github.io/jsarray/"/>
+    <id>https://tealset.github.io/jsarray/</id>
+    <published>2020-08-25T00:00:00.000Z</published>
+    <updated>2020-09-06T02:19:32.173Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;javascript关于数组方法&quot;&gt;&lt;a href=&quot;#javascript关于数组方法&quot; class=&quot;headerlink&quot; title=&quot;javascript关于数组方法&quot;&gt;&lt;/a&gt;javascript关于数组方法&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mongodb数据加密</title>
     <link href="https://tealset.github.io/modb/"/>
     <id>https://tealset.github.io/modb/</id>
@@ -455,31 +478,6 @@
     
     
     <category term="mongodb" scheme="https://tealset.github.io/tags/mongodb/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript关于数组方法</title>
-    <link href="https://tealset.github.io/jsarray/"/>
-    <id>https://tealset.github.io/jsarray/</id>
-    <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-09-06T02:19:32.173Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;javascript关于数组方法&quot;&gt;&lt;a href=&quot;#javascript关于数组方法&quot; class=&quot;headerlink&quot; title=&quot;javascript关于数组方法&quot;&gt;&lt;/a&gt;javascript关于数组方法&lt;/h1&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
   </entry>
   

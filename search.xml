@@ -98,8 +98,6 @@
           
           <category> 练习 </category>
           
-          <category> 学习 </category>
-          
       </categories>
       
       
@@ -411,31 +409,6 @@
     
     
     <entry>
-      <title>mongodb数据加密</title>
-      <link href="//modb/"/>
-      <url>//modb/</url>
-      
-        <content type="html"><![CDATA[<ol><li><p><strong>打开终端</strong> （如：cmd || powershell 等等…）</p></li><li><p>输入  <strong>mongo</strong></p></li><li><p><strong>show dbs</strong>   //查询数据列表</p></li><li><p><strong>use admin</strong>  //切换至admin数据库</p></li><li><p><strong>db.createUser({user:’用户名’，pwd:’设置管理员密码’，roles:[‘root’]})</strong>  //创建超级管理员</p><ol><li><p>role: 管理权限</p></li><li><p>参数：</p><ul><li><p>root:超级管理员权限，可对任意数据库进行增删改查</p></li><li><p>read能读取该数据库的内容，但不能进心修改</p></li><li><p>readwrite:   可以对该数据库进行增删改查</p></li></ul></li></ol></li><li><p><strong>use text</strong>   //创建并进入text数据库</p></li><li><p><strong>db.createUser({user:’用户名‘，pwd:’密码’，roles:[‘readWhite’]})</strong>        //创建普通管理员</p><pre><code>// 创建代码    db.createUser(&#123;user:&#39;text&#39;,pwd:&#39;teal&#39;,roles:[&#39;readWrite&#39;]&#125;)// 成功提示    Successfully added user: &#123; &quot;user&quot; : &quot;text&quot;, &quot;roles&quot; : [ &quot;readWrite&quot; ] &#125;</code></pre></li><li><p><strong>edit</strong>  //退出</p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> mongodb </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>javascript关于数组方法</title>
       <link href="//jsarray/"/>
       <url>//jsarray/</url>
@@ -453,6 +426,31 @@
         <tags>
             
             <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mongodb数据加密</title>
+      <link href="//modb/"/>
+      <url>//modb/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p><strong>打开终端</strong> （如：cmd || powershell 等等…）</p></li><li><p>输入  <strong>mongo</strong></p></li><li><p><strong>show dbs</strong>   //查询数据列表</p></li><li><p><strong>use admin</strong>  //切换至admin数据库</p></li><li><p><strong>db.createUser({user:’用户名’，pwd:’设置管理员密码’，roles:[‘root’]})</strong>  //创建超级管理员</p><ol><li><p>role: 管理权限</p></li><li><p>参数：</p><ul><li><p>root:超级管理员权限，可对任意数据库进行增删改查</p></li><li><p>read能读取该数据库的内容，但不能进心修改</p></li><li><p>readwrite:   可以对该数据库进行增删改查</p></li></ul></li></ol></li><li><p><strong>use text</strong>   //创建并进入text数据库</p></li><li><p><strong>db.createUser({user:’用户名‘，pwd:’密码’，roles:[‘readWhite’]})</strong>        //创建普通管理员</p><pre><code>// 创建代码    db.createUser(&#123;user:&#39;text&#39;,pwd:&#39;teal&#39;,roles:[&#39;readWrite&#39;]&#125;)// 成功提示    Successfully added user: &#123; &quot;user&quot; : &quot;text&quot;, &quot;roles&quot; : [ &quot;readWrite&quot; ] &#125;</code></pre></li><li><p><strong>edit</strong>  //退出</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
