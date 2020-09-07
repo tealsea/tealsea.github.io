@@ -544,6 +544,22 @@
 
 》过程：typeof !NaN+!false =&gt;typeof true+true =&gt;&quot;boolean&quot;+true =&gt;&quot;booleantrue&quot;
 》解析：先将psrseInt(null)转换为数字类型NaN,在取反的true,在判断true的类型为&quot;boolean&quot;,判断isNaN(null)的结果为false,然后取反结果为true,最后将字符串进行拼接的&quot;booleantrue&quot;</code></pre>
+<h2 id="栈与堆内存"><a href="#栈与堆内存" class="headerlink" title="栈与堆内存"></a>栈与堆内存</h2><blockquote>
+<p>修改盒子中文字颜色样式的三种写法，哪一种可以？</p>
+</blockquote>
+<pre><code>// 1
+let box=document.getElementById(&#39;box&#39;);
+box.style.color=&#39;red&#39;;// 可以
+
+// 2
+let boxSty=box.style;
+boxSty.coloe=&#39;green&#39;; // 可以
+
+// 3
+let text=box.style.color;
+text=&#39;blue&#39;; // 不可以</code></pre>
+<p>详细过程图</p>
+<p><img src="https://s1.ax1x.com/2020/09/07/wuFXoq.md.png" alt="过程图"></p>
 
             </div>
             <hr/>
