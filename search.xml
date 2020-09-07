@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>js中的循环</title>
+      <link href="//jsloop/"/>
+      <url>//jsloop/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中的循环"><a href="#js中的循环" class="headerlink" title="js中的循环"></a>js中的循环</h1><ol><li><p>for循环  =&gt;循环数组</p><ul><li><p>循环：一轮一轮的重复做某一件事情（真是项目中一般都控制相关的事情执行一遍）</p></li><li><p>使用：for(设置初始值；设置循环条件，控制循环次数；每一轮循环结束购处理的事情[步长累加])</p></li><li><p>循环体</p><ol><li>设置初始值</li><li>验证条件（条件不成立循环体结束）</li><li>循环体</li><li>步长累加</li><li>再次验证</li><li>循环体</li><li>一直重复执行，一直到验证条件不成立为止</li></ol></li><li><p>循环体可能出现的两个关键词</p><ol><li><p>break:强制结束整个循环，所有在循环体中的代码都不在执行</p><pre><code>for(var=0;i&lt;5;i++)&#123;    console.log(i);// =&gt;0    break;// 结束整个循环&#125;console.log(i);// =&gt;0</code></pre></li><li><p>continue:结束本轮循环体，下一轮继续执行，但当前循环体中continue下面的代码不在执行</p><pre><code>for(var i=0;i&lt;5;i++)&#123;    if(i==0)&#123;        continue;    &#125;    console.log(i); // =&gt; 1 &gt; 2 &gt; 3 &gt; 4&#125;;console.log(i);// =&gt;5</code></pre></li></ol></li><li><p>遍历（循环/迭代）数组中的每一项：因为数组有索引个length属性，所以我们能够知道循环次数，也能基于索引获取对应项，使用for循环就可以解决</p><pre><code>let arr=[10,20,30];for(var i=0;i&lt;arr.length;i++)&#123;    console.log(arr[i]);// =&gt; 10 &gt; 20 &gt; 30&#125;;</code></pre></li></ul></li><li><p>for in循环  =&gt;循环对象</p><blockquote><p>遍历对象中的每一个属性：我们无法直接获取到对象中有多少个属性，也就无法知道循环多少次，所以无法使用for循环，真实项目中遍历对象我们基于的是for in循环</p></blockquote><ul><li><p>使用：创建变量（存储的是属性） in 对象</p></li><li><p>当前对象中有多少可枚举的属性，就循环多少次</p></li><li><p>key 变量存储的是每一次循环的属性名</p></li><li><p>obj[key] 获取key变量中的对象属性名的属性值</p><pre><code>var obj=&#123;    name:&#39;teal&#39;,    age:20,    skill:&#39;睡觉&#39;&#125;;for(var key in obj)&#123;    consoel.log(key);// =&gt;&quot;name&quot; &gt; &quot;age&quot; &gt; &quot;skill&quot;    console.log(obj[key]);// &#39;teal&#39; &gt; 20 &gt; &#39;睡觉&#39;&#125;</code></pre><blockquote><p>for in遍历对象的时候，是按照从小到大的机制遍历数字属性的</p><pre><code>var obj=&#123;   name:&#39;teal&#39;,   age:20,   1:12,   5:30&#125;for(var key in obj)&#123;   console.log(key); // =&gt; &quot;1&quot; &gt; &quot;2&quot; &gt; &quot;name&quot; &gt; &quot;age&quot;   console.log(obj[key]); // =&gt; 12 &gt; 30 &gt; &#39;teal&#39; &gt; 20&#125;</code></pre></blockquote></li></ul></li><li><p>练习</p><pre><code>for (var i=0;i&lt;5;i++)&#123;    console.log(i); // =&gt; 0 &gt; 1 &gt;2 &gt;3 &gt;4    continue;&#125;console.log(i);// =&gt;5</code></pre><pre><code>for(var i=0;i&lt;5;i++)&#123;    continue;    console.log(i);// =&gt;应continue会结束本此循环项，所以以下代码不会执行&#125;;console.log(i); // =&gt;5</code></pre><pre><code>for(var i=1;i&lt;=10;i+=2)&#123; // =&gt;2+2 &gt;5+2 &gt;    if(i&lt;=5)&#123;        i++; // =&gt;1+1 &gt; 4+1         continue; // =&gt; 结束本次循环    &#125;else&#123;        i+=2;// =&gt;7+2        break;// =&gt;结束整个循环    &#125;;    i--;// 因上面个判断条件中有结束循环语句，所以不可能执行以下代码    console.log(i);&#125;;console.log(i);// =&gt;9</code></pre><pre><code>for(var i=3;i&lt;12;i++)&#123;    if(i&lt;3)&#123;        i++;        break;    &#125;;    if(i&gt;9)&#123;        i+=2;        continue;    &#125;;    i--;&#125;;console.log(i)//;//解析：以上代码为死循环，1、循环过程首先判断i(3)小于12吗，条件成立.2、进入循环项，判断i(3)小于3吗，条件不成立，集训执行下面代码，判断i(3)大于9吗，条件不成立，继续执行下面代码，让i--(3-1)。本次循环结束，执行i++(2+1)，继续判断i(3)小于12，成立进入循环项，继续判断，就这样一直进入了死循环</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> 循环 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第一部分学习总结</title>
       <link href="//jssummary1/"/>
       <url>//jssummary1/</url>
