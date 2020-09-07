@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-09-05T14:19:52.522Z</updated>
+  <updated>2020-09-07T04:22:12.705Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一部分学习总结</title>
+    <link href="https://tealset.github.io/jssummary1/"/>
+    <id>https://tealset.github.io/jssummary1/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-07T04:22:12.705Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;学习第一部分总结&quot;&gt;&lt;a href=&quot;#学习第一部分总结&quot; class=&quot;headerlink&quot; title=&quot;学习第一部分总结&quot;&gt;&lt;/a&gt;学习第一部分总结&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h2 id=&quot;前端的发展史&quot;&gt;&lt;a href=&quot;#前端的发展史&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="总结" scheme="https://tealset.github.io/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="总结" scheme="https://tealset.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>js中的判断方法</title>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascrpt,判断">
+    <meta name="keywords" content="第一部分学习总结, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中的判断方法 | Teal</title>
+    <title>第一部分学习总结 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE4Df.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREWvt.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中的判断方法</h1>
+                    <h1 class="description center-align post-title">第一部分学习总结</h1>
                 </div>
             </div>
         </div>
@@ -459,12 +459,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%88%A4%E6%96%AD/">
-                                <span class="chip bg-color">判断</span>
+                            <a href="/tags/%E6%80%BB%E7%BB%93/">
+                                <span class="chip bg-color">总结</span>
                             </a>
                         
                     </div>
@@ -475,12 +471,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
-                            </a>
-                        
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                学习
+                            <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
+                                总结
                             </a>
                         
                     </div>
@@ -492,7 +484,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-05
+                    2020-09-07
                 </div>
                 
 
@@ -508,44 +500,319 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中的判断方式"><a href="#js中的判断方式" class="headerlink" title="js中的判断方式"></a>js中的判断方式</h1><ul>
-<li><p>if…else…else if….else这种方式进行判断</p>
-<pre><code>let a=10;
-if(a&gt;10)&#123;
-    console.log(a++)
-&#125;else if(a&lt;10)&#123;
-    console.log(a--)
-&#125;else&#123;
-    consolelog(20) //20
-&#125;</code></pre>
-</li>
-<li><p>三元运算符判断</p>
-<blockquote>
-<p>格式：条件表达式？成立所做的事情：失败所做的事情</p>
-</blockquote>
-<pre><code>let a=10;
-a&gt;10?a++:a--;
-console.log(a);//9</code></pre>
-<blockquote>
-<p>复杂数据三元表达式判断，可以用括号包起来，让后以逗号分隔</p>
-</blockquote>
-<pre><code>let a=10;
-a&gt;10?(a++,console.log(a)):(null,console.log(a));//10</code></pre>
-</li>
-<li><p>switch case 判断</p>
-<pre><code>let a=10;
-switch(a)&#123; // 表达式
-    case 5: //case表示条件分支 ，只有两个数全等的情况才会执行里面的代码
-    consoel.log(5);
-    break; //如果条件成立以下代码不在执行
-    case 10:
-    console.log(10); // 10
-    break;
-    default:// default 表示没有符合条件的时候
-    console.log(30)
-&#125;</code></pre>
+                <h1 id="学习第一部分总结"><a href="#学习第一部分总结" class="headerlink" title="学习第一部分总结"></a>学习第一部分总结</h1><ol>
+<li><h2 id="前端的发展史"><a href="#前端的发展史" class="headerlink" title="前端的发展史"></a>前端的发展史</h2><ul>
+<li><h3 id="了解重要的历史节点"><a href="#了解重要的历史节点" class="headerlink" title="了解重要的历史节点"></a>了解重要的历史节点</h3></li>
+<li><h3 id="重点掌握WEB1-0-WEB3-0的进化史"><a href="#重点掌握WEB1-0-WEB3-0的进化史" class="headerlink" title="重点掌握WEB1.0~WEB3.0的进化史"></a>重点掌握WEB1.0~WEB3.0的进化史</h3><ul>
+<li>动态页面</li>
+<li>前后端分离</li>
+<li>WebApp(NativeApp)</li>
+<li>全栈开发</li>
+<li>……</li>
+</ul>
 </li>
 </ul>
+</li>
+<li><h2 id="浏览器常用的内核"><a href="#浏览器常用的内核" class="headerlink" title="浏览器常用的内核"></a>浏览器常用的内核</h2><ul>
+<li>Webkit</li>
+<li>Gecko</li>
+<li>Trident</li>
+<li>Blink</li>
+<li>…..</li>
+</ul>
+</li>
+<li><h2 id="js三部分"><a href="#js三部分" class="headerlink" title="js三部分"></a>js三部分</h2><ul>
+<li>ECMAscript</li>
+<li>DOM</li>
+<li>BOM</li>
+</ul>
+</li>
+<li><h2 id="变量个变量定义"><a href="#变量个变量定义" class="headerlink" title="变量个变量定义"></a>变量个变量定义</h2><ul>
+<li><h3 id="变量就是起了一个名字，用来存储-指向-或者代表某一个值得-他是一个虚拟的东西，值才是实在的东西"><a href="#变量就是起了一个名字，用来存储-指向-或者代表某一个值得-他是一个虚拟的东西，值才是实在的东西" class="headerlink" title="变量就是起了一个名字，用来存储(指向)或者代表某一个值得(他是一个虚拟的东西，值才是实在的东西)"></a>变量就是起了一个名字，用来存储(指向)或者代表某一个值得(他是一个虚拟的东西，值才是实在的东西)</h3></li>
+<li><h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><ul>
+<li>严格区分大小写</li>
+<li>驼峰命名法</li>
+<li>基于”_、$、数字、字母”命名，但数字不能作为开头</li>
+<li>不能使用关键字及保留字</li>
+</ul>
+</li>
+<li><h3 id="定义变量的几种方式"><a href="#定义变量的几种方式" class="headerlink" title="定义变量的几种方式"></a>定义变量的几种方式</h3><ul>
+<li>var</li>
+<li>let </li>
+<li>const =&gt;定义的变量，变量指向不能随意被更改（理解为定义的是一个常量）</li>
+<li>function</li>
+<li>class</li>
+<li>import</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="js中的数据类型"><a href="#js中的数据类型" class="headerlink" title="js中的数据类型**"></a>js中的数据类型**</h2><ul>
+<li><h3 id="基本数据类型（值类型-原始值）"><a href="#基本数据类型（值类型-原始值）" class="headerlink" title="基本数据类型（值类型 / 原始值）"></a>基本数据类型（值类型 / 原始值）</h3><ul>
+<li>number</li>
+<li>string</li>
+<li>boolean</li>
+<li>null</li>
+<li>undefined</li>
+<li>symbol</li>
+<li>bigint</li>
+</ul>
+</li>
+<li><h3 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h3><ul>
+<li><h4 id="对象数据类型"><a href="#对象数据类型" class="headerlink" title="对象数据类型"></a>对象数据类型</h4><ul>
+<li>{} 普通对象</li>
+<li>[] 数组对象</li>
+<li>/^$/ 正则对象</li>
+<li>日期对象</li>
+<li>Math数学对象</li>
+<li>……</li>
+</ul>
+</li>
+<li><p>函数数据类型</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="数据类型的检测"><a href="#数据类型的检测" class="headerlink" title="数据类型的检测**"></a>数据类型的检测**</h2><ul>
+<li><h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof"></a>typeof</h3><ul>
+<li>语法 =&gt; typeof[value]</li>
+<li>返回值首先是字符串其次包含对应的类型 =&gt;typeof typeof [] ===”string”</li>
+<li>typeof null === “object”</li>
+<li>数组、正则、普通对象最后检测出的结果都是”object”,所以基于此操作，无法细分对象</li>
+</ul>
+</li>
+<li><h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3></li>
+<li><h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3></li>
+<li><h3 id="Object-prototype-toString-call"><a href="#Object-prototype-toString-call" class="headerlink" title="Object.prototype.toString.call()"></a>Object.prototype.toString.call()</h3></li>
+</ul>
+</li>
+<li><h2 id="数字类型详解"><a href="#数字类型详解" class="headerlink" title="数字类型详解**"></a>数字类型详解**</h2><ul>
+<li><h3 id="NaN-和-isNaN"><a href="#NaN-和-isNaN" class="headerlink" title="NaN 和 isNaN"></a>NaN 和 isNaN</h3><ul>
+<li>typeof NaN===”number”</li>
+<li>NaN !==NaN</li>
+<li>基于isNaN检测值是否为有效数字（检测的值不是数字类型，需要默认基于Number()把其转换为数字类型，然后在检测）</li>
+</ul>
+</li>
+<li><h3 id="把其他类型的值转换为数字类型"><a href="#把其他类型的值转换为数字类型" class="headerlink" title="把其他类型的值转换为数字类型"></a>把其他类型的值转换为数字类型</h3><ul>
+<li><h4 id="Number-value"><a href="#Number-value" class="headerlink" title="Number([value])"></a>Number([value])</h4><ul>
+<li>字符串转换为数字：字符串是0，字符串中只要出现任意一个非有效数字字符，结果都为NaN</li>
+<li>布尔转换为数字：true是1   false是0</li>
+<li>undfined转换为数字：NaN</li>
+<li>symbol不能转换为数字：否则会报错</li>
+<li>对象(或者函数)转换为数字，首先都是调用toString先转换为字符串，然后在转换为数字<ul>
+<li>普通对象转换为字符串结果是：”[object object]”</li>
+<li>数组转换为字符串结果是：用逗号分隔数组中的每一项<ul>
+<li>[]  =&gt;” “</li>
+<li>[10] =&gt;”10”</li>
+<li>[10,20] =&gt;”10,20”</li>
+</ul>
+</li>
+<li>正则或者函数转换为字符串和原始看的内容类似</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="parseInt-value-parseFloat-value"><a href="#parseInt-value-parseFloat-value" class="headerlink" title="parseInt([value])/parseFloat([value])"></a>parseInt([value])/parseFloat([value])</h3><ul>
+<li>首先把[value]值变为字符串，其次从字符串最左侧开始找，把找到的有效数字字符串转换为数字，遇到一个非有效数字的字符串则结束查找（不论左侧是否还有没有数字，都不在查找了）</li>
+<li>Number(true) =&gt;1</li>
+<li>parseint(true) =&gt;NaN</li>
+<li>Number(‘12px’) =&gt;NaN</li>
+<li>parseInt(‘12px’) =&gt;12</li>
+</ul>
+</li>
+<li><h3 id="一些常用的属性方法"><a href="#一些常用的属性方法" class="headerlink" title="一些常用的属性方法"></a>一些常用的属性方法</h3><ul>
+<li>数字.toFixed(N)  保留小数点N位，返回的结果是一个字符串</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Infinity 无穷大</p>
+<ul>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="字符串类型详解"><a href="#字符串类型详解" class="headerlink" title="字符串类型详解**"></a>字符串类型详解**</h2><ul>
+<li><h3 id="把其他类型转换为字符串"><a href="#把其他类型转换为字符串" class="headerlink" title="把其他类型转换为字符串"></a>把其他类型转换为字符串</h3><ul>
+<li>string([value])</li>
+<li>[value].toString()</li>
+</ul>
+</li>
+<li><h3 id="加号在js中除了数学运算，还有字符串拼接"><a href="#加号在js中除了数学运算，还有字符串拼接" class="headerlink" title="加号在js中除了数学运算，还有字符串拼接"></a>加号在js中除了数学运算，还有字符串拼接</h3><ul>
+<li><p>减乘除和取余都一定是数学运算（不是数学类型要转换为数字类型，然后在运算）</p>
+</li>
+<li><p>加号两边的任意一边出现字符串，则为字符串拼接（如果加的是一个对象，其实最后也是字符串拼接，因为对象转换为数字，是转换为字符串的）</p>
+<ul>
+<li>1+’1’===’11’</li>
+<li>1+[10]===’101’</li>
+</ul>
+</li>
+<li><p>基于ES6的模板字符串（反引号 或者叫两个撇）可以方便字符串的拼接</p>
+<pre><code>//$&#123;&#125;就是把一个变量的值或者一个js表达式运行的结果，拼接到模板字符串中
+let n=10;
+let str=`N的值是：$&#123;n&#125;`;
+console.log(str);// =&gt;&quot;N的值是：10&quot;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="布尔类型详解"><a href="#布尔类型详解" class="headerlink" title="布尔类型详解**"></a>布尔类型详解**</h2><ul>
+<li><h3 id="把其他数据类型转换为布尔类型"><a href="#把其他数据类型转换为布尔类型" class="headerlink" title="把其他数据类型转换为布尔类型"></a>把其他数据类型转换为布尔类型</h3><ul>
+<li><p>规律：只有 “0、NaN、null、undefined、空字符串”五个值最后变为FALSE,其余都会转换为TRUE</p>
+</li>
+<li><p>Boolean([value])</p>
+</li>
+<li><p>![value]转换为布尔再取反</p>
+</li>
+<li><p>!![value] 转换为布尔</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>在条件判断中，最后的结果都是转换为布尔</p>
+</li>
+<li><p>……</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="对象数据类型详解"><a href="#对象数据类型详解" class="headerlink" title="对象数据类型详解**"></a>对象数据类型详解**</h2><ul>
+<li><h3 id="对象的组成：零到多组键值对组成（key-value-gt-属性名：属性值），每一组之间用逗号分隔"><a href="#对象的组成：零到多组键值对组成（key-value-gt-属性名：属性值），每一组之间用逗号分隔" class="headerlink" title="对象的组成：零到多组键值对组成（key:value =&gt; 属性名：属性值），每一组之间用逗号分隔"></a>对象的组成：零到多组键值对组成（key:value =&gt; 属性名：属性值），每一组之间用逗号分隔</h3></li>
+<li><h3 id="关于对象键值对的操作（增删改查）"><a href="#关于对象键值对的操作（增删改查）" class="headerlink" title="关于对象键值对的操作（增删改查）"></a>关于对象键值对的操作（增删改查）</h3><ul>
+<li><p>对象的属性名不能重复</p>
+</li>
+<li><p>对象.属性名  =&gt;这样的操作属性名不能为数字</p>
+</li>
+<li><p>对象[属性名]  =&gt;obj[‘n’]和obj[n]是不一样的，前者属性名就是n,后者是吧n变量存储的值作为属性名拿过来操作的</p>
+<pre><code>let n=13;
+let obj=&#123;
+    n:20;
+&#125;;
+obj[&#39;n&#39;]=30;
+console.log(obj);// =&gt;&#123;n:30&#125;
+obj[n]=10;// 相当于obj[13]=10
+console.log(obj);// =&gt;&#123;n:30,&quot;13&quot;:10&#125;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="基本数据类型和引用数据类型的区别"><a href="#基本数据类型和引用数据类型的区别" class="headerlink" title="基本数据类型和引用数据类型的区别 ***"></a>基本数据类型和引用数据类型的区别 ***</h2><ul>
+<li><p>堆内存（HEAP）和栈内存（STACK）</p>
+</li>
+<li><p>栈内存</p>
+<p>ESCtack 执行环境栈</p>
+<p>EC(G) 全局执行上下文</p>
+<p>VO(G) 全局变量对象</p>
+<p>let a=12</p>
+<ul>
+<li>创建12这个值，存放到栈内存中（栈内存是用来执行代码和存储基本数据类型的）</li>
+<li>创建变量a存储到VO(G)</li>
+<li>最后让a指向12这个值 （赋值的意思 =&gt;值得指向）</li>
+</ul>
+</li>
+<li><p>堆内存</p>
+<ul>
+<li>let obj ={xxx:”xxx”}<ul>
+<li>创建对象值（引用数据类型不能直接存储到栈内存中）<ul>
+<li>创建一个堆内存，有一个16进制地址（如：AAAFFF000）</li>
+<li>把对象中的键值对存储到堆中</li>
+<li>把堆内存得地址存放到栈内存中，供变量指向</li>
+</ul>
+</li>
+<li>后期obj.xxx得所有操作，都是基于地址找到对内存，从而来操作堆内存中的内容</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="DOM的一些操作"><a href="#DOM的一些操作" class="headerlink" title="DOM的一些操作"></a>DOM的一些操作</h2><ul>
+<li>document.getElementById</li>
+<li>document.body<ul>
+<li>js中获取的元素都是对象数据类型的（有自己对应的堆内存，堆内存中存储者很对内置的属性和方法，这些属性方法就是操作DOM元素的）<ul>
+<li>id</li>
+<li>className</li>
+<li>tagName</li>
+<li>innerHTML</li>
+<li>innerText</li>
+<li>style =对象   操作当前的元素的”行内样式“</li>
+<li>onclick</li>
+<li>……</li>
+</ul>
+</li>
+<li>context.getElementsByTagName<ul>
+<li>获取到的是一个伪数组(类数组)元素集合 HTMLCollection</li>
+<li>操作起来和数组类似（基于索引获取到某一项以及循环操作等）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="js中常用的操作语句"><a href="#js中常用的操作语句" class="headerlink" title="js中常用的操作语句**"></a>js中常用的操作语句**</h2><ul>
+<li>判断语句<ul>
+<li>if 、else、if、else</li>
+<li>三元运算符<ul>
+<li>语法  ：条件？成立：不成立</li>
+<li>基于null/undefined占位</li>
+<li>多个事情基于括号包起来、逗号分隔</li>
+<li>三元嵌套</li>
+</ul>
+</li>
+<li>switch case<ul>
+<li>每一种 case都是===判断</li>
+<li>== 和===的区别</li>
+</ul>
+</li>
+<li>循环语句<ul>
+<li>for循环：指定循环的次数或者遍历数组<ul>
+<li>四部操作</li>
+<li>break</li>
+<li>continue</li>
+</ul>
+</li>
+<li>for in 循环：变量对象中的键值对的<ul>
+<li>优先按照从小到大遍历数字属性</li>
+</ul>
+</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="js中常用的输出方式"><a href="#js中常用的输出方式" class="headerlink" title="js中常用的输出方式"></a>js中常用的输出方式</h2><ul>
+<li>console<ul>
+<li>.log</li>
+<li>.dir</li>
+<li>.table</li>
+<li>.time   /  .timeEnd</li>
+<li>.wran</li>
+<li>….</li>
+</ul>
+</li>
+<li>浏览器弹出窗口（输出的结果都会变为字符串）<ul>
+<li>alert</li>
+<li>confirm</li>
+<li>prompt</li>
+</ul>
+</li>
+<li>向页面中输出内容（输出的结果都会变为字符串）<ul>
+<li>document.write</li>
+<li>元素.innerHTML</li>
+<li>元素.innerText</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 
             </div>
             <hr/>
@@ -571,7 +838,7 @@ switch(a)&#123; // 表达式
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsjudge/">https://tealset.github.io/jsjudge/</a>
+                    <a href="https://tealset.github.io/jssummary1/">https://tealset.github.io/jssummary1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -609,12 +876,8 @@ switch(a)&#123; // 表达式
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%88%A4%E6%96%AD/">
-                                    <span class="chip bg-color">判断</span>
+                                <a href="/tags/%E6%80%BB%E7%BB%93/">
+                                    <span class="chip bg-color">总结</span>
                                 </a>
                             
                         </div>
@@ -1045,9 +1308,10 @@ switch(a)&#123; // 表达式
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/jssummary1/">
                     <div class="card-image">
@@ -1082,9 +1346,9 @@ B
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1097,6 +1361,7 @@ B
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1115,27 +1380,25 @@ B
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jsstack/">
+                <a href="/jsjudge/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREyUe.jpg" class="responsive-img" alt="栈内存与堆内存">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="js中的判断方法">
                         
-                        <span class="card-title">栈内存与堆内存</span>
+                        <span class="card-title">js中的判断方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            栈内存与堆内存内存分类
-栈内存  stack
-堆内存  heap 
-
-栈内存与堆内存区别
-栈内存是储存基本数据类型值和为执行上下文提供的环境
-堆内存是存储引用数据类型的，他会在内存中开辟一条新的内存来储存值，并生成一个16进制的地址
-
-浏览
+                            js中的判断方式
+if…else…else if….else这种方式进行判断
+let a=10;
+if(a&gt;10)&#123;
+    console.log(a++)
+&#125;else if(a&lt;10)&#123;
+   
                         
                     </div>
                     <div class="publish-info">
@@ -1165,8 +1428,8 @@ B
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/stack/">
-                        <span class="chip bg-color">stack</span>
+                    <a href="/tags/%E5%88%A4%E6%96%AD/">
+                        <span class="chip bg-color">判断</span>
                     </a>
                     
                 </div>
