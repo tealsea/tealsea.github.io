@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>js中arguments使用</title>
+      <link href="//jsarguments/"/>
+      <url>//jsarguments/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>arguments函数内置的实参集合，不管我们设置形参与否，再或者是否传递了实参，arguments始终都会存在（ES6箭头函数中没有arguments），arguments只能出现在函数体中</p></blockquote><blockquote><p>在ES6中可以使用剩余运算符来获取传递的实参</p></blockquote><blockquote><p>arguments是一个伪数组（类似于数组，但不是数组，个元素集合HTMLCollection类似）</p></blockquote><blockquote><p>arguments根据索引记录了每一个传递进来的实参信息（和是否定义形参变量没有关系），arguments中包含了所有传递进来的实参信息）</p></blockquote><blockquote><p>arguments中length属性代表了传递实参的个数</p></blockquote><p>==========================================================================</p><blockquote><p>练习 输出所有形参和的值，非法数字不进行计算</p><pre><code>function sum() &#123;   let total = 0;//创建一个变量定义初始值   for (var i = 0; i &lt; arguments.length; i++) &#123;       let item =arguments[i]-0;//将循环中每一项的值转换为字符串(-0相当于Number())       if (!isNaN(item)) &#123; // 判断不是NaN的值           total += item;  //将每次循环得到的有效数字累加到total中       &#125;;   &#125;;   console.log(total);// =&gt;100&#125;;sum(10,&#39;70&#39;, 20,&#39;fdsa&#39;);//调用计算函数，传递形参</code></pre></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jascript </tag>
+            
+            <tag> function </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据类型对比转换</title>
+      <link href="//jsimplicit/"/>
+      <url>//jsimplicit/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>特殊类型对比</p><ul><li>NaN==NaN; // =&gt;false  NaN和任何数比较都是false包括自己本省</li><li>Infinity==Infinity; // =&gt;true   Infinity只有各自己比较为true，其余都为false</li><li>symbol(1)==symbol(1);  // =&gt;false   symbol和任何数相比都为false</li><li>null==undefined; // =&gt;true   null和undefined两个等号相比为true，三个等号为false，除此之外与其他类型相比都为false</li></ul></li><li><p>隐式转换规则</p><ul><li>对象==字符串  对象转换为字符串然后在进行比较</li><li>除以上规则外其余的都是把值转换为数字类型，然后在进行比较</li></ul></li><li><p>练习</p><pre><code>console.log([10]==&#39;10&#39;);// =&gt; 10==10 &gt; trueconsole.log(&#123;&#125;==&#39;&#123;&#125;&#39;);// =&gt; &quot;object&quot;==&#39;&#123;&#125;&#39; &gt; falseconsole.log(1==true);// =&gt;1==1 &gt; trueconsole.log(2==true);// 2==1 &gt; falseconsole.log(-1==false);// =&gt; -1==0 &gt; falseconsole.log(0==false);// =&gt;0==0 &gt; trueconsole.log(1==&#39;1&#39;);// =&gt; 1==1 &gt; trueconsole.log(true==&#39;1&#39;);// =&gt; 1==1 &gt; trueconsole.log(false==&quot;&quot;);// =&gt; 0==0 &gt;trueconsole.log([]==0);// =&gt; 0==0 &gt; true</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jascript </tag>
+            
+            <tag> function </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js中的循环</title>
       <link href="//jsloop/"/>
       <url>//jsloop/</url>
@@ -23,6 +77,33 @@
             <tag> javascript </tag>
             
             <tag> 循环 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中ruturn的使用</title>
+      <link href="//jsreturn/"/>
+      <url>//jsreturn/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>当函数执行的时候，会形成一个全新的执行上下文，函数体中的代码在这个上下文中云运行，代码在运行中，会把所有创建的变量存储到当前上下文的AO(活动变量对象)中，这些变量是“私有变量”，除了当前上下文中可以使用这些变量的值，上下文以外的环境不能使用私有变量的值，如果外面想用当前上下文中的一些信息，则需要函数对外提供的出口，把信息提供给外面使用，而这个出口在js函数中被称为“返回值”</p><p>return返回的一定是值</p><pre><code>function fun()&#123;   return 20+10;&#125;let num=fun();console.log(num);//30</code></pre><p>如果函数中没写return，默认返回的值是undefined</p><pre><code>function fun()&#123;   let num=20;&#125;;let num=fun();console.log(num);//undefined</code></pre><p>return 在函数中除了返回信息外，还有结束函数中代码的代码，不在向下执行的作用</p><pre><code>function fun()&#123;   let a=1;   return;   console.log(a);//没有任何输出&#125;;fun();</code></pre></blockquote><p>==============================================================================</p><blockquote><p>for循环中结束整个循环用break</p><p>for循环中结束当前循环项用continue</p><p>switch case中结束判断语句用break</p><p>函数中结束函数用return</p><p>在函数中，判断和循环可以结合return一起使用，结束了函数结束相当于结束了函数中循环个判断语句，但在函数以外不能在一起混用，否则会报错</p><pre><code>for(var i=0;i&lt;20;i++)&#123;   if(i&gt;=10)&#123;       return   &#125;;   console.log(i);// Uncaught SyntaxError: Illegal return statement&#125;</code></pre></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jascript </tag>
+            
+            <tag> function </tag>
             
         </tags>
       

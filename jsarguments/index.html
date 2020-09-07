@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="js中的循环, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
+    <meta name="keywords" content="js中arguments使用, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js中的循环 | Teal</title>
+    <title>js中arguments使用 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE28A.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE5b8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js中的循环</h1>
+                    <h1 class="description center-align post-title">js中arguments使用</h1>
                 </div>
             </div>
         </div>
@@ -459,12 +459,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/jascript/">
+                                <span class="chip bg-color">jascript</span>
                             </a>
                         
-                            <a href="/tags/%E5%BE%AA%E7%8E%AF/">
-                                <span class="chip bg-color">循环</span>
+                            <a href="/tags/function/">
+                                <span class="chip bg-color">function</span>
                             </a>
                         
                     </div>
@@ -504,127 +504,36 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="js中的循环"><a href="#js中的循环" class="headerlink" title="js中的循环"></a>js中的循环</h1><ol>
-<li><p>for循环  =&gt;循环数组</p>
-<ul>
-<li><p>循环：一轮一轮的重复做某一件事情（真是项目中一般都控制相关的事情执行一遍）</p>
-</li>
-<li><p>使用：for(设置初始值；设置循环条件，控制循环次数；每一轮循环结束购处理的事情[步长累加])</p>
-</li>
-<li><p>循环体</p>
-<ol>
-<li>设置初始值</li>
-<li>验证条件（条件不成立循环体结束）</li>
-<li>循环体</li>
-<li>步长累加</li>
-<li>再次验证</li>
-<li>循环体</li>
-<li>一直重复执行，一直到验证条件不成立为止</li>
-</ol>
-</li>
-<li><p>循环体可能出现的两个关键词</p>
-<ol>
-<li><p>break:强制结束整个循环，所有在循环体中的代码都不在执行</p>
-<pre><code>for(var=0;i&lt;5;i++)&#123;
-    console.log(i);// =&gt;0
-    break;// 结束整个循环
-&#125;
-console.log(i);// =&gt;0</code></pre>
-</li>
-<li><p>continue:结束本轮循环体，下一轮继续执行，但当前循环体中continue下面的代码不在执行</p>
-<pre><code>for(var i=0;i&lt;5;i++)&#123;
-    if(i==0)&#123;
-        continue;
-    &#125;
-    console.log(i); // =&gt; 1 &gt; 2 &gt; 3 &gt; 4
-&#125;;
-console.log(i);// =&gt;5</code></pre>
-</li>
-</ol>
-</li>
-<li><p>遍历（循环/迭代）数组中的每一项：因为数组有索引个length属性，所以我们能够知道循环次数，也能基于索引获取对应项，使用for循环就可以解决</p>
-<pre><code>let arr=[10,20,30];
-for(var i=0;i&lt;arr.length;i++)&#123;
-    console.log(arr[i]);// =&gt; 10 &gt; 20 &gt; 30
-&#125;;</code></pre>
-</li>
-</ul>
-</li>
-<li><p>for in循环  =&gt;循环对象</p>
-<blockquote>
-<p>遍历对象中的每一个属性：我们无法直接获取到对象中有多少个属性，也就无法知道循环多少次，所以无法使用for循环，真实项目中遍历对象我们基于的是for in循环</p>
+                <blockquote>
+<p>arguments函数内置的实参集合，不管我们设置形参与否，再或者是否传递了实参，arguments始终都会存在（ES6箭头函数中没有arguments），arguments只能出现在函数体中</p>
 </blockquote>
-<ul>
-<li><p>使用：创建变量（存储的是属性） in 对象</p>
-</li>
-<li><p>当前对象中有多少可枚举的属性，就循环多少次</p>
-</li>
-<li><p>key 变量存储的是每一次循环的属性名</p>
-</li>
-<li><p>obj[key] 获取key变量中的对象属性名的属性值</p>
-<pre><code>var obj=&#123;
-    name:&#39;teal&#39;,
-    age:20,
-    skill:&#39;睡觉&#39;
-&#125;;
-for(var key in obj)&#123;
-    consoel.log(key);// =&gt;&quot;name&quot; &gt; &quot;age&quot; &gt; &quot;skill&quot;
-    console.log(obj[key]);// &#39;teal&#39; &gt; 20 &gt; &#39;睡觉&#39;
-&#125;</code></pre>
 <blockquote>
-<p>for in遍历对象的时候，是按照从小到大的机制遍历数字属性的</p>
-<pre><code>var obj=&#123;
-   name:&#39;teal&#39;,
-   age:20,
-   1:12,
-   5:30
-&#125;
-for(var key in obj)&#123;
-   console.log(key); // =&gt; &quot;1&quot; &gt; &quot;2&quot; &gt; &quot;name&quot; &gt; &quot;age&quot;
-   console.log(obj[key]); // =&gt; 12 &gt; 30 &gt; &#39;teal&#39; &gt; 20
-&#125;</code></pre>
+<p>在ES6中可以使用剩余运算符来获取传递的实参</p>
 </blockquote>
-</li>
-</ul>
-</li>
-<li><p>练习</p>
-<pre><code>for (var i=0;i&lt;5;i++)&#123;
-    console.log(i); // =&gt; 0 &gt; 1 &gt;2 &gt;3 &gt;4
-    continue;
-&#125;
-console.log(i);// =&gt;5</code></pre>
-<pre><code>for(var i=0;i&lt;5;i++)&#123;
-    continue;
-    console.log(i);// =&gt;应continue会结束本此循环项，所以以下代码不会执行
+<blockquote>
+<p>arguments是一个伪数组（类似于数组，但不是数组，个元素集合HTMLCollection类似）</p>
+</blockquote>
+<blockquote>
+<p>arguments根据索引记录了每一个传递进来的实参信息（和是否定义形参变量没有关系），arguments中包含了所有传递进来的实参信息）</p>
+</blockquote>
+<blockquote>
+<p>arguments中length属性代表了传递实参的个数</p>
+</blockquote>
+<p>==========================================================================</p>
+<blockquote>
+<p>练习 输出所有形参和的值，非法数字不进行计算</p>
+<pre><code>function sum() &#123;
+   let total = 0;//创建一个变量定义初始值
+   for (var i = 0; i &lt; arguments.length; i++) &#123;
+       let item =arguments[i]-0;//将循环中每一项的值转换为字符串(-0相当于Number())
+       if (!isNaN(item)) &#123; // 判断不是NaN的值
+           total += item;  //将每次循环得到的有效数字累加到total中
+       &#125;;
+   &#125;;
+   console.log(total);// =&gt;100
 &#125;;
-console.log(i); // =&gt;5</code></pre>
-<pre><code>for(var i=1;i&lt;=10;i+=2)&#123; // =&gt;2+2 &gt;5+2 &gt;
-    if(i&lt;=5)&#123;
-        i++; // =&gt;1+1 &gt; 4+1 
-        continue; // =&gt; 结束本次循环
-    &#125;else&#123;
-        i+=2;// =&gt;7+2
-        break;// =&gt;结束整个循环
-    &#125;;
-    i--;// 因上面个判断条件中有结束循环语句，所以不可能执行以下代码
-    console.log(i);
-&#125;;
-console.log(i);// =&gt;9</code></pre>
-<pre><code>for(var i=3;i&lt;12;i++)&#123;
-    if(i&lt;3)&#123;
-        i++;
-        break;
-    &#125;;
-    if(i&gt;9)&#123;
-        i+=2;
-        continue;
-    &#125;;
-    i--;
-&#125;;
-console.log(i)//;
-//解析：以上代码为死循环，1、循环过程首先判断i(3)小于12吗，条件成立.2、进入循环项，判断i(3)小于3吗，条件不成立，集训执行下面代码，判断i(3)大于9吗，条件不成立，继续执行下面代码，让i--(3-1)。本次循环结束，执行i++(2+1)，继续判断i(3)小于12，成立进入循环项，继续判断，就这样一直进入了死循环</code></pre>
-</li>
-</ol>
+sum(10,&#39;70&#39;, 20,&#39;fdsa&#39;);//调用计算函数，传递形参</code></pre>
+</blockquote>
 
             </div>
             <hr/>
@@ -650,7 +559,7 @@ console.log(i)//;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsloop/">https://tealset.github.io/jsloop/</a>
+                    <a href="https://tealset.github.io/jsarguments/">https://tealset.github.io/jsarguments/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -688,12 +597,12 @@ console.log(i)//;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/jascript/">
+                                    <span class="chip bg-color">jascript</span>
                                 </a>
                             
-                                <a href="/tags/%E5%BE%AA%E7%8E%AF/">
-                                    <span class="chip bg-color">循环</span>
+                                <a href="/tags/function/">
+                                    <span class="chip bg-color">function</span>
                                 </a>
                             
                         </div>
@@ -1124,33 +1033,34 @@ console.log(i)//;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/jsimplicit/">
+                <a href="/jsarguments/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="数据类型对比转换">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE5b8.jpg" class="responsive-img" alt="js中arguments使用">
                         
-                        <span class="card-title">数据类型对比转换</span>
+                        <span class="card-title">js中arguments使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-特殊类型对比
+arguments函数内置的实参集合，不管我们设置形参与否，再或者是否传递了实参，arguments始终都会存在（ES6箭头函数中没有arguments），arguments只能出现在函数体中
 
-NaN==NaN; // =&gt;false  NaN和任何数比较都是false包括自己本省
-Infinity==Infinity; // =&gt;true   Infinity只有各自己比较为true，其余都为fal
+
+在ES6中可以使用剩余运算符来获取传递的
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1163,6 +1073,7 @@ Infinity==Infinity; // =&gt;true   Infinity只有各自己比较为true，其余
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1185,20 +1096,23 @@ Infinity==Infinity; // =&gt;true   Infinity只有各自己比较为true，其余
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jsreturn/">
+                <a href="/jsimplicit/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE28A.jpg" class="responsive-img" alt="js中ruturn的使用">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="数据类型对比转换">
                         
-                        <span class="card-title">js中ruturn的使用</span>
+                        <span class="card-title">数据类型对比转换</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-当函数执行的时候，会形成一个全新的执行上下文，函数体中的代码在这个上下文中云运行，代码在运行中，会把所有创建的变量存储到当前上下文的AO(活动变量对象)中，这些变量是“私有变量”，除了当前上下文中可以使用这些变量的值，上下文以外的环境不能
+特殊类型对比
+
+NaN==NaN; // =&gt;false  NaN和任何数比较都是false包括自己本省
+Infinity==Infinity; // =&gt;true   Infinity只有各自己比较为true，其余都为fal
                         
                     </div>
                     <div class="publish-info">

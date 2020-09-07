@@ -6,7 +6,7 @@
   <link href="https://tealset.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealset.github.io/"/>
-  <updated>2020-09-07T06:15:23.981Z</updated>
+  <updated>2020-09-07T14:09:40.854Z</updated>
   <id>https://tealset.github.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中arguments使用</title>
+    <link href="https://tealset.github.io/jsarguments/"/>
+    <id>https://tealset.github.io/jsarguments/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-07T14:09:40.854Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;arguments函数内置的实参集合，不管我们设置形参与否，再或者是否传递了实参，arguments始终都会存在（ES6箭头函数中没有arguments），arguments只能出现在函数体中&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquo</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="jascript" scheme="https://tealset.github.io/tags/jascript/"/>
+    
+    <category term="function" scheme="https://tealset.github.io/tags/function/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据类型对比转换</title>
+    <link href="https://tealset.github.io/jsimplicit/"/>
+    <id>https://tealset.github.io/jsimplicit/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-07T14:26:41.249Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;特殊类型对比&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NaN==NaN; // =&amp;gt;false  NaN和任何数比较都是false包括自己本省&lt;/li&gt;
+&lt;li&gt;Infinity==Infinity; // =&amp;gt;true  </summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="jascript" scheme="https://tealset.github.io/tags/jascript/"/>
+    
+    <category term="function" scheme="https://tealset.github.io/tags/function/"/>
+    
+  </entry>
   
   <entry>
     <title>js中的循环</title>
@@ -41,6 +102,34 @@
     <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
     
     <category term="循环" scheme="https://tealset.github.io/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中ruturn的使用</title>
+    <link href="https://tealset.github.io/jsreturn/"/>
+    <id>https://tealset.github.io/jsreturn/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-07T14:09:22.813Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;当函数执行的时候，会形成一个全新的执行上下文，函数体中的代码在这个上下文中云运行，代码在运行中，会把所有创建的变量存储到当前上下文的AO(活动变量对象)中，这些变量是“私有变量”，除了当前上下文中可以使用这些变量的值，上下文以外的环境不能使用私有变</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="jascript" scheme="https://tealset.github.io/tags/jascript/"/>
+    
+    <category term="function" scheme="https://tealset.github.io/tags/function/"/>
     
   </entry>
   
@@ -477,61 +566,6 @@
     <category term="node" scheme="https://tealset.github.io/tags/node/"/>
     
     <category term="bcrypt" scheme="https://tealset.github.io/tags/bcrypt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript关于数组方法</title>
-    <link href="https://tealset.github.io/jsarray/"/>
-    <id>https://tealset.github.io/jsarray/</id>
-    <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-09-06T02:19:32.173Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;javascript关于数组方法&quot;&gt;&lt;a href=&quot;#javascript关于数组方法&quot; class=&quot;headerlink&quot; title=&quot;javascript关于数组方法&quot;&gt;&lt;/a&gt;javascript关于数组方法&lt;/h1&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mongodb数据加密</title>
-    <link href="https://tealset.github.io/modb/"/>
-    <id>https://tealset.github.io/modb/</id>
-    <published>2020-08-25T00:00:00.000Z</published>
-    <updated>2020-08-31T02:45:18.808Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;打开终端&lt;/strong&gt; （如：cmd || powershell 等等…）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;输入  &lt;strong&gt;mongo&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;show</summary>
-        
-      
-    
-    
-    
-    <category term="数据库" scheme="https://tealset.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-    <category term="mongodb" scheme="https://tealset.github.io/tags/mongodb/"/>
     
   </entry>
   
