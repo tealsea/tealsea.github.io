@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascript,es6,数组,循环,过滤,筛选">
+    <meta name="keywords" content="js数组, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>javascript关于数组方法 | Teal</title>
+    <title>js数组 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREsED.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE64H.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">javascript关于数组方法</h1>
+                    <h1 class="description center-align post-title">js数组</h1>
                 </div>
             </div>
         </div>
@@ -459,8 +459,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/array/">
+                                <span class="chip bg-color">array</span>
                             </a>
                         
                     </div>
@@ -471,8 +471,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                学习
                             </a>
                         
                     </div>
@@ -500,129 +500,294 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="javascript关于数组方法"><a href="#javascript关于数组方法" class="headerlink" title="javascript关于数组方法"></a>javascript关于数组方法</h1><h3 id="Array-forEach-v-i-callback"><a href="#Array-forEach-v-i-callback" class="headerlink" title="Array.forEach(v, i, callback)"></a>Array.forEach(v, i, callback)</h3><ol>
-<li>作用 :循环数组</li>
-<li>形参：</li>
-</ol>
-<ul>
-<li><p>v : 当前循环项</p>
-</li>
-<li><p>i :  当前循环项索引</p>
-</li>
-<li><p>callback: 回调函数</p>
-</li>
-</ul>
-<pre><code>const array = [
-    &#123;
-    id:0,
-    name:&#39;孙为空&#39;
-    &#125;,
-    &#123;
-    id:1,
-    name:&#39;猪八戒&#39;
-    &#125;,
-    &#123;
-    id:2,
-    name:&#39;沙悟净&#39;
-    &#125;,
-    &#123;
-    id:3,
-    name:&#39;唐三藏&#39;
-    &#125;
-]
-array.forEach((v,i)=&gt;&#123;
-    consoel.log(v,i)
-&#125;)
-// 输出:
-&#123;id:0,name:&#39;孙悟空&#39;&#125;,
-&#123;id:1,name:&#39;猪八戒&#39;&#125;,
-&#123;id:2,name:&#39;沙悟净&#39;&#125;,
-&#123;id:3,name:&#39;唐三藏&#39;&#125;</code></pre>
-<h3 id="Array-filter-v-i-callback"><a href="#Array-filter-v-i-callback" class="headerlink" title="Array.filter(v, i, callback)"></a>Array.filter(v, i, callback)</h3><ol>
-<li>作用 : 过滤数组,并返回新数组</li>
-<li>形参：</li>
-</ol>
-<ul>
-<li>v : 当前循环项</li>
-<li>i :  当前循环项索引</li>
-<li>callback: 回调函数</li>
-</ul>
-<pre><code>const num = [10,15,20,25]
-const newNum = num.filter((v,i)=&gt;&#123;
-    return v &gt;= 15
-&#125;)
-console.log(newNum)
+                <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li><h2 id="数组是应用数据类型中的对象数据类型-特殊对象"><a href="#数组是应用数据类型中的对象数据类型-特殊对象" class="headerlink" title="数组是应用数据类型中的对象数据类型(特殊对象)"></a>数组是应用数据类型中的对象数据类型(特殊对象)</h2><ol>
+<li><p>创建一个对象也要开辟一个堆内存,堆内存中存储数组对象的键值对</p>
+<pre><code>let arr=[10,20,30];
+conosle.log(arr);
 //输出:
-    [15, 20, 25]</code></pre>
-<h3 id="Array-map-v-i-callback"><a href="#Array-map-v-i-callback" class="headerlink" title="Array.map(v, i, callback)"></a>Array.map(v, i, callback)</h3><ol>
-<li>作用 : 返回数组中指定的值</li>
-<li>形参：*同上</li>
+ 0: 10
+ 1: 20
+    2: 30
+ length: 3</code></pre>
+</li>
+<li><p>数组中我们看到的每一项都是属性值,默认属性名是数字,数字从零开始递增,数字代表当前的第几项,我们把代表位置的数字属性名称为”索引”;数组是以数字为索引,索引从零开始的结构!</p>
+</li>
+<li><p>在数组中默认存在一个length属性,代表着数组的长度(有多少项)</p>
+<pre><code>let arr=[20,39,54];
+console.log(arr.length);//3</code></pre>
+</li>
+<li><p>数组中存在的每一项可以是任意数据类型</p>
+<pre><code>let arr=[&#39;aaa&#39;,&#123;name:&#39;teal&#39;&#125;,20,function()&#123;&#125;];
+console.log(arr);
+// 输出
+    0: &quot;aaa&quot;
+    1: &#123;name: &quot;teal&quot;&#125;
+    2: 20
+    3: ƒ ()
+    length: 4</code></pre>
+</li>
 </ol>
-<pre><code>const list = [
-    &#123;
-     name:&#39;张三&#39;,
-     age:20
-    &#125;,
-    &#123;
-     name:&#39;李四&#39;,
-     age:25
-    &#125;,
-    &#123;
-     name:&#39;王五&#39;,
-     age:27
-    &#125;
-]
-const newList = list.map((v,i)=&gt;&#123;
-    return v.name
-&#125;)
-console.log(newList)
-// 输出:
-    [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]</code></pre>
-<h3 id="Array-findIndex-v-i-callback"><a href="#Array-findIndex-v-i-callback" class="headerlink" title="Array.findIndex(v, i, callback)"></a>Array.findIndex(v, i, callback)</h3><ol>
-<li>作用 : 返回符合条件的索引 </li>
-<li>形参：*同上</li>
-<li>注意：如果找到符合条件的值，立即结束循环并返回索引</li>
-<li>索引：索引是从0开始计算的</li>
+</li>
+<li><h2 id="项目使用"><a href="#项目使用" class="headerlink" title="项目使用"></a>项目使用</h2><ul>
+<li>真实项目中,我们把从服务器获取到的数据一般都是对象或者数组(json格式),而且结构层次一般都是多级结构<ol>
+<li>一维数组(只有一级结构)]</li>
+<li>二维数组(也叫多维数组,有两级或以上结构)</li>
 </ol>
-<pre><code>const num = [10,20,30,40]
-const index = num.findIndex((v,i)=&gt;&#123;
-    return v &gt; 25
-&#125;)
-console.log(index)
-// 输出:
-    2</code></pre>
-<h3 id="Array-every-v-i-callback"><a href="#Array-every-v-i-callback" class="headerlink" title="Array.every(v, i, callback)"></a>Array.every(v, i, callback)</h3><ol>
-<li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li>
-<li>形参：*同上</li>
-<li>注意：数组中只要有一个不符合条件，都会返回false,并立即结束循环</li>
+</li>
+</ul>
+</li>
+<li><h2 id="数组中常用的内置方法"><a href="#数组中常用的内置方法" class="headerlink" title="数组中常用的内置方法"></a>数组中常用的内置方法</h2><ol>
+<li><h3 id="关于数组的增删改"><a href="#关于数组的增删改" class="headerlink" title="关于数组的增删改"></a>关于数组的增删改</h3><ul>
+<li><h4 id="push-向数组末尾追加元素"><a href="#push-向数组末尾追加元素" class="headerlink" title="push:向数组末尾追加元素"></a>push:向数组末尾追加元素</h4><ol>
+<li>params: 参数个数不固定,类型也不固定,都是向数组末尾依次追加内容</li>
+<li>return :返回的结构为新增加后数组的长度</li>
+<li>原始数组发生变化</li>
 </ol>
-<pre><code>const num = [20,30,40,50]
-const bool = num.every((v,i)=&gt;&#123;
-    console.log(v)
-    return v &lt;= 30
-&#125;)
-console.log(bool)
-// 输出:
-    20
-    30
-    40
-    false</code></pre>
-<h3 id="Array-some-v-i-callback"><a href="#Array-some-v-i-callback" class="headerlink" title="Array.some(v, i, callback)"></a>Array.some(v, i, callback)</h3><ol>
-<li>作用 : 判断数组中的值符合条件，并返回布尔值 false || true</li>
-<li>形参：*同上</li>
-<li>注意：数组中只要有一个符合条件，都会返回true,并立即结束循环</li>
+<pre><code>let arr=[10,20,30];
+let result=arr.push(40,&#39;50&#39;);
+console.log(arr);//[10,20,30,40,&#39;50&#39;];
+console.log(result);//5</code></pre>
+</li>
+<li><h4 id="pop-删除数组中最后一项内容"><a href="#pop-删除数组中最后一项内容" class="headerlink" title="pop:删除数组中最后一项内容"></a>pop:删除数组中最后一项内容</h4><ol>
+<li>params:参数为空</li>
+<li>return:返回结果为删除的内容</li>
+<li>原始数组改变</li>
 </ol>
-<pre><code>const num = [10,20,30,40]
-const bool=num.some((v,i)=&gt;&#123;
-    console.log(v)
-    return v&gt;=30
-&#125;)
-console.log(bool)
-// 输出:
-    10
-    20
-    30
-    true</code></pre>
+<pre><code>let arr=[10,20,30];
+let result=arr.pop();
+console.log(arr);//[10,20]
+console.log(result);//30</code></pre>
+</li>
+<li><h4 id="unshift-向数组开头位置新填内容"><a href="#unshift-向数组开头位置新填内容" class="headerlink" title="unshift:向数组开头位置新填内容"></a>unshift:向数组开头位置新填内容</h4><ol>
+<li>params:参数个数不定,类型不定,都是要依次在数组前新添内容</li>
+<li>return:返回的结果为添加后数组的长度</li>
+<li>原始数组改变</li>
+</ol>
+<pre><code>let arr=[10,20,30];
+let result=arr.unshift(0,&#39;1&#39;);
+console.log(arr);//[0,&#39;1&#39;,10,20,30]
+console.log(result);//5</code></pre>
+</li>
+<li><h4 id="shift-删除数组中第一项内容"><a href="#shift-删除数组中第一项内容" class="headerlink" title="shift:删除数组中第一项内容"></a>shift:删除数组中第一项内容</h4><ol>
+<li>params:参数为空</li>
+<li>return:返回的结果为被删除的内容</li>
+<li>原始数组改变</li>
+</ol>
+<pre><code>let arr=[10,20,30];
+let result=arr.shift();
+console.log(arr);//[20,30]
+console.log(result);//10</code></pre>
+</li>
+</ul>
+</li>
+<li><h3 id="指定位置的增删改"><a href="#指定位置的增删改" class="headerlink" title="指定位置的增删改"></a>指定位置的增删改</h3><ul>
+<li><h4 id="splice-n-m-删除指定位置的内容"><a href="#splice-n-m-删除指定位置的内容" class="headerlink" title="splice(n,m):删除指定位置的内容"></a>splice(n,m):删除指定位置的内容</h4><ol>
+<li>params: 从数组中索引为n的地方开始,删除到m个元素</li>
+<li>return: 返回的结果是删除的内容(以数组类型展示)</li>
+<li>原始数组改变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5,6];
+let result =arr.splice(1,3);
+console.log(arr);//[1, 5, 6]
+console.log(result);// [2, 3, 4]</code></pre>
+</li>
+<li><h4 id="splice-n-m-x1-x2-…-修改指定位置数组的内容"><a href="#splice-n-m-x1-x2-…-修改指定位置数组的内容" class="headerlink" title="splice(n,m,x1,x2,…): 修改指定位置数组的内容"></a>splice(n,m,x1,x2,…): 修改指定位置数组的内容</h4><ol>
+<li>params: 从索引n开始,删除m个元素,用x1(或多个值)替换删除后的内容</li>
+<li>return: 返回的一个数组.数组中是删除的内容</li>
+<li>原始值发生变化</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5];
+let result=arr.splice(0,2,&#39;1&#39;,2.2);
+console.log(arr);//[&#39;1&#39;,2.2,3,4,5]
+console.log(result);//[1,2]</code></pre>
+</li>
+<li><h4 id="splice-n-0-x1-x2-…-在指定的位置添加内容"><a href="#splice-n-0-x1-x2-…-在指定的位置添加内容" class="headerlink" title="splice(n,0,x1,x2,…):在指定的位置添加内容"></a>splice(n,0,x1,x2,…):在指定的位置添加内容</h4><ol>
+<li>params:从索引n开始,一个都不删除,把x1(或更多值)插入到索引n的前面</li>
+<li>返回结果为空数组</li>
+<li>原始数组发生改变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4];
+let result=arr.splice(1,0,1.1,1.2);
+console.log(arr);//[1, 1.1, 1.2, 2, 3, 4]
+console.log(result);// []</code></pre>
+</li>
+<li><h4 id="splice-0-删除数组中所有的内容"><a href="#splice-0-删除数组中所有的内容" class="headerlink" title="splice(0):删除数组中所有的内容"></a>splice(0):删除数组中所有的内容</h4><ol>
+<li>params:从索引0开始,一直删除到数组的末尾</li>
+<li>return:返回值为整个被删除的的数组</li>
+<li>原始数组发生改变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4];
+let result=arr.splice(0);
+console.log(arr);//[]
+console.log(result);//[1,2,3,4]</code></pre>
+</li>
+</ul>
+</li>
+<li><h3 id="关于数组的查询"><a href="#关于数组的查询" class="headerlink" title="关于数组的查询"></a>关于数组的查询</h3><ul>
+<li><h4 id="slice-n-m-实现数组的查询-数组指定位置的截取"><a href="#slice-n-m-实现数组的查询-数组指定位置的截取" class="headerlink" title="slice(n,m):实现数组的查询(数组指定位置的截取)"></a>slice(n,m):实现数组的查询(数组指定位置的截取)</h4><ol>
+<li>params: 从数组n出开始查询,查询到索引为m处(不包含m)</li>
+<li>retutn: 返回的结果以新数组的展示</li>
+<li>原始数组不变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5,6];
+let result=arr.slice(2,4);
+console.log(arr);//[1,2,3,4,5,6]
+console.log(result);//[3,4]</code></pre>
+</li>
+<li><h4 id="slice-n-查询指定位置后面所有的内容"><a href="#slice-n-查询指定位置后面所有的内容" class="headerlink" title="slice(n):查询指定位置后面所有的内容"></a>slice(n):查询指定位置后面所有的内容</h4><ol>
+<li>params: 从数组n的位置开始查询,一直查到数组的末尾</li>
+<li>return: 返回的结果是n后面所有的值,并以新数组展示</li>
+<li>原始数组不变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5,6];
+let result=arr.slice(2);
+console.log(arr);//[1,2,3,4,5,6]
+console.log(result);//[3,4,5,6]</code></pre>
+</li>
+<li><h4 id="slice-0-查询数组中所有的内容"><a href="#slice-0-查询数组中所有的内容" class="headerlink" title="slice(0):查询数组中所有的内容"></a>slice(0):查询数组中所有的内容</h4><ol>
+<li>params: 从索引0的位置开始截取,一直截取到最后,可以理解为把原始数组中的每一项都查询到</li>
+<li>return : 返回新的数组,实行数组的浅克隆,得到的新数组和原始数组是两个不同的数组(连个不同的堆内存),但是堆内存中存储的内容是一致的</li>
+<li>原始数组不变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5];
+let result=arr.slice(0);
+console.log(arr);//[1,2,3,4,5]
+console.log(result);//[1,2,3,4,5]</code></pre>
+</li>
+</ul>
+</li>
+<li><h3 id="数组的拼接"><a href="#数组的拼接" class="headerlink" title="数组的拼接"></a>数组的拼接</h3><h4 id="concat-x1-x2-…-实现数组的拼接"><a href="#concat-x1-x2-…-实现数组的拼接" class="headerlink" title="concat(x1,x2,…):实现数组的拼接"></a>concat(x1,x2,…):实现数组的拼接</h4><ol>
+<li>params:把多个数组(或多个值)最后拼接成一个数组</li>
+<li>return: 返回结果为拼接后新的数组</li>
+<li>原始数组不变</li>
+</ol>
+<pre><code>let arr1=[1,2,3];
+let arr2=[6,7,8];
+let result=arr1.concat(&#39;4&#39;,5,arr2);
+console.log(arr1);//[1,2,3]
+console.log(arr2);//[6,7,8]
+console.log(result);//[1,2,3,&#39;4&#39;,5,6,7,8]</code></pre>
+</li>
+<li><h3 id="数组转换为字符串"><a href="#数组转换为字符串" class="headerlink" title="数组转换为字符串"></a>数组转换为字符串</h3><ul>
+<li><h4 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString();"></a>toString();</h4><ol>
+<li>params:把数组中的每一项按照”逗号分隔”,拼接成对应的字符串</li>
+<li>原始数组不改变</li>
+</ol>
+<pre><code>let arr=[10,20,30];
+console.log(arr.toString());//&quot;10,20,30&quot;</code></pre>
+</li>
+<li><h4 id="join-char"><a href="#join-char" class="headerlink" title="join([char]);"></a>join([char]);</h4><ol>
+<li><p>char:以指定的字符分隔成对应的字符串</p>
+</li>
+<li><p>原始数组不改变</p>
+<pre><code>let arr=[10,20,30,40];
+console.log(arr.join(&#39;&#39;));//&#39;10203040&#39; =&gt;以空格分隔数组</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h3 id="获取数组中指定的索引"><a href="#获取数组中指定的索引" class="headerlink" title="获取数组中指定的索引"></a>获取数组中指定的索引</h3><ul>
+<li><h4 id="indexOf-value-获取当前项在数组中第一次"><a href="#indexOf-value-获取当前项在数组中第一次" class="headerlink" title="indexOf([value]);获取当前项在数组中第一次"></a>indexOf([value]);获取当前项在数组中第一次</h4><ol>
+<li>params:获取指定位置的索引</li>
+<li>return:返回结果为出现位置的索引,不存在返回-1</li>
+<li>原始数组不变</li>
+</ol>
+<pre><code>let arr=[10,20,30,40,50];
+let result1=arr.indexOf(30);
+let result2=arr.indexOf(60);
+console.log(arr);//[10,20,30,40,50]
+console.log(result1);//2
+console.log(result2);//-1</code></pre>
+</li>
+<li><h4 id="lastIndexOf-value-获取最后出现的索引"><a href="#lastIndexOf-value-获取最后出现的索引" class="headerlink" title="lastIndexOf([value]);获取最后出现的索引"></a>lastIndexOf([value]);获取最后出现的索引</h4><ol>
+<li>params: 获取指定位置的索引</li>
+<li>return: 返回最后一次出现位置的索引,如果不存在返回-1</li>
+<li>原始数组不变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,3,4,3];
+let result1=arr.lastIndexOf(3);
+let result2=arr.lastIndexOf(5);
+console.log(arr);//[1,2,3,4,3,4,3]
+console.log(result1);//6
+console.log(result2);//-1</code></pre>
+</li>
+<li><h4 id="includes-value-验证数组中是否包含指定内容"><a href="#includes-value-验证数组中是否包含指定内容" class="headerlink" title="includes([value]):验证数组中是否包含指定内容"></a>includes([value]):验证数组中是否包含指定内容</h4><ol>
+<li>params:指定的内容</li>
+<li>return: 返回结果存在返回true,不存在返回false</li>
+<li>原始数组不改变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5];
+console.log(arr.includes(2));//true
+console.log(arr.includes(6));//false</code></pre>
+</li>
+</ul>
+</li>
+<li><h3 id="反转与排序"><a href="#反转与排序" class="headerlink" title="反转与排序"></a>反转与排序</h3><ul>
+<li><h4 id="reverse-数组反转"><a href="#reverse-数组反转" class="headerlink" title="reverse(); 数组反转"></a>reverse(); 数组反转</h4><ol>
+<li>params:无参数</li>
+<li>return:返回的结果是排列后原始的数组,原始数组改变(因反转后原始数组===排列后的数组,所以一般不需要返回值,直接输出原始值即可)</li>
+<li>原始数组改变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4,5];
+console.log(arr.reverse());//[5,4,3,2,1]</code></pre>
+</li>
+<li><h4 id="sort-数组排序"><a href="#sort-数组排序" class="headerlink" title="sort; 数组排序"></a>sort; 数组排序</h4><ol>
+<li>param:回调函数</li>
+<li>return: 返回把原始数组按照规则进行排序后的值</li>
+<li>原始数组会发生改变</li>
+</ol>
+<pre><code>let arr=[2,4,5,1,3];
+console.log(arr.sort());//[1,2,3,4,5]</code></pre>
+<ul>
+<li>sort可以对单位数进行有效排序</li>
+<li>sort支持传递回调函数,基于自定义排序规则</li>
+<li>sort(a,b):在回调函数中,有两个形参.可以进行排序(返回a-b可以得到升序结果,b-a可以得到降序结果)</li>
+</ul>
+<pre><code>let arr1=[3,2,4,1,6,5];
+let arr2=[3,2,4,1,6,5];
+let result1 =arr1.sort(function(a,b)&#123;
+    return a-b;
+&#125;);
+let result2 =arr2.sort(function(a,b)&#123;
+    return b-a;
+&#125;);
+console.log(result1);//[1,2,3,4,5,6]
+console.log(result2);//[6,5,4,3,2,1]</code></pre>
+</li>
+</ul>
+</li>
+<li><h3 id="数组中常用的迭代方法-遍历数组中的每一项"><a href="#数组中常用的迭代方法-遍历数组中的每一项" class="headerlink" title="数组中常用的迭代方法(遍历数组中的每一项)"></a>数组中常用的迭代方法(遍历数组中的每一项)</h3><ul>
+<li><h4 id="forEach-函数-遍历数组中的每一项-数组中有多少项-函数会相继执被执行多少次-每一次执行函数-都可以在函数中获取当前的遍历的这一项个对应的索引"><a href="#forEach-函数-遍历数组中的每一项-数组中有多少项-函数会相继执被执行多少次-每一次执行函数-都可以在函数中获取当前的遍历的这一项个对应的索引" class="headerlink" title="forEach([函数]);遍历数组中的每一项(数组中有多少项,函数会相继执被执行多少次),每一次执行函数,都可以在函数中获取当前的遍历的这一项个对应的索引"></a>forEach([函数]);遍历数组中的每一项(数组中有多少项,函数会相继执被执行多少次),每一次执行函数,都可以在函数中获取当前的遍历的这一项个对应的索引</h4><ol>
+<li>forEach中有一个回调函数,形参为item,index</li>
+<li>item:表示当前项的内容</li>
+<li>index:表示当前项的索引</li>
+</ol>
+<pre><code>let arr=[1,2,3];
+arr.forEach(function(item,index)&#123;
+    console.log(item);// 1 &gt; 2 &gt; 3
+    console.log(index);// 0 &gt; 1 &gt; 2
+&#125;);</code></pre>
+</li>
+<li><h4 id="map-forEach是不支持返回值的-而map可以在forEach的基础上支持返回值-把原来数组中每一项的值替换为新值-最后存储在一个新的数组中-但原始数组不变"><a href="#map-forEach是不支持返回值的-而map可以在forEach的基础上支持返回值-把原来数组中每一项的值替换为新值-最后存储在一个新的数组中-但原始数组不变" class="headerlink" title="map:forEach是不支持返回值的,而map可以在forEach的基础上支持返回值,把原来数组中每一项的值替换为新值,最后存储在一个新的数组中,但原始数组不变"></a>map:forEach是不支持返回值的,而map可以在forEach的基础上支持返回值,把原来数组中每一项的值替换为新值,最后存储在一个新的数组中,但原始数组不变</h4><ol>
+<li>map支持返回值但是不会改变原来的数组,执行完的返回结果是修改后的新数组</li>
+<li>map中有一个回调函数,函数中有两个形参item,index</li>
+<li>item:当前循环的这一项的值</li>
+<li>index:当前值的对应的索引</li>
+<li>函数返回啥都是把数组中当前项替换成啥,但原始数组不变</li>
+</ol>
+<pre><code>let arr=[1,2,3,4];
+let result= arr.map(function(item,index)&#123;
+    return item*10;
+&#125;);
+console.log(result);//[10,20,30,40]</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
 
             </div>
             <hr/>
@@ -648,7 +813,7 @@ console.log(bool)
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsarray/">https://tealset.github.io/jsarray/</a>
+                    <a href="https://tealset.github.io/jsarraystudy/">https://tealset.github.io/jsarraystudy/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -686,8 +851,8 @@ console.log(bool)
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/array/">
+                                    <span class="chip bg-color">array</span>
                                 </a>
                             
                         </div>
@@ -1122,36 +1287,44 @@ console.log(bool)
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/nobcrypt/">
+                <a href="/jsarraymethod/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREhKP.jpg" class="responsive-img" alt="node将明文密码加密">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREsED.jpg" class="responsive-img" alt="javascript关于数组方法">
                         
-                        <span class="card-title">node将明文密码加密</span>
+                        <span class="card-title">javascript关于数组方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            今天给大家介绍一款Node密码加密的模块 bcrypt
-使用bcrypt模块加密前确保本机存在python环境python官网
+                            javascript关于数组方法Array.forEach(v, i)
+作用 :循环数组
+形参：
 
-下载bacrypt模块npm install bcrypt
 
-在本地项目中导入bcrypt模块const bc
+v : 当前循环项
+
+i :  当前循环项索引
+
+
+const array = [
+    &#123;
+    id:0,
+    na
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-25
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                    后端
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1161,12 +1334,12 @@ console.log(bool)
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node/">
-                        <span class="chip bg-color">node</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/bcrypt/">
-                        <span class="chip bg-color">bcrypt</span>
+                    <a href="/tags/array/">
+                        <span class="chip bg-color">array</span>
                     </a>
                     
                 </div>
