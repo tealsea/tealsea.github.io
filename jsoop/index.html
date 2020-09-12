@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="js字符串中常用的方法, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
+    <meta name="keywords" content="js面向对象介绍, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js字符串中常用的方法 | Teal</title>
+    <title>js面向对象介绍 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE64H.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREgCd.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js字符串中常用的方法</h1>
+                    <h1 class="description center-align post-title">js面向对象介绍</h1>
                 </div>
             </div>
         </div>
@@ -463,8 +463,8 @@
                                 <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/string/">
-                                <span class="chip bg-color">string</span>
+                            <a href="/tags/oop/">
+                                <span class="chip bg-color">oop</span>
                             </a>
                         
                     </div>
@@ -488,7 +488,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-11
+                    2020-09-12
                 </div>
                 
 
@@ -504,84 +504,124 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><blockquote>
-<p>在js中用单引号或双引号，反引号包起来的都是字符串，每一个字符串都是由零到多个字符组成的，个数组类似每一个字符都有自己的索引</p>
-<pre><code>let str=&#39;Hello world&#39;;
-console.log(str[0]);//“H”
-console.log(str[1]);//&quot;e&quot;</code></pre>
-<p>str.length存储了一共又多少字符。也就是字符的长度</p>
-<p>遍历字符串的每一个字符</p>
-<pre><code>let str=&quot;Hello world&quot;;
-for(let i=0;i&lt;str.length;i++)&#123;
-   console.log(str[i]);// &quot;H&quot;&gt;&quot;e&quot;&gt;&quot;l&quot;&gt;&quot;l&quot;&gt;&quot;o&quot;&gt;&quot; &quot;&gt;&quot;w&quot;&gt;&quot;o&quot;&gt;&quot;r&quot;&gt;&quot;l&quot;&gt;&quot;d&quot;
-&#125;;</code></pre>
-</blockquote>
+                <h4 id="面型对象介绍"><a href="#面型对象介绍" class="headerlink" title="面型对象介绍"></a>面型对象介绍</h4><blockquote>
+<p>面向对象编程需要我们掌握：‘’对象、类、实例“的概念</p>
 <ul>
-<li><h2 id="字符串中常用的方法"><a href="#字符串中常用的方法" class="headerlink" title="字符串中常用的方法"></a>字符串中常用的方法</h2><ul>
-<li><h4 id="获取指定的位置的值和unicode编码"><a href="#获取指定的位置的值和unicode编码" class="headerlink" title="获取指定的位置的值和unicode编码"></a>获取指定的位置的值和unicode编码</h4><ol>
-<li><h5 id="charAt-value-根据索引获取指定位置的字符-charAt相当于直接基于索引获取的方式，在当前并不存在的情况下，字符串-索引-获取的结果是undefined，而charAt获取的结果为空字符串）"><a href="#charAt-value-根据索引获取指定位置的字符-charAt相当于直接基于索引获取的方式，在当前并不存在的情况下，字符串-索引-获取的结果是undefined，而charAt获取的结果为空字符串）" class="headerlink" title="charAt([value]);根据索引获取指定位置的字符(charAt相当于直接基于索引获取的方式，在当前并不存在的情况下，字符串[索引]获取的结果是undefined，而charAt获取的结果为空字符串）"></a>charAt([value]);根据索引获取指定位置的字符(charAt相当于直接基于索引获取的方式，在当前并不存在的情况下，字符串[索引]获取的结果是undefined，而charAt获取的结果为空字符串）</h5><pre><code>let str=&#39;Hello world&#39;;
-console.log(str[0]);// &#39;H&#39;
-console.log(str.charAt(0));// &#39;H&#39;
-console.log(str[str.length-1]); // &#39;d&#39;
-console.log(str.charAt(str.length-1));// &#39;d&#39;
-console.log(str[str.length]);// &#39;undefined&#39;
-console.log(str.charAt(str.length));// &#39;&#39;</code></pre>
+<li>对象：万物皆对象</li>
+<li>类：对象的具体细分(按照功能特点进行分类：大类、小类）</li>
+<li>实例：类中具体的一个事物（拿出类别中的具体的一个实例进行研究，那么当前类别下的其他类的实例也具备这些特点个特征）</li>
+</ul>
+<p>整个js就是基于面向对象设计的个开发的出来的语言，我们学习和实战的时候也要按照面向对象的思想去体会和理解。</p>
+</blockquote>
+<h4 id="基于构造函数创建自定义类（constructor）"><a href="#基于构造函数创建自定义类（constructor）" class="headerlink" title="基于构造函数创建自定义类（constructor）"></a>基于构造函数创建自定义类（constructor）</h4><ul>
+<li><p>在普通函数执行的基础上”new xxx()“，这样就不普通函数执行了，而是构造函数执行，当前的函数名称之为”类名“，接受的返回结果是当前类的一个实例。</p>
 </li>
-<li><h5 id="charCodeAt-在charAt的基础上获取指定字符的unicode编码（ASSCII码中的值）"><a href="#charCodeAt-在charAt的基础上获取指定字符的unicode编码（ASSCII码中的值）" class="headerlink" title="charCodeAt:在charAt的基础上获取指定字符的unicode编码（ASSCII码中的值）"></a>charCodeAt:在charAt的基础上获取指定字符的unicode编码（ASSCII码中的值）</h5><pre><code>let str=&#39;Hello world&#39;;
-console.log(str.charCodeAt(0));// 72</code></pre>
+<li><p>自己创将的类名，最好第一个首字母大写</p>
 </li>
-<li><h5 id="String-fromCharCode-unicode编码-；和charCodeAt对应，他是基于编码前的字符"><a href="#String-fromCharCode-unicode编码-；和charCodeAt对应，他是基于编码前的字符" class="headerlink" title="String,fromCharCode([unicode编码])；和charCodeAt对应，他是基于编码前的字符"></a>String,fromCharCode([unicode编码])；和charCodeAt对应，他是基于编码前的字符</h5><pre><code>console.log(String.fromCharCode(72)); //&#39;H&#39;</code></pre>
-</li>
-</ol>
-</li>
-<li><h4 id="字符串的截取（最后的m不写，默认都是截取到字符串的末尾）"><a href="#字符串的截取（最后的m不写，默认都是截取到字符串的末尾）" class="headerlink" title="字符串的截取（最后的m不写，默认都是截取到字符串的末尾）"></a>字符串的截取（最后的m不写，默认都是截取到字符串的末尾）</h4><ol>
-<li><h5 id="substr-n-m-从索引n开始-截取m个字符"><a href="#substr-n-m-从索引n开始-截取m个字符" class="headerlink" title="substr(n,m);从索引n开始,截取m个字符"></a>substr(n,m);从索引n开始,截取m个字符</h5><pre><code>let str =&#39;Hello world&#39;;
-console.log(str.substr(2,3));//&#39;llo&#39;</code></pre>
-</li>
-<li><h5 id="substring-n-m-从索引n开始，找到索引为m处（不包含m）吗，找到的部分截取到"><a href="#substring-n-m-从索引n开始，找到索引为m处（不包含m）吗，找到的部分截取到" class="headerlink" title="substring(n,m);从索引n开始，找到索引为m处（不包含m）吗，找到的部分截取到"></a>substring(n,m);从索引n开始，找到索引为m处（不包含m）吗，找到的部分截取到</h5><pre><code>let str=&#39;Hello world&#39;;
-console.log(str.substring(2,3));//&#39;l&#39;</code></pre>
-</li>
-<li><h5 id="slice-n-m-和substring是一样的，两个都是根据索引截取，只不过slice支持以负数作为索引"><a href="#slice-n-m-和substring是一样的，两个都是根据索引截取，只不过slice支持以负数作为索引" class="headerlink" title="slice(n,m);和substring是一样的，两个都是根据索引截取，只不过slice支持以负数作为索引"></a>slice(n,m);和substring是一样的，两个都是根据索引截取，只不过slice支持以负数作为索引</h5><pre><code>let str=&#39;Hello world&#39;;
-console.log(str.substring(-6,-3));// &#39; &#39; &gt;substring只能支持整数作为索引，以负数作为索引，返回空字符
-console.log(str.slice(-6,-3));//&#39; wo&#39;</code></pre>
-</li>
-</ol>
-</li>
-<li><h4 id="字符串查找是否包含某个字符"><a href="#字符串查找是否包含某个字符" class="headerlink" title="字符串查找是否包含某个字符"></a>字符串查找是否包含某个字符</h4><ol>
-<li><h5 id="indexOf-lastIndexOf-获取当前字符串中第一次或最后一次出现的位置的索引，如果字符串中不包含该字符，返回结果为-1"><a href="#indexOf-lastIndexOf-获取当前字符串中第一次或最后一次出现的位置的索引，如果字符串中不包含该字符，返回结果为-1" class="headerlink" title="indexOf / lastIndexOf ;获取当前字符串中第一次或最后一次出现的位置的索引，如果字符串中不包含该字符，返回结果为-1"></a>indexOf / lastIndexOf ;获取当前字符串中第一次或最后一次出现的位置的索引，如果字符串中不包含该字符，返回结果为-1</h5><pre><code>let str=&#39;Hello world&#39;;
-console.log(str.indexOf(&#39;o&#39;));// 4
-console.log(str.lastIndexOf(&#39;o&#39;));// 7
-console.log(str.indexOf(&#39;z&#39;));// -1
-console.log(str.lastIndexOf(&#39;z&#39;)); //-1</code></pre>
-</li>
-</ol>
-</li>
-<li><h4 id="字符串大小字符转换"><a href="#字符串大小字符转换" class="headerlink" title="字符串大小字符转换"></a>字符串大小字符转换</h4><ol>
-<li><h5 id="toUpperCase-toLowerCase-把字符串转换为大写或小写"><a href="#toUpperCase-toLowerCase-把字符串转换为大写或小写" class="headerlink" title="toUpperCase / toLowerCase :把字符串转换为大写或小写"></a>toUpperCase / toLowerCase :把字符串转换为大写或小写</h5><pre><code>let str=&#39;HELLO world&#39;;
-console.log(str.toUpperCase());//&#39;HELLO WORLD&#39;
-console.log(str.toLowerCase());//&#39;hello world&#39;</code></pre>
-</li>
-</ol>
-</li>
-<li><h4 id="字符串转换为数组的方法"><a href="#字符串转换为数组的方法" class="headerlink" title="字符串转换为数组的方法"></a>字符串转换为数组的方法</h4><ol>
-<li><h5 id="split-和数组中的join方法对应，他是把字符串按照指定的分隔符分隔，拆分成数组中的每一项，返回的结果是一个数组"><a href="#split-和数组中的join方法对应，他是把字符串按照指定的分隔符分隔，拆分成数组中的每一项，返回的结果是一个数组" class="headerlink" title="split:和数组中的join方法对应，他是把字符串按照指定的分隔符分隔，拆分成数组中的每一项，返回的结果是一个数组"></a>split:和数组中的join方法对应，他是把字符串按照指定的分隔符分隔，拆分成数组中的每一项，返回的结果是一个数组</h5><pre><code>let str=&#39;a|b|c|d&#39;;
-let result1=str.split(&#39;|&#39;);
-console.log(result1);// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;];
-let result2=str.split(&#39;&#39;);
-console.log(result2);// [&quot;a&quot;,&quot;|&quot;,&quot;b&quot;,&quot;|&quot;,&quot;c&quot;,&quot;|&quot;,&quot;d&quot;] &gt;如果为空字符串则将每一个字符分隔，然后组成新的数组
-let result3=str.split();
-console.log(result3;//[&quot;a|b|c|d&quot;]&gt; 如果没有任何参数，则直接将其变为数组，值长度为1</code></pre>
-</li>
-</ol>
-</li>
-<li><h4 id="字符串的替换"><a href="#字符串的替换" class="headerlink" title="字符串的替换"></a>字符串的替换</h4><ol>
-<li><h5 id="replace-原始字符，新字符-；把字符串中原始字符替换成新字符，在不使用正则的情况下，每次执行replace只能替换为一个"><a href="#replace-原始字符，新字符-；把字符串中原始字符替换成新字符，在不使用正则的情况下，每次执行replace只能替换为一个" class="headerlink" title="replace(原始字符，新字符)；把字符串中原始字符替换成新字符，在不使用正则的情况下，每次执行replace只能替换为一个"></a>replace(原始字符，新字符)；把字符串中原始字符替换成新字符，在不使用正则的情况下，每次执行replace只能替换为一个</h5><pre><code>let str=&#39;Hello world&#39;;
-console.log(str.replace(&#39;o&#39;,&#39;z&#39;));//&#39;Hellz world&#39;
-console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
-</li>
-</ol>
+<li><p>这种构造函数设计模式执行，主要用户组件、类库、插件、框架的封装，平时编写业务逻辑一般不这样处理</p>
+<pre><code>function Fn()&#123;&#125;;
+var f1=new Fn();//Fn是类 f1是类的实例
+var f2=new Fn();//发f2也是Fn的实例，他是和f1是分开独立的，互不影响</code></pre>
 </li>
 </ul>
+<h4 id="js中创建值又两种方法"><a href="#js中创建值又两种方法" class="headerlink" title="js中创建值又两种方法"></a>js中创建值又两种方法</h4><ul>
+<li><p>字面量表达式</p>
+</li>
+<li><p>构造函数模式</p>
+<pre><code>var obj=&#123;&#125;;//字面量创建
+var obj=new Object();//构造函数</code></pre>
+<blockquote>
+<p>不管哪种方式创建出来的都是Object类的实例，而实例之间是独立分开的</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="基本数据类型基于两种不同的模式创建出来的值不一样"><a href="#基本数据类型基于两种不同的模式创建出来的值不一样" class="headerlink" title="基本数据类型基于两种不同的模式创建出来的值不一样"></a>基本数据类型基于两种不同的模式创建出来的值不一样</h4><ul>
+<li><p>基于字面量方式创建出来的值是基本数据类型</p>
+</li>
+<li><p>基于构造函数创建出来的值是引用数据类型</p>
+<pre><code>var num1=12;
+var num2=new Number(12);
+console.log(typeof num1);//&quot;number&quot;
+console.log(typeof num2);//&quot;object&quot;</code></pre>
+</li>
+</ul>
+<h4 id="构造函数执行步骤（四步）"><a href="#构造函数执行步骤（四步）" class="headerlink" title="构造函数执行步骤（四步）"></a>构造函数执行步骤（四步）</h4><ul>
+<li><p>跟普通函数执行一样，形成一个私有作用域（栈内存）</p>
+<ul>
+<li>形参赋值</li>
+<li>变量提升</li>
+</ul>
+</li>
+<li><p>[构造函数执行独有]在js中代码自上而下执行之前，首先在当前形成一个栈中创建一个对象（创建一个堆内存，暂时不存储任何东西），并且让函数中执行主体（this）执行这个堆内存（this===新创建的对象）</p>
+</li>
+<li><p>代码自上而下执行</p>
+</li>
+<li><p>[构造函数独有]代码执行完毕，把之前创建的堆内存(也是就是this)地址返回(浏览器默认返回)</p>
+<pre><code>function Fn()&#123;
+    var n=10;
+    this.m=n
+&#125;;
+var f=new Fn();
+console.log(f.m); // 10
+console.log(f.n); // undefined</code></pre>
+</li>
+</ul>
+<h4 id="构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return-返回-会发生什么"><a href="#构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return-返回-会发生什么" class="headerlink" title="构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return(返回)会发生什么?"></a>构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return(返回)会发生什么?</h4><ul>
+<li><p>如果自己return(返回)的是一个基本数据类型，返回的结果依然是类的实例（this），没有任何影响</p>
+<pre><code>function Fn()&#123;
+    this.name=&#39;teal&#39;;
+    return 12;
+&#125;;
+var f=new Fn();
+console.log(f);//&#123;name:&#39;teal&#39;&#125;
+console.log(f.name);//&quot;teal&quot;</code></pre>
+</li>
+<li><p>如果返回的是引用数据类型值，则会把默认返回的实例覆盖，此时接收到的结果就不是当前类的实例了（不再是this,而是我们自己返回的引用数据类型值），所以我们在构造函数中，应尽量避免return的使用，防止覆盖实例</p>
+<pre><code>function Fn()&#123;
+    this.name=&#39;teal&#39;;
+    return &#123;age:20&#125;;
+&#125;;
+var f=new Fn;//如果构造函数没有实参传递可以不写括号
+console.log(f);//&#123;age:20&#125;
+console.log(f.name);//undefined
+console.log(f.age)// 20</code></pre>
+</li>
+</ul>
+<h4 id="instanceof：检测某一个实例是否隶属于这个类"><a href="#instanceof：检测某一个实例是否隶属于这个类" class="headerlink" title="instanceof：检测某一个实例是否隶属于这个类"></a>instanceof：检测某一个实例是否隶属于这个类</h4><ul>
+<li><p>检测如果属于这个类返回true,不属于返回false</p>
+</li>
+<li><p>万物皆对象，所有的对象包含创建的实例都是Object的实例</p>
+<pre><code>function Fn()&#123;
+    this.m=10;
+&#125;;
+var f=new Fn();
+console.log(f instanceof Fn);//true
+console.log(f instanceof Array);//false
+console.log(f instanceof Object);//true</code></pre>
+</li>
+</ul>
+<h4 id="in-检测当前对象是否存在某一个属性"><a href="#in-检测当前对象是否存在某一个属性" class="headerlink" title="in:检测当前对象是否存在某一个属性"></a>in:检测当前对象是否存在某一个属性</h4><ul>
+<li><p>不管这个属性是对象的私有属性还是公有属性，只要有结果都为true,否则为false</p>
+<pre><code>function Fn()&#123;    
+    var n=10;
+    this.m=n;
+&#125;;
+var f=new Fn();
+console.log(&#39;m&#39; in f);//true
+console.log(&#39;n&#39; in f);// false 
+console.log(&#39;toString&#39; in f);// true (toString为供有属性)</code></pre>
+</li>
+</ul>
+<h4 id="hasOwnproperty-检测当前属性是否为对象的私有属性"><a href="#hasOwnproperty-检测当前属性是否为对象的私有属性" class="headerlink" title="hasOwnproperty:检测当前属性是否为对象的私有属性"></a>hasOwnproperty:检测当前属性是否为对象的私有属性</h4><ul>
+<li><p>不仅要包含这个属性，而且必须还是私有属性的才为true,否则为false</p>
+<pre><code>function Fn()&#123;
+    var n=10;
+    this.m=n;
+&#125;;
+var f=new Fn();
+console.log(f.hasOwnProperty(&#39;m&#39;));//true
+console.log(f.hasOwnProperty(&#39;n&#39;));//false
+console.log(f.hasOwnProperty(&#39;toString&#39;));//false(虽然toString有这个属性，但是他不是私有属性)</code></pre>
 </li>
 </ul>
 
@@ -609,7 +649,7 @@ console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealset.github.io/jsstringstudy/">https://tealset.github.io/jsstringstudy/</a>
+                    <a href="https://tealset.github.io/jsoop/">https://tealset.github.io/jsoop/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -651,8 +691,8 @@ console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
                                     <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/string/">
-                                    <span class="chip bg-color">string</span>
+                                <a href="/tags/oop/">
+                                    <span class="chip bg-color">oop</span>
                                 </a>
                             
                         </div>
@@ -1083,9 +1123,10 @@ console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/jsoop/">
                     <div class="card-image">
@@ -1108,9 +1149,9 @@ console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1123,6 +1164,7 @@ console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1145,32 +1187,27 @@ console.log(str.replace(/o/g,&#39;z&#39;));//&#39;Hellz wzrld&#39;</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/jsarraystudy/">
+                <a href="/jsstringstudy/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE64H.jpg" class="responsive-img" alt="js数组">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE64H.jpg" class="responsive-img" alt="js字符串中常用的方法">
                         
-                        <span class="card-title">js数组</span>
+                        <span class="card-title">js字符串中常用的方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目录
-数组是应用数据类型中的对象数据类型(特殊对象)
-创建一个对象也要开辟一个堆内存,堆内存中存储数组对象的键值对
-let arr=[10,20,30];
-conosle.log(arr);
-//输出:
- 0: 10
- 1: 20
-    
+                            简介
+在js中用单引号或双引号，反引号包起来的都是字符串，每一个字符串都是由零到多个字符组成的，个数组类似每一个字符都有自己的索引
+let str=&#39;Hello world&#39;;
+console.log(str[0]);//“
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
                             </span>
                         <span class="publish-author">
                             
@@ -1187,8 +1224,12 @@ conosle.log(arr);
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/array/">
-                        <span class="chip bg-color">array</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                    <a href="/tags/string/">
+                        <span class="chip bg-color">string</span>
                     </a>
                     
                 </div>
