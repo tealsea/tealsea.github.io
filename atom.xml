@@ -3,11 +3,11 @@
   <title>Teal</title>
   
   <subtitle>星辰大海</subtitle>
-  <link href="https://tealset.github.io/atom.xml" rel="self"/>
+  <link href="https://tealsea.github.io/atom.xml" rel="self"/>
   
-  <link href="https://tealset.github.io/"/>
+  <link href="https://tealsea.github.io/"/>
   <updated>2020-09-12T01:33:07.405Z</updated>
-  <id>https://tealset.github.io/</id>
+  <id>https://tealsea.github.io/</id>
   
   <author>
     <name>Teal</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>js面向对象介绍</title>
-    <link href="https://tealset.github.io/jsoop/"/>
-    <id>https://tealset.github.io/jsoop/</id>
+    <link href="https://tealsea.github.io/jsoop/"/>
+    <id>https://tealsea.github.io/jsoop/</id>
     <published>2020-09-12T00:00:00.000Z</published>
     <updated>2020-09-12T01:33:07.405Z</updated>
     
@@ -34,19 +34,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="oop" scheme="https://tealset.github.io/tags/oop/"/>
+    <category term="oop" scheme="https://tealsea.github.io/tags/oop/"/>
     
   </entry>
   
   <entry>
     <title>js原型和原型链</title>
-    <link href="https://tealset.github.io/jspropotype/"/>
-    <id>https://tealset.github.io/jspropotype/</id>
+    <link href="https://tealsea.github.io/jspropotype/"/>
+    <id>https://tealsea.github.io/jspropotype/</id>
     <published>2020-09-12T00:00:00.000Z</published>
     <updated>2020-09-12T04:30:05.796Z</updated>
     
@@ -61,19 +61,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="prototype" scheme="https://tealset.github.io/tags/prototype/"/>
+    <category term="prototype" scheme="https://tealsea.github.io/tags/prototype/"/>
     
   </entry>
   
   <entry>
     <title>js字符串中常用的方法</title>
-    <link href="https://tealset.github.io/jsstringstudy/"/>
-    <id>https://tealset.github.io/jsstringstudy/</id>
+    <link href="https://tealsea.github.io/jsstringstudy/"/>
+    <id>https://tealsea.github.io/jsstringstudy/</id>
     <published>2020-09-11T00:00:00.000Z</published>
     <updated>2020-09-11T02:48:42.395Z</updated>
     
@@ -88,19 +88,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="string" scheme="https://tealset.github.io/tags/string/"/>
+    <category term="string" scheme="https://tealsea.github.io/tags/string/"/>
     
   </entry>
   
   <entry>
     <title>js数组</title>
-    <link href="https://tealset.github.io/jsarraystudy/"/>
-    <id>https://tealset.github.io/jsarraystudy/</id>
+    <link href="https://tealsea.github.io/jsarraystudy/"/>
+    <id>https://tealsea.github.io/jsarraystudy/</id>
     <published>2020-09-10T00:00:00.000Z</published>
     <updated>2020-09-10T09:22:09.890Z</updated>
     
@@ -116,17 +116,17 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="array" scheme="https://tealset.github.io/tags/array/"/>
+    <category term="array" scheme="https://tealsea.github.io/tags/array/"/>
     
   </entry>
   
   <entry>
     <title>js数学函数中的常用方法</title>
-    <link href="https://tealset.github.io/jsmathstudy/"/>
-    <id>https://tealset.github.io/jsmathstudy/</id>
+    <link href="https://tealsea.github.io/jsmathstudy/"/>
+    <id>https://tealsea.github.io/jsmathstudy/</id>
     <published>2020-09-10T00:00:00.000Z</published>
     <updated>2020-09-10T09:51:54.846Z</updated>
     
@@ -142,17 +142,17 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="math" scheme="https://tealset.github.io/tags/math/"/>
+    <category term="math" scheme="https://tealsea.github.io/tags/math/"/>
     
   </entry>
   
   <entry>
     <title>js中arguments使用</title>
-    <link href="https://tealset.github.io/jsarguments/"/>
-    <id>https://tealset.github.io/jsarguments/</id>
+    <link href="https://tealsea.github.io/jsarguments/"/>
+    <id>https://tealsea.github.io/jsarguments/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-10T09:55:17.052Z</updated>
     
@@ -170,19 +170,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="function" scheme="https://tealset.github.io/tags/function/"/>
+    <category term="function" scheme="https://tealsea.github.io/tags/function/"/>
     
   </entry>
   
   <entry>
     <title>数据类型对比转换</title>
-    <link href="https://tealset.github.io/jsimplicit/"/>
-    <id>https://tealset.github.io/jsimplicit/</id>
+    <link href="https://tealsea.github.io/jsimplicit/"/>
+    <id>https://tealsea.github.io/jsimplicit/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-10T09:56:49.485Z</updated>
     
@@ -201,19 +201,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="function" scheme="https://tealset.github.io/tags/function/"/>
+    <category term="function" scheme="https://tealsea.github.io/tags/function/"/>
     
   </entry>
   
   <entry>
     <title>js中的循环</title>
-    <link href="https://tealset.github.io/jsloop/"/>
-    <id>https://tealset.github.io/jsloop/</id>
+    <link href="https://tealsea.github.io/jsloop/"/>
+    <id>https://tealsea.github.io/jsloop/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-07T06:15:23.981Z</updated>
     
@@ -229,19 +229,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="循环" scheme="https://tealset.github.io/tags/%E5%BE%AA%E7%8E%AF/"/>
+    <category term="循环" scheme="https://tealsea.github.io/tags/%E5%BE%AA%E7%8E%AF/"/>
     
   </entry>
   
   <entry>
     <title>js中ruturn的使用</title>
-    <link href="https://tealset.github.io/jsreturn/"/>
-    <id>https://tealset.github.io/jsreturn/</id>
+    <link href="https://tealsea.github.io/jsreturn/"/>
+    <id>https://tealsea.github.io/jsreturn/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-10T09:57:46.594Z</updated>
     
@@ -257,19 +257,19 @@
     
     
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="function" scheme="https://tealset.github.io/tags/function/"/>
+    <category term="function" scheme="https://tealsea.github.io/tags/function/"/>
     
   </entry>
   
   <entry>
     <title>第一部分学习总结</title>
-    <link href="https://tealset.github.io/jssummary1/"/>
-    <id>https://tealset.github.io/jssummary1/</id>
+    <link href="https://tealsea.github.io/jssummary1/"/>
+    <id>https://tealsea.github.io/jssummary1/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-07T04:22:12.705Z</updated>
     
@@ -285,17 +285,17 @@
     
     
     
-    <category term="总结" scheme="https://tealset.github.io/categories/%E6%80%BB%E7%BB%93/"/>
+    <category term="总结" scheme="https://tealsea.github.io/categories/%E6%80%BB%E7%BB%93/"/>
     
     
-    <category term="总结" scheme="https://tealset.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    <category term="总结" scheme="https://tealsea.github.io/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>js中的判断方法</title>
-    <link href="https://tealset.github.io/jsjudge/"/>
-    <id>https://tealset.github.io/jsjudge/</id>
+    <link href="https://tealsea.github.io/jsjudge/"/>
+    <id>https://tealsea.github.io/jsjudge/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-05T14:19:52.522Z</updated>
     
@@ -311,21 +311,21 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="判断" scheme="https://tealset.github.io/tags/%E5%88%A4%E6%96%AD/"/>
+    <category term="判断" scheme="https://tealsea.github.io/tags/%E5%88%A4%E6%96%AD/"/>
     
   </entry>
   
   <entry>
     <title>栈内存与堆内存</title>
-    <link href="https://tealset.github.io/jsstack/"/>
-    <id>https://tealset.github.io/jsstack/</id>
+    <link href="https://tealsea.github.io/jsstack/"/>
+    <id>https://tealsea.github.io/jsstack/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-05T03:19:55.573Z</updated>
     
@@ -340,21 +340,21 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="stack" scheme="https://tealset.github.io/tags/stack/"/>
+    <category term="stack" scheme="https://tealsea.github.io/tags/stack/"/>
     
   </entry>
   
   <entry>
     <title>js面试题一</title>
-    <link href="https://tealset.github.io/jswor/"/>
-    <id>https://tealset.github.io/jswor/</id>
+    <link href="https://tealsea.github.io/jswor/"/>
+    <id>https://tealsea.github.io/jswor/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-05T11:41:39.484Z</updated>
     
@@ -369,17 +369,17 @@
     
     
     
-    <category term="练习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    <category term="练习" scheme="https://tealsea.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
     
     
-    <category term="试题" scheme="https://tealset.github.io/tags/%E8%AF%95%E9%A2%98/"/>
+    <category term="试题" scheme="https://tealsea.github.io/tags/%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>面试练习二</title>
-    <link href="https://tealset.github.io/jswor2/"/>
-    <id>https://tealset.github.io/jswor2/</id>
+    <link href="https://tealsea.github.io/jswor2/"/>
+    <id>https://tealsea.github.io/jswor2/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-07T07:01:27.194Z</updated>
     
@@ -394,17 +394,17 @@
     
     
     
-    <category term="练习" scheme="https://tealset.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    <category term="练习" scheme="https://tealsea.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
     
     
-    <category term="试题" scheme="https://tealset.github.io/tags/%E8%AF%95%E9%A2%98/"/>
+    <category term="试题" scheme="https://tealsea.github.io/tags/%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>js中boolean数据类型</title>
-    <link href="https://tealset.github.io/jsboolean/"/>
-    <id>https://tealset.github.io/jsboolean/</id>
+    <link href="https://tealsea.github.io/jsboolean/"/>
+    <id>https://tealsea.github.io/jsboolean/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-05T01:32:48.825Z</updated>
     
@@ -419,21 +419,21 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="boolean" scheme="https://tealset.github.io/tags/boolean/"/>
+    <category term="boolean" scheme="https://tealsea.github.io/tags/boolean/"/>
     
   </entry>
   
   <entry>
     <title>js中Object数据类型</title>
-    <link href="https://tealset.github.io/jsobject/"/>
-    <id>https://tealset.github.io/jsobject/</id>
+    <link href="https://tealsea.github.io/jsobject/"/>
+    <id>https://tealsea.github.io/jsobject/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-05T01:33:14.221Z</updated>
     
@@ -448,21 +448,21 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="object" scheme="https://tealset.github.io/tags/object/"/>
+    <category term="object" scheme="https://tealsea.github.io/tags/object/"/>
     
   </entry>
   
   <entry>
     <title>js中关于String数据类型</title>
-    <link href="https://tealset.github.io/jsstring/"/>
-    <id>https://tealset.github.io/jsstring/</id>
+    <link href="https://tealsea.github.io/jsstring/"/>
+    <id>https://tealsea.github.io/jsstring/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-04T04:17:41.674Z</updated>
     
@@ -477,21 +477,21 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="String" scheme="https://tealset.github.io/tags/String/"/>
+    <category term="String" scheme="https://tealsea.github.io/tags/String/"/>
     
   </entry>
   
   <entry>
     <title>js中typeof数据检测</title>
-    <link href="https://tealset.github.io/jstypeof/"/>
-    <id>https://tealset.github.io/jstypeof/</id>
+    <link href="https://tealsea.github.io/jstypeof/"/>
+    <id>https://tealsea.github.io/jstypeof/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-05T01:29:46.841Z</updated>
     
@@ -506,21 +506,21 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="学习" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
-    <category term="typeof" scheme="https://tealset.github.io/tags/typeof/"/>
+    <category term="typeof" scheme="https://tealsea.github.io/tags/typeof/"/>
     
   </entry>
   
   <entry>
     <title>常用浏览器内核</title>
-    <link href="https://tealset.github.io/brower/"/>
-    <id>https://tealset.github.io/brower/</id>
+    <link href="https://tealsea.github.io/brower/"/>
+    <id>https://tealsea.github.io/brower/</id>
     <published>2020-09-03T00:00:00.000Z</published>
     <updated>2020-09-03T12:25:32.184Z</updated>
     
@@ -539,17 +539,17 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="其他" scheme="https://tealset.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://tealsea.github.io/tags/%E5%85%B6%E4%BB%96/"/>
     
   </entry>
   
   <entry>
     <title>js中的数据类型</title>
-    <link href="https://tealset.github.io/jsdataclass/"/>
-    <id>https://tealset.github.io/jsdataclass/</id>
+    <link href="https://tealsea.github.io/jsdataclass/"/>
+    <id>https://tealsea.github.io/jsdataclass/</id>
     <published>2020-09-03T00:00:00.000Z</published>
     <updated>2020-09-03T10:06:29.390Z</updated>
     
@@ -564,10 +564,10 @@
     
     
     
-    <category term="前端" scheme="https://tealset.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="javascript" scheme="https://tealset.github.io/tags/javascript/"/>
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
   </entry>
   
