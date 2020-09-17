@@ -492,31 +492,6 @@
     
     
     <entry>
-      <title>常用浏览器内核</title>
-      <link href="/posts/brower/"/>
-      <url>/posts/brower/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>1、以谷歌浏览器Webkit内核为主（v8引擎）</p></blockquote><blockquote><p>2、火狐的 Gecko内核</p></blockquote><blockquote><p>3、IE浏览器的Trident内核</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 其他 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>js中的数据类型</title>
       <link href="/posts/jsdataclass/"/>
       <url>/posts/jsdataclass/</url>
@@ -534,6 +509,31 @@
         <tags>
             
             <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常用浏览器内核</title>
+      <link href="/posts/brower/"/>
+      <url>/posts/brower/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>1、以谷歌浏览器Webkit内核为主（v8引擎）</p></blockquote><blockquote><p>2、火狐的 Gecko内核</p></blockquote><blockquote><p>3、IE浏览器的Trident内核</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 其他 </tag>
             
         </tags>
       
