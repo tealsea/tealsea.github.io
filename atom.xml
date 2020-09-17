@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Teal</title>
+  
+  <subtitle>星辰大海</subtitle>
+  <link href="https://tealsea.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://tealsea.github.io/"/>
+  <updated>2020-09-12T01:33:07.405Z</updated>
+  <id>https://tealsea.github.io/</id>
+  
+  <author>
+    <name>Teal</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js面向对象介绍</title>
+    <link href="https://tealsea.github.io/posts/jsoop/"/>
+    <id>https://tealsea.github.io/posts/jsoop/</id>
+    <published>2020-09-12T00:00:00.000Z</published>
+    <updated>2020-09-12T01:33:07.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;面型对象介绍&quot;&gt;&lt;a href=&quot;#面型对象介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="oop" scheme="https://tealsea.github.io/tags/oop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js原型和原型链</title>
+    <link href="https://tealsea.github.io/posts/jspropotype/"/>
+    <id>https://tealsea.github.io/posts/jspropotype/</id>
+    <published>2020-09-12T00:00:00.000Z</published>
+    <updated>2020-09-12T04:30:05.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;原型&quot;&gt;&lt;a href=&quot;#原型&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="prototype" scheme="https://tealsea.github.io/tags/prototype/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js字符串中常用的方法</title>
+    <link href="https://tealsea.github.io/posts/jsstringstudy/"/>
+    <id>https://tealsea.github.io/posts/jsstringstudy/</id>
+    <published>2020-09-11T00:00:00.000Z</published>
+    <updated>2020-09-11T02:48:42.395Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="string" scheme="https://tealsea.github.io/tags/string/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js数组</title>
+    <link href="https://tealsea.github.io/posts/jsarraystudy/"/>
+    <id>https://tealsea.github.io/posts/jsarraystudy/</id>
+    <published>2020-09-10T00:00:00.000Z</published>
+    <updated>2020-09-10T09:22:09.890Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h2 id=&quot;数组是应用数据类型中的对象数据类型-特殊对象&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="array" scheme="https://tealsea.github.io/tags/array/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js数学函数中的常用方法</title>
+    <link href="https://tealsea.github.io/posts/jsmathstudy/"/>
+    <id>https://tealsea.github.io/posts/jsmathstudy/</id>
+    <published>2020-09-10T00:00:00.000Z</published>
+    <updated>2020-09-10T09:51:54.846Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;h6 id=&quot;math是一个对象数据类型值-在他的堆内存中-存储了很多内置属性及方法-这些方法-一般都是直接用来操作的数字的-所以我们把Math”数字函数对象”&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="math" scheme="https://tealsea.github.io/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中arguments使用</title>
+    <link href="https://tealsea.github.io/posts/jsarguments/"/>
+    <id>https://tealsea.github.io/posts/jsarguments/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-10T09:55:17.052Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;arguments函数内置的实参集合，不管我们设置形参与否，再或者是否传递了实参，arguments始终都会存在（ES6箭头函数中没有arguments），arguments只能出现在函数体中&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquo</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="function" scheme="https://tealsea.github.io/tags/function/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据类型对比转换</title>
+    <link href="https://tealsea.github.io/posts/jsimplicit/"/>
+    <id>https://tealsea.github.io/posts/jsimplicit/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-10T09:56:49.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;特殊类型对比&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NaN==NaN; // =&amp;gt;false  NaN和任何数比较都是false包括自己本省&lt;/li&gt;
+&lt;li&gt;Infinity==Infinity; // =&amp;gt;true  </summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="function" scheme="https://tealsea.github.io/tags/function/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中的循环</title>
+    <link href="https://tealsea.github.io/posts/jsloop/"/>
+    <id>https://tealsea.github.io/posts/jsloop/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-07T06:15:23.981Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的循环&quot;&gt;&lt;a href=&quot;#js中的循环&quot; class=&quot;headerlink&quot; title=&quot;js中的循环&quot;&gt;&lt;/a&gt;js中的循环&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;for循环 </summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="循环" scheme="https://tealsea.github.io/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中ruturn的使用</title>
+    <link href="https://tealsea.github.io/posts/jsreturn/"/>
+    <id>https://tealsea.github.io/posts/jsreturn/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-10T09:57:46.594Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;当函数执行的时候，会形成一个全新的执行上下文，函数体中的代码在这个上下文中云运行，代码在运行中，会把所有创建的变量存储到当前上下文的AO(活动变量对象)中，这些变量是“私有变量”，除了当前上下文中可以使用这些变量的值，上下文以外的环境不能使用私有变</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="function" scheme="https://tealsea.github.io/tags/function/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一部分学习总结</title>
+    <link href="https://tealsea.github.io/posts/jssummary1/"/>
+    <id>https://tealsea.github.io/posts/jssummary1/</id>
+    <published>2020-09-07T00:00:00.000Z</published>
+    <updated>2020-09-07T04:22:12.705Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;学习第一部分总结&quot;&gt;&lt;a href=&quot;#学习第一部分总结&quot; class=&quot;headerlink&quot; title=&quot;学习第一部分总结&quot;&gt;&lt;/a&gt;学习第一部分总结&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h2 id=&quot;前端的发展史&quot;&gt;&lt;a href=&quot;#前端的发展史&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="总结" scheme="https://tealsea.github.io/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="总结" scheme="https://tealsea.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中的判断方法</title>
+    <link href="https://tealsea.github.io/posts/jsjudge/"/>
+    <id>https://tealsea.github.io/posts/jsjudge/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-05T14:19:52.522Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的判断方式&quot;&gt;&lt;a href=&quot;#js中的判断方式&quot; class=&quot;headerlink&quot; title=&quot;js中的判断方式&quot;&gt;&lt;/a&gt;js中的判断方式&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;if…else…else</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="判断" scheme="https://tealsea.github.io/tags/%E5%88%A4%E6%96%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>栈内存与堆内存</title>
+    <link href="https://tealsea.github.io/posts/jsstack/"/>
+    <id>https://tealsea.github.io/posts/jsstack/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-05T03:19:55.573Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;栈内存与堆内存&quot;&gt;&lt;a href=&quot;#栈内存与堆内存&quot; class=&quot;headerlink&quot; title=&quot;栈内存与堆内存&quot;&gt;&lt;/a&gt;栈内存与堆内存&lt;/h1&gt;&lt;h2 id=&quot;内存分类&quot;&gt;&lt;a href=&quot;#内存分类&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="stack" scheme="https://tealsea.github.io/tags/stack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js面试题一</title>
+    <link href="https://tealsea.github.io/posts/jswor/"/>
+    <id>https://tealsea.github.io/posts/jswor/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-05T11:41:39.484Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;栈内存与堆内存&quot;&gt;&lt;a href=&quot;#栈内存与堆内存&quot; class=&quot;headerlink&quot; title=&quot;栈内存与堆内存&quot;&gt;&lt;/a&gt;栈内存与堆内存&lt;/h1&gt;&lt;h1 id=&quot;js练习面试题一&quot;&gt;&lt;a href=&quot;#js练习面试题一&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="练习" scheme="https://tealsea.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="试题" scheme="https://tealsea.github.io/tags/%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试练习二</title>
+    <link href="https://tealsea.github.io/posts/jswor2/"/>
+    <id>https://tealsea.github.io/posts/jswor2/</id>
+    <published>2020-09-05T00:00:00.000Z</published>
+    <updated>2020-09-07T07:01:27.194Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;试题二&quot;&gt;&lt;a href=&quot;#试题二&quot; class=&quot;headerlink&quot; title=&quot;试题二&quot;&gt;&lt;/a&gt;试题二&lt;/h1&gt;&lt;h2 id=&quot;数据类型基础知识&quot;&gt;&lt;a href=&quot;#数据类型基础知识&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="练习" scheme="https://tealsea.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="试题" scheme="https://tealsea.github.io/tags/%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中boolean数据类型</title>
+    <link href="https://tealsea.github.io/posts/jsboolean/"/>
+    <id>https://tealsea.github.io/posts/jsboolean/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:32:48.825Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中boolean数据类型&quot;&gt;&lt;a href=&quot;#js中boolean数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中boolean数据类型&quot;&gt;&lt;/a&gt;js中boolean数据类型&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="boolean" scheme="https://tealsea.github.io/tags/boolean/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中Object数据类型</title>
+    <link href="https://tealsea.github.io/posts/jsobject/"/>
+    <id>https://tealsea.github.io/posts/jsobject/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:33:14.221Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中object数据类型&quot;&gt;&lt;a href=&quot;#js中object数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中object数据类型&quot;&gt;&lt;/a&gt;js中object数据类型&lt;/h1&gt;&lt;h2 id=&quot;所有的对象都具备的特点&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="object" scheme="https://tealsea.github.io/tags/object/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中关于String数据类型</title>
+    <link href="https://tealsea.github.io/posts/jsstring/"/>
+    <id>https://tealsea.github.io/posts/jsstring/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-04T04:17:41.674Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中关于String数据类型&quot;&gt;&lt;a href=&quot;#js中关于String数据类型&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="String" scheme="https://tealsea.github.io/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中typeof数据检测</title>
+    <link href="https://tealsea.github.io/posts/jstypeof/"/>
+    <id>https://tealsea.github.io/posts/jstypeof/</id>
+    <published>2020-09-04T00:00:00.000Z</published>
+    <updated>2020-09-05T01:29:46.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中typeof数据检测&quot;&gt;&lt;a href=&quot;#js中typeof数据检测&quot; class=&quot;headerlink&quot; title=&quot;js中typeof数据检测&quot;&gt;&lt;/a&gt;js中typeof数据检测&lt;/h1&gt;&lt;h2 id=&quot;js中的数据检测&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="typeof" scheme="https://tealsea.github.io/tags/typeof/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用浏览器内核</title>
+    <link href="https://tealsea.github.io/posts/brower/"/>
+    <id>https://tealsea.github.io/posts/brower/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T12:25:32.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;1、以谷歌浏览器Webkit内核为主（v8引擎）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2、火狐的</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="其他" scheme="https://tealsea.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js中的数据类型</title>
+    <link href="https://tealsea.github.io/posts/jsdataclass/"/>
+    <id>https://tealsea.github.io/posts/jsdataclass/</id>
+    <published>2020-09-03T00:00:00.000Z</published>
+    <updated>2020-09-03T10:06:29.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+</feed>
