@@ -18,8 +18,8 @@
   
   <entry>
     <title>js面向对象介绍</title>
-    <link href="https://tealsea.github.io/jsoop/"/>
-    <id>https://tealsea.github.io/jsoop/</id>
+    <link href="https://tealsea.github.io/posts/jsoop/"/>
+    <id>https://tealsea.github.io/posts/jsoop/</id>
     <published>2020-09-12T00:00:00.000Z</published>
     <updated>2020-09-12T01:33:07.405Z</updated>
     
@@ -45,8 +45,8 @@
   
   <entry>
     <title>js原型和原型链</title>
-    <link href="https://tealsea.github.io/jspropotype/"/>
-    <id>https://tealsea.github.io/jspropotype/</id>
+    <link href="https://tealsea.github.io/posts/jspropotype/"/>
+    <id>https://tealsea.github.io/posts/jspropotype/</id>
     <published>2020-09-12T00:00:00.000Z</published>
     <updated>2020-09-12T04:30:05.796Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>js字符串中常用的方法</title>
-    <link href="https://tealsea.github.io/jsstringstudy/"/>
-    <id>https://tealsea.github.io/jsstringstudy/</id>
+    <link href="https://tealsea.github.io/posts/jsstringstudy/"/>
+    <id>https://tealsea.github.io/posts/jsstringstudy/</id>
     <published>2020-09-11T00:00:00.000Z</published>
     <updated>2020-09-11T02:48:42.395Z</updated>
     
@@ -99,8 +99,8 @@
   
   <entry>
     <title>js数组</title>
-    <link href="https://tealsea.github.io/jsarraystudy/"/>
-    <id>https://tealsea.github.io/jsarraystudy/</id>
+    <link href="https://tealsea.github.io/posts/jsarraystudy/"/>
+    <id>https://tealsea.github.io/posts/jsarraystudy/</id>
     <published>2020-09-10T00:00:00.000Z</published>
     <updated>2020-09-10T09:22:09.890Z</updated>
     
@@ -125,8 +125,8 @@
   
   <entry>
     <title>js数学函数中的常用方法</title>
-    <link href="https://tealsea.github.io/jsmathstudy/"/>
-    <id>https://tealsea.github.io/jsmathstudy/</id>
+    <link href="https://tealsea.github.io/posts/jsmathstudy/"/>
+    <id>https://tealsea.github.io/posts/jsmathstudy/</id>
     <published>2020-09-10T00:00:00.000Z</published>
     <updated>2020-09-10T09:51:54.846Z</updated>
     
@@ -151,8 +151,8 @@
   
   <entry>
     <title>js中arguments使用</title>
-    <link href="https://tealsea.github.io/jsarguments/"/>
-    <id>https://tealsea.github.io/jsarguments/</id>
+    <link href="https://tealsea.github.io/posts/jsarguments/"/>
+    <id>https://tealsea.github.io/posts/jsarguments/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-10T09:55:17.052Z</updated>
     
@@ -181,8 +181,8 @@
   
   <entry>
     <title>数据类型对比转换</title>
-    <link href="https://tealsea.github.io/jsimplicit/"/>
-    <id>https://tealsea.github.io/jsimplicit/</id>
+    <link href="https://tealsea.github.io/posts/jsimplicit/"/>
+    <id>https://tealsea.github.io/posts/jsimplicit/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-10T09:56:49.485Z</updated>
     
@@ -212,8 +212,8 @@
   
   <entry>
     <title>js中的循环</title>
-    <link href="https://tealsea.github.io/jsloop/"/>
-    <id>https://tealsea.github.io/jsloop/</id>
+    <link href="https://tealsea.github.io/posts/jsloop/"/>
+    <id>https://tealsea.github.io/posts/jsloop/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-07T06:15:23.981Z</updated>
     
@@ -240,8 +240,8 @@
   
   <entry>
     <title>js中ruturn的使用</title>
-    <link href="https://tealsea.github.io/jsreturn/"/>
-    <id>https://tealsea.github.io/jsreturn/</id>
+    <link href="https://tealsea.github.io/posts/jsreturn/"/>
+    <id>https://tealsea.github.io/posts/jsreturn/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-10T09:57:46.594Z</updated>
     
@@ -268,8 +268,8 @@
   
   <entry>
     <title>第一部分学习总结</title>
-    <link href="https://tealsea.github.io/jssummary1/"/>
-    <id>https://tealsea.github.io/jssummary1/</id>
+    <link href="https://tealsea.github.io/posts/jssummary1/"/>
+    <id>https://tealsea.github.io/posts/jssummary1/</id>
     <published>2020-09-07T00:00:00.000Z</published>
     <updated>2020-09-07T04:22:12.705Z</updated>
     
@@ -294,8 +294,8 @@
   
   <entry>
     <title>js中的判断方法</title>
-    <link href="https://tealsea.github.io/jsjudge/"/>
-    <id>https://tealsea.github.io/jsjudge/</id>
+    <link href="https://tealsea.github.io/posts/jsjudge/"/>
+    <id>https://tealsea.github.io/posts/jsjudge/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-05T14:19:52.522Z</updated>
     
@@ -324,8 +324,8 @@
   
   <entry>
     <title>栈内存与堆内存</title>
-    <link href="https://tealsea.github.io/jsstack/"/>
-    <id>https://tealsea.github.io/jsstack/</id>
+    <link href="https://tealsea.github.io/posts/jsstack/"/>
+    <id>https://tealsea.github.io/posts/jsstack/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-05T03:19:55.573Z</updated>
     
@@ -353,8 +353,8 @@
   
   <entry>
     <title>js面试题一</title>
-    <link href="https://tealsea.github.io/jswor/"/>
-    <id>https://tealsea.github.io/jswor/</id>
+    <link href="https://tealsea.github.io/posts/jswor/"/>
+    <id>https://tealsea.github.io/posts/jswor/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-05T11:41:39.484Z</updated>
     
@@ -378,8 +378,8 @@
   
   <entry>
     <title>面试练习二</title>
-    <link href="https://tealsea.github.io/jswor2/"/>
-    <id>https://tealsea.github.io/jswor2/</id>
+    <link href="https://tealsea.github.io/posts/jswor2/"/>
+    <id>https://tealsea.github.io/posts/jswor2/</id>
     <published>2020-09-05T00:00:00.000Z</published>
     <updated>2020-09-07T07:01:27.194Z</updated>
     
@@ -403,8 +403,8 @@
   
   <entry>
     <title>js中boolean数据类型</title>
-    <link href="https://tealsea.github.io/jsboolean/"/>
-    <id>https://tealsea.github.io/jsboolean/</id>
+    <link href="https://tealsea.github.io/posts/jsboolean/"/>
+    <id>https://tealsea.github.io/posts/jsboolean/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-05T01:32:48.825Z</updated>
     
@@ -432,8 +432,8 @@
   
   <entry>
     <title>js中Object数据类型</title>
-    <link href="https://tealsea.github.io/jsobject/"/>
-    <id>https://tealsea.github.io/jsobject/</id>
+    <link href="https://tealsea.github.io/posts/jsobject/"/>
+    <id>https://tealsea.github.io/posts/jsobject/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-05T01:33:14.221Z</updated>
     
@@ -461,8 +461,8 @@
   
   <entry>
     <title>js中关于String数据类型</title>
-    <link href="https://tealsea.github.io/jsstring/"/>
-    <id>https://tealsea.github.io/jsstring/</id>
+    <link href="https://tealsea.github.io/posts/jsstring/"/>
+    <id>https://tealsea.github.io/posts/jsstring/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-04T04:17:41.674Z</updated>
     
@@ -490,8 +490,8 @@
   
   <entry>
     <title>js中typeof数据检测</title>
-    <link href="https://tealsea.github.io/jstypeof/"/>
-    <id>https://tealsea.github.io/jstypeof/</id>
+    <link href="https://tealsea.github.io/posts/jstypeof/"/>
+    <id>https://tealsea.github.io/posts/jstypeof/</id>
     <published>2020-09-04T00:00:00.000Z</published>
     <updated>2020-09-05T01:29:46.841Z</updated>
     
@@ -519,8 +519,8 @@
   
   <entry>
     <title>常用浏览器内核</title>
-    <link href="https://tealsea.github.io/brower/"/>
-    <id>https://tealsea.github.io/brower/</id>
+    <link href="https://tealsea.github.io/posts/brower/"/>
+    <id>https://tealsea.github.io/posts/brower/</id>
     <published>2020-09-03T00:00:00.000Z</published>
     <updated>2020-09-03T12:25:32.184Z</updated>
     
@@ -548,8 +548,8 @@
   
   <entry>
     <title>js中的数据类型</title>
-    <link href="https://tealsea.github.io/jsdataclass/"/>
-    <id>https://tealsea.github.io/jsdataclass/</id>
+    <link href="https://tealsea.github.io/posts/jsdataclass/"/>
+    <id>https://tealsea.github.io/posts/jsdataclass/</id>
     <published>2020-09-03T00:00:00.000Z</published>
     <updated>2020-09-03T10:06:29.390Z</updated>
     
