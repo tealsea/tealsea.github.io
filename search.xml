@@ -492,31 +492,6 @@
     
     
     <entry>
-      <title>js中的数据类型</title>
-      <link href="/posts/jsdataclass/"/>
-      <url>/posts/jsdataclass/</url>
-      
-        <content type="html"><![CDATA[<h1 id="js中的数据类型"><a href="#js中的数据类型" class="headerlink" title="js中的数据类型"></a>js中的数据类型</h1><h2 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h2><ul><li>数值 Number </li><li>字符串 String </li><li>布尔值 Boolean </li><li>空值 Null //undefined</li><li>未定义 Undefined </li><li>ES6新增的唯一的类型 Symbol</li></ul><h2 id="2、引用数据类型"><a href="#2、引用数据类型" class="headerlink" title="2、引用数据类型"></a>2、引用数据类型</h2><ol><li><p>对象数据类型 Object</p><ul><li>普通对象 {}</li><li>数组对象 []</li><li>正则表达式  /^$/</li><li>日期对象 new Date</li><li>数学函数对象 Math</li><li>…</li></ul><p>2、函数数据类型 Function</p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> javascript </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>常用浏览器内核</title>
       <link href="/posts/brower/"/>
       <url>/posts/brower/</url>
@@ -534,6 +509,31 @@
         <tags>
             
             <tag> 其他 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中的数据类型</title>
+      <link href="/posts/jsdataclass/"/>
+      <url>/posts/jsdataclass/</url>
+      
+        <content type="html"><![CDATA[<h1 id="js中的数据类型"><a href="#js中的数据类型" class="headerlink" title="js中的数据类型"></a>js中的数据类型</h1><h2 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h2><ul><li>数值 Number </li><li>字符串 String </li><li>布尔值 Boolean </li><li>空值 Null //undefined</li><li>未定义 Undefined </li><li>ES6新增的唯一的类型 Symbol</li></ul><h2 id="2、引用数据类型"><a href="#2、引用数据类型" class="headerlink" title="2、引用数据类型"></a>2、引用数据类型</h2><ol><li><p>对象数据类型 Object</p><ul><li>普通对象 {}</li><li>数组对象 []</li><li>正则表达式  /^$/</li><li>日期对象 new Date</li><li>数学函数对象 Math</li><li>…</li></ul><p>2、函数数据类型 Function</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
             
         </tags>
       
