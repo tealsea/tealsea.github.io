@@ -6,7 +6,7 @@
   <link href="https://tealsea.github.io/atom.xml" rel="self"/>
   
   <link href="https://tealsea.github.io/"/>
-  <updated>2020-09-12T01:33:07.405Z</updated>
+  <updated>2020-09-21T09:53:32.648Z</updated>
   <id>https://tealsea.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git的基本使用</title>
+    <link href="https://tealsea.github.io/posts/git/"/>
+    <id>https://tealsea.github.io/posts/git/</id>
+    <published>2020-09-21T00:00:00.000Z</published>
+    <updated>2020-09-21T09:53:32.648Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;git的基本使用&quot;&gt;&lt;a href=&quot;#git的基本使用&quot; class=&quot;headerlink&quot; title=&quot;git的基本使用&quot;&gt;&lt;/a&gt;git的基本使用&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;初始化一个本地的git仓库&lt;/p&gt;
+&lt;pre class=&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制" scheme="https://tealsea.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    
+    <category term="git" scheme="https://tealsea.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>js面向对象介绍</title>
@@ -543,31 +570,6 @@
     
     
     <category term="其他" scheme="https://tealsea.github.io/tags/%E5%85%B6%E4%BB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js中的数据类型</title>
-    <link href="https://tealsea.github.io/posts/jsdataclass/"/>
-    <id>https://tealsea.github.io/posts/jsdataclass/</id>
-    <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-03T10:06:29.390Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;js中的数据类型&quot;&gt;&lt;a href=&quot;#js中的数据类型&quot; class=&quot;headerlink&quot; title=&quot;js中的数据类型&quot;&gt;&lt;/a&gt;js中的数据类型&lt;/h1&gt;&lt;h2 id=&quot;1、基本数据类型&quot;&gt;&lt;a href=&quot;#1、基本数据类型&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
   </entry>
   

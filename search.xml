@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>git的基本使用</title>
+      <link href="/posts/git/"/>
+      <url>/posts/git/</url>
+      
+        <content type="html"><![CDATA[<h2 id="git的基本使用"><a href="#git的基本使用" class="headerlink" title="git的基本使用"></a>git的基本使用</h2><ol><li><p>初始化一个本地的git仓库</p><pre class=" language-shell"><code class="language-shell">$ git init; // 初始化git仓库</code></pre></li><li><p>将工作区代码提交到暂存区</p><pre class=" language-shell"><code class="language-shell">$ git status;// 查看工作区代码$ git add . / git add -A;// 将代码提交暂存区</code></pre></li><li><p>将暂存区代码提交到历史区</p><pre class=" language-shell"><code class="language-shell">$ git commit -m'项目描述';//将暂存区代码提交到历史区$ git log;// 查看首次历史版本信息$ git reflog;// 查看所有的历史版本信息及操作$ git reset --hard 历史版本号;//回退到指定的版本</code></pre></li><li><p>把本地代码提交到远程仓库</p><ol><li><p>创建 github账号</p></li><li><p>创建一个新的远程仓库</p></li><li><p>将本地仓库和远程仓库进行连接</p><pre class=" language-shell"><code class="language-shell">$ git remote -V;//查看连接状态$ git remote add origin 仓库地址;//将本地仓库和远程仓库建立连接$ git remote rm origin;//删除本地仓库和远程仓库的关联$ git remote pull origin master;//拉取远程仓库最新的代码$ git remote push origin master;//将本地代码上传到远程仓库</code></pre></li></ol></li><li><p>克隆仓库</p><ol><li><p>创建一个仓库</p></li><li><p>点击code查看仓库地址</p></li><li><p>在本地进行克隆</p><pre class=" language-shell"><code class="language-shell">$ git clone 仓库地址</code></pre><blockquote><p>克隆的好处？</p><ol><li>克隆可以自动初始化仓库</li><li>克隆自动和远程仓库进行连接</li><li>克隆可以将仓库内容拉取到本地</li></ol></blockquote></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 版本控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js面向对象介绍</title>
       <link href="/posts/jsoop/"/>
       <url>/posts/jsoop/</url>
