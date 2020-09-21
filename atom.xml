@@ -44,6 +44,31 @@
   </entry>
   
   <entry>
+    <title>npm的使用</title>
+    <link href="https://tealsea.github.io/posts/npm/"/>
+    <id>https://tealsea.github.io/posts/npm/</id>
+    <published>2020-09-21T00:00:00.000Z</published>
+    <updated>2020-09-21T10:15:18.512Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;git的基本使用&quot;&gt;&lt;a href=&quot;#git的基本使用&quot; class=&quot;headerlink&quot; title=&quot;git的基本使用&quot;&gt;&lt;/a&gt;git的基本使用&lt;/h2&gt;&lt;h2 id=&quot;npm的基本使用&quot;&gt;&lt;a href=&quot;#npm的基本使用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="包管理模块" scheme="https://tealsea.github.io/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9D%97/"/>
+    
+    
+    <category term="npm" scheme="https://tealsea.github.io/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js面向对象介绍</title>
     <link href="https://tealsea.github.io/posts/jsoop/"/>
     <id>https://tealsea.github.io/posts/jsoop/</id>
@@ -541,35 +566,6 @@
     <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
     <category term="typeof" scheme="https://tealsea.github.io/tags/typeof/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用浏览器内核</title>
-    <link href="https://tealsea.github.io/posts/brower/"/>
-    <id>https://tealsea.github.io/posts/brower/</id>
-    <published>2020-09-03T00:00:00.000Z</published>
-    <updated>2020-09-03T12:25:32.184Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;1、以谷歌浏览器Webkit内核为主（v8引擎）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2、火狐的</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="其他" scheme="https://tealsea.github.io/tags/%E5%85%B6%E4%BB%96/"/>
     
   </entry>
   
