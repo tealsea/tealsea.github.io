@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="js面向对象介绍, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
+    <meta name="keywords" content="axios封装使用, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js面向对象介绍 | Teal</title>
+    <title>axios封装使用 | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -337,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dREgCd.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s1.ax1x.com/2020/08/26/dRE28A.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js面向对象介绍</h1>
+                    <h1 class="description center-align post-title">axios封装使用</h1>
                 </div>
             </div>
         </div>
@@ -459,12 +459,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
-                            </a>
-                        
-                            <a href="/tags/oop/">
-                                <span class="chip bg-color">oop</span>
+                            <a href="/tags/axios/">
+                                <span class="chip bg-color">axios</span>
                             </a>
                         
                     </div>
@@ -475,8 +471,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                学习
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                工具
                             </a>
                         
                     </div>
@@ -488,7 +484,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-12
+                    2020-09-21
                 </div>
                 
 
@@ -504,126 +500,70 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="面型对象介绍"><a href="#面型对象介绍" class="headerlink" title="面型对象介绍"></a>面型对象介绍</h4><blockquote>
-<p>面向对象编程需要我们掌握：‘’对象、类、实例“的概念</p>
-<ul>
-<li>对象：万物皆对象</li>
-<li>类：对象的具体细分(按照功能特点进行分类：大类、小类）</li>
-<li>实例：类中具体的一个事物（拿出类别中的具体的一个实例进行研究，那么当前类别下的其他类的实例也具备这些特点个特征）</li>
-</ul>
-<p>整个js就是基于面向对象设计的个开发的出来的语言，我们学习和实战的时候也要按照面向对象的思想去体会和理解。</p>
-</blockquote>
-<h4 id="基于构造函数创建自定义类（constructor）"><a href="#基于构造函数创建自定义类（constructor）" class="headerlink" title="基于构造函数创建自定义类（constructor）"></a>基于构造函数创建自定义类（constructor）</h4><ul>
-<li><p>在普通函数执行的基础上”new xxx()“，这样就不普通函数执行了，而是构造函数执行，当前的函数名称之为”类名“，接受的返回结果是当前类的一个实例。</p>
-</li>
-<li><p>自己创将的类名，最好第一个首字母大写</p>
-</li>
-<li><p>这种构造函数设计模式执行，主要用户组件、类库、插件、框架的封装，平时编写业务逻辑一般不这样处理</p>
-<pre><code>function Fn()&#123;&#125;;
-var f1=new Fn();//Fn是类 f1是类的实例
-var f2=new Fn();//发f2也是Fn的实例，他是和f1是分开独立的，互不影响</code></pre>
-</li>
-</ul>
-<h4 id="js中创建值又两种方法"><a href="#js中创建值又两种方法" class="headerlink" title="js中创建值又两种方法"></a>js中创建值又两种方法</h4><ul>
-<li><p>字面量表达式</p>
-</li>
-<li><p>构造函数模式</p>
-<pre><code>var obj=&#123;&#125;;//字面量创建
-var obj=new Object();//构造函数</code></pre>
-<blockquote>
-<p>不管哪种方式创建出来的都是Object类的实例，而实例之间是独立分开的</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="基本数据类型基于两种不同的模式创建出来的值不一样"><a href="#基本数据类型基于两种不同的模式创建出来的值不一样" class="headerlink" title="基本数据类型基于两种不同的模式创建出来的值不一样"></a>基本数据类型基于两种不同的模式创建出来的值不一样</h4><ul>
-<li><p>基于字面量方式创建出来的值是基本数据类型</p>
-</li>
-<li><p>基于构造函数创建出来的值是引用数据类型</p>
-<pre><code>var num1=12;
-var num2=new Number(12);
-console.log(typeof num1);//&quot;number&quot;
-console.log(typeof num2);//&quot;object&quot;</code></pre>
-</li>
-</ul>
-<h4 id="构造函数执行步骤（四步）"><a href="#构造函数执行步骤（四步）" class="headerlink" title="构造函数执行步骤（四步）"></a>构造函数执行步骤（四步）</h4><ul>
-<li><p>跟普通函数执行一样，形成一个私有作用域（栈内存）</p>
-<ul>
-<li>形参赋值</li>
-<li>变量提升</li>
-</ul>
-</li>
-<li><p>[构造函数执行独有]在js中代码自上而下执行之前，首先在当前形成一个栈中创建一个对象（创建一个堆内存，暂时不存储任何东西），并且让函数中执行主体（this）执行这个堆内存（this===新创建的对象）</p>
-</li>
-<li><p>代码自上而下执行</p>
-</li>
-<li><p>[构造函数独有]代码执行完毕，把之前创建的堆内存(也是就是this)地址返回(浏览器默认返回)</p>
-<pre><code>function Fn()&#123;
-    var n=10;
-    this.m=n
+                <pre><code>//下载 axios &amp;&amp; qs
+// 导出axios模块
+import axios from &#39;axios&#39;
+// 导入qs模块
+import qs from &#39;qs&#39;
+// 设置开发环境(生产环境)
+switch (process.env.NODE_ENV) &#123;
+    case &#39;production&#39;:
+        axios.defaults.baseURL = &#39;http://tealseaproduction:80&#39;;// 开发环境
+        break;
+    case &#39;test&#39;:
+        axios.defaults.baseURL = &#39;http://tealseatest:3000&#39;;// 测试环境
+        break;
+    default:
+        axios.defaults.baseURL = &#39;http://tealseadevelop:3000&#39;;// 开发环境
 &#125;;
-var f=new Fn();
-console.log(f.m); // 10
-console.log(f.n); // undefined</code></pre>
-</li>
-</ul>
-<h4 id="构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return-返回-会发生什么"><a href="#构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return-返回-会发生什么" class="headerlink" title="构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return(返回)会发生什么?"></a>构造函数执行，不写return浏览器默认返回创建的实例，但是如果我们自己return(返回)会发生什么?</h4><ul>
-<li><p>如果自己return(返回)的是一个基本数据类型，返回的结果依然是类的实例（this），没有任何影响</p>
-<pre><code>function Fn()&#123;
-    this.name=&#39;teal&#39;;
-    return 12;
-&#125;;
-var f=new Fn();
-console.log(f);//&#123;name:&#39;teal&#39;&#125;
-console.log(f.name);//&quot;teal&quot;</code></pre>
-</li>
-<li><p>如果返回的是引用数据类型值，则会把默认返回的实例覆盖，此时接收到的结果就不是当前类的实例了（不再是this,而是我们自己返回的引用数据类型值），所以我们在构造函数中，应尽量避免return的使用，防止覆盖实例</p>
-<pre><code>function Fn()&#123;
-    this.name=&#39;teal&#39;;
-    return &#123;age:20&#125;;
-&#125;;
-var f=new Fn;//如果构造函数没有实参传递可以不写括号
-console.log(f);//&#123;age:20&#125;
-console.log(f.name);//undefined
-console.log(f.age)// 20</code></pre>
-</li>
-</ul>
-<h4 id="instanceof：检测某一个实例是否隶属于这个类"><a href="#instanceof：检测某一个实例是否隶属于这个类" class="headerlink" title="instanceof：检测某一个实例是否隶属于这个类"></a>instanceof：检测某一个实例是否隶属于这个类</h4><ul>
-<li><p>检测如果属于这个类返回true,不属于返回false</p>
-</li>
-<li><p>万物皆对象，所有的对象包含创建的实例都是Object的实例</p>
-<pre><code>function Fn()&#123;
-    this.m=10;
-&#125;;
-var f=new Fn();
-console.log(f instanceof Fn);//true
-console.log(f instanceof Array);//false
-console.log(f instanceof Object);//true</code></pre>
-</li>
-</ul>
-<h4 id="in-检测当前对象是否存在某一个属性"><a href="#in-检测当前对象是否存在某一个属性" class="headerlink" title="in:检测当前对象是否存在某一个属性"></a>in:检测当前对象是否存在某一个属性</h4><ul>
-<li><p>不管这个属性是对象的私有属性还是公有属性，只要有结果都为true,否则为false</p>
-<pre><code>function Fn()&#123;    
-    var n=10;
-    this.m=n;
-&#125;;
-var f=new Fn();
-console.log(&#39;m&#39; in f);//true
-console.log(&#39;n&#39; in f);// false 
-console.log(&#39;toString&#39; in f);// true (toString为供有属性)</code></pre>
-</li>
-</ul>
-<h4 id="hasOwnproperty-检测当前属性是否为对象的私有属性"><a href="#hasOwnproperty-检测当前属性是否为对象的私有属性" class="headerlink" title="hasOwnproperty:检测当前属性是否为对象的私有属性"></a>hasOwnproperty:检测当前属性是否为对象的私有属性</h4><ul>
-<li><p>不仅要包含这个属性，而且必须还是私有属性的才为true,否则为false</p>
-<pre><code>function Fn()&#123;
-    var n=10;
-    this.m=n;
-&#125;;
-var f=new Fn();
-console.log(f.hasOwnProperty(&#39;m&#39;));//true
-console.log(f.hasOwnProperty(&#39;n&#39;));//false
-console.log(f.hasOwnProperty(&#39;toString&#39;));//false(虽然toString有这个属性，但是他不是私有属性)</code></pre>
-</li>
-</ul>
+// 设置超时时间(十秒)
+axios.defaults.timeou = 10000;
+// 设置跨域请求携带凭证(是)
+axios.defaults.withCredentials = true;
+//设置请求参数格式(x-www-form-urlencoded)
+axios.defaults.headers[&#39;Content-Type&#39;] = &quot;application/x-www-form-urlencoded&quot;;// 格式xxx=xxx&amp;&amp;xxx=xxx
+//将json格式转换为x-www-form-urlencoded格式[ tranformRequest只对post请求起作用, data是传递的参数 ]
+axios.defaults.transformRequest = data =&gt; qs.stringify(data);//将&#123;name=xxx,age=xx&#125;=&gt;name=xxx&amp;&amp;age=xx
+// 请求拦截器
+axios.interceptors.request.use(config =&gt; &#123;
+    // 携带本地存储的token
+    let token = localStorage.getItem(&#39;token&#39;);
+    token &amp;&amp; (config.headers.Authorization = token);
+    return config;
+&#125;, error =&gt; &#123;
+    // 将失败信息返回
+    return Promise.reject(error);
+&#125;);
+// 相应拦截器
+axios.interceptors.response.use(response =&gt; &#123;
+    // 直接返回数据
+    return response.data;
+&#125;, error =&gt; &#123;
+    let &#123; response &#125; = error;
+    // 判断是否有数据返回
+    if (response) &#123;
+        // 判断返回状态码，来判断错误问题
+        switch (response.status) &#123;
+            case 401://一般是未登录
+                break;
+            case 403://一般为token
+                break;
+            case 404: //找不到页面地址
+                break;
+        &#125;;
+        // 服务器什么都没返回
+    &#125; else &#123;
+        // 断网状态
+        if (!window.navigator.onLine) &#123;
+            console.log(&#39;没有网络&#39;);
+            return
+        &#125;;
+        // 服务器有问题
+        return Promise.reject(error);
+    &#125;;
+&#125;);
+// 将axios暴露出去
+export default axios;</code></pre>
 
             </div>
             <hr/>
@@ -649,7 +589,7 @@ console.log(f.hasOwnProperty(&#39;toString&#39;));//false(虽然toString有这�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealsea.github.io/posts/jsoop/">https://tealsea.github.io/posts/jsoop/</a>
+                    <a href="https://tealsea.github.io/posts/toolsaxios/">https://tealsea.github.io/posts/toolsaxios/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -687,12 +627,8 @@ console.log(f.hasOwnProperty(&#39;toString&#39;));//false(虽然toString有这�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
-                                </a>
-                            
-                                <a href="/tags/oop/">
-                                    <span class="chip bg-color">oop</span>
+                                <a href="/tags/axios/">
+                                    <span class="chip bg-color">axios</span>
                                 </a>
                             
                         </div>
@@ -1127,24 +1063,22 @@ console.log(f.hasOwnProperty(&#39;toString&#39;));//false(虽然toString有这�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/toolsaxios/">
+                <a href="/posts/npm/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRE28A.jpg" class="responsive-img" alt="axios封装使用">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREyUe.jpg" class="responsive-img" alt="npm的使用">
                         
-                        <span class="card-title">axios封装使用</span>
+                        <span class="card-title">npm的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            //下载 axios &amp;&amp; qs
-// 导出axios模块
-import axios from &#39;axios&#39;
-// 导入qs模块
-import qs from &#39;qs&#39;
-// 设置开发环境(
+                            npm的基本使用npmjs：基于npm下载安装平台
+$ npm install xx; //下载完成后会在本地项目中生成（node_modules）的管理文件夹保存模块
+$ npm install xx -g; // 全局安装模块
+$ np
                         
                     </div>
                     <div class="publish-info">
@@ -1155,8 +1089,8 @@ import qs from &#39;qs&#39;
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    工具
+                            <a href="/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9D%97/" class="post-category">
+                                    包管理模块
                                 </a>
                             
                             
@@ -1166,8 +1100,8 @@ import qs from &#39;qs&#39;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/axios/">
-                        <span class="chip bg-color">axios</span>
+                    <a href="/tags/npm/">
+                        <span class="chip bg-color">npm</span>
                     </a>
                     
                 </div>
@@ -1181,21 +1115,24 @@ import qs from &#39;qs&#39;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/jspropotype/">
+                <a href="/posts/jsoop/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRERgI.jpg" class="responsive-img" alt="js原型和原型链">
+                        <img src="https://s1.ax1x.com/2020/08/26/dREgCd.jpg" class="responsive-img" alt="js面向对象介绍">
                         
-                        <span class="card-title">js原型和原型链</span>
+                        <span class="card-title">js面向对象介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原型
-所有的函数类型都天生再带一个属性：prototype（原型），这个属性的值是一个对象，浏览器会默认给他开辟一个堆内存
-在浏览器中给prototype（原型）开辟的堆内存中有一个天生自带的属性：constructor,这个属性存储的值是
+                            面型对象介绍
+面向对象编程需要我们掌握：‘’对象、类、实例“的概念
+
+对象：万物皆对象
+类：对象的具体细分(按照功能特点进行分类：大类、小类）
+实例：类中具体的一个事物（拿出类别中的具体的一个实例进行研究，那么当前类别下的其他类的实例也具备
                         
                     </div>
                     <div class="publish-info">
@@ -1221,8 +1158,8 @@ import qs from &#39;qs&#39;
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/prototype/">
-                        <span class="chip bg-color">prototype</span>
+                    <a href="/tags/oop/">
+                        <span class="chip bg-color">oop</span>
                     </a>
                     
                 </div>

@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>axios封装使用</title>
+      <link href="/posts/toolsaxios/"/>
+      <url>/posts/toolsaxios/</url>
+      
+        <content type="html"><![CDATA[<pre><code>//下载 axios &amp;&amp; qs// 导出axios模块import axios from &#39;axios&#39;// 导入qs模块import qs from &#39;qs&#39;// 设置开发环境(生产环境)switch (process.env.NODE_ENV) &#123;    case &#39;production&#39;:        axios.defaults.baseURL = &#39;http://tealseaproduction:80&#39;;// 开发环境        break;    case &#39;test&#39;:        axios.defaults.baseURL = &#39;http://tealseatest:3000&#39;;// 测试环境        break;    default:        axios.defaults.baseURL = &#39;http://tealseadevelop:3000&#39;;// 开发环境&#125;;// 设置超时时间(十秒)axios.defaults.timeou = 10000;// 设置跨域请求携带凭证(是)axios.defaults.withCredentials = true;//设置请求参数格式(x-www-form-urlencoded)axios.defaults.headers[&#39;Content-Type&#39;] = &quot;application/x-www-form-urlencoded&quot;;// 格式xxx=xxx&amp;&amp;xxx=xxx//将json格式转换为x-www-form-urlencoded格式[ tranformRequest只对post请求起作用, data是传递的参数 ]axios.defaults.transformRequest = data =&gt; qs.stringify(data);//将&#123;name=xxx,age=xx&#125;=&gt;name=xxx&amp;&amp;age=xx// 请求拦截器axios.interceptors.request.use(config =&gt; &#123;    // 携带本地存储的token    let token = localStorage.getItem(&#39;token&#39;);    token &amp;&amp; (config.headers.Authorization = token);    return config;&#125;, error =&gt; &#123;    // 将失败信息返回    return Promise.reject(error);&#125;);// 相应拦截器axios.interceptors.response.use(response =&gt; &#123;    // 直接返回数据    return response.data;&#125;, error =&gt; &#123;    let &#123; response &#125; = error;    // 判断是否有数据返回    if (response) &#123;        // 判断返回状态码，来判断错误问题        switch (response.status) &#123;            case 401://一般是未登录                break;            case 403://一般为token                break;            case 404: //找不到页面地址                break;        &#125;;        // 服务器什么都没返回    &#125; else &#123;        // 断网状态        if (!window.navigator.onLine) &#123;            console.log(&#39;没有网络&#39;);            return        &#125;;        // 服务器有问题        return Promise.reject(error);    &#125;;&#125;);// 将axios暴露出去export default axios;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> axios </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js面向对象介绍</title>
       <link href="/posts/jsoop/"/>
       <url>/posts/jsoop/</url>

@@ -69,6 +69,36 @@
   </entry>
   
   <entry>
+    <title>axios封装使用</title>
+    <link href="https://tealsea.github.io/posts/toolsaxios/"/>
+    <id>https://tealsea.github.io/posts/toolsaxios/</id>
+    <published>2020-09-21T00:00:00.000Z</published>
+    <updated>2020-09-21T10:25:43.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre&gt;&lt;code&gt;//下载 axios &amp;amp;&amp;amp; qs
+// 导出axios模块
+import axios from &amp;#39;axios&amp;#39;
+// 导入qs模块
+import qs from &amp;#39;qs&amp;#39;
+//</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://tealsea.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="axios" scheme="https://tealsea.github.io/tags/axios/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js面向对象介绍</title>
     <link href="https://tealsea.github.io/posts/jsoop/"/>
     <id>https://tealsea.github.io/posts/jsoop/</id>
@@ -537,35 +567,6 @@
     <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
     <category term="String" scheme="https://tealsea.github.io/tags/String/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js中typeof数据检测</title>
-    <link href="https://tealsea.github.io/posts/jstypeof/"/>
-    <id>https://tealsea.github.io/posts/jstypeof/</id>
-    <published>2020-09-04T00:00:00.000Z</published>
-    <updated>2020-09-05T01:29:46.841Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;js中typeof数据检测&quot;&gt;&lt;a href=&quot;#js中typeof数据检测&quot; class=&quot;headerlink&quot; title=&quot;js中typeof数据检测&quot;&gt;&lt;/a&gt;js中typeof数据检测&lt;/h1&gt;&lt;h2 id=&quot;js中的数据检测&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
-    
-    <category term="typeof" scheme="https://tealsea.github.io/tags/typeof/"/>
     
   </entry>
   
