@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>javascript正则的基本使用</title>
+      <link href="/posts/jsregexp/"/>
+      <url>/posts/jsregexp/</url>
+      
+        <content type="html"><![CDATA[<h3 id="正则基本符号："><a href="#正则基本符号：" class="headerlink" title="正则基本符号："></a>正则基本符号：</h3><h4 id="量词："><a href="#量词：" class="headerlink" title="量词："></a>量词：</h4><table><thead><tr><th align="center">量词</th><th>使用说明</th></tr></thead><tbody><tr><td align="center">{ n, }</td><td>表示出现n次级n次以上</td></tr><tr><td align="center">{ n }</td><td>表示出现n次</td></tr><tr><td align="center">{ n, m}</td><td>表示出现n到m次</td></tr><tr><td align="center">?</td><td>表示出现零次或一次</td></tr><tr><td align="center">+</td><td>表示出现一次及一次以上</td></tr><tr><td align="center">*</td><td>表示出现零次及零次以上</td></tr></tbody></table><h4 id="元字符："><a href="#元字符：" class="headerlink" title="元字符："></a>元字符：</h4><table><thead><tr><th align="center">元字符</th><th align="left">使用说明</th></tr></thead><tbody><tr><td align="center">\w</td><td align="left">表示数字、字母、下划线</td></tr><tr><td align="center">\W</td><td align="left">表示除了数字、字母、下划线</td></tr><tr><td align="center">\d</td><td align="left">表示0-9之间的数字</td></tr><tr><td align="center">\D</td><td align="left">表示除了0-9之间的数字</td></tr><tr><td align="center">\s</td><td align="left">表示空格、制表符、换行符</td></tr><tr><td align="center">\S</td><td align="left">表示除了空格、制表符、换行符</td></tr><tr><td align="center">\b</td><td align="left">表示单词边界</td></tr><tr><td align="center">\B</td><td align="left">表示除了单词边界</td></tr><tr><td align="center">\t</td><td align="left">表示制表符(一个TAB键：四个空格)</td></tr><tr><td align="center">\n</td><td align="left">表示换行符</td></tr><tr><td align="center">\</td><td align="left">表示转义符</td></tr><tr><td align="center">.</td><td align="left">表示除了\n(换行符)之外的任意字符</td></tr><tr><td align="center">\ .</td><td align="left">表示小数点（单独写点\ .写不出来只能中间加一个空格，真实中没有空格）</td></tr><tr><td align="center">[xzy]</td><td align="left">表示 x 或 z 或 y 中的任意字符</td></tr><tr><td align="center">a|b</td><td align="left">表示 a 或 b</td></tr><tr><td align="center">[a-z]</td><td align="left">表示 a-z 之间小写英文字母中的任意一个</td></tr><tr><td align="center">[A-Z]</td><td align="left">表示A-Z之间大写英文字母中的任意一个</td></tr><tr><td align="center">[0-9]</td><td align="left">表示 0-9 之间任意一个数字</td></tr><tr><td align="center">[ \u4e00-\u9fa5 ]</td><td align="left">表示所有汉字</td></tr><tr><td align="center">^n</td><td align="left">表示以n开始</td></tr><tr><td align="center">m$</td><td align="left">表示以m结尾</td></tr><tr><td align="center">^a$</td><td align="left">表示以a开头还要以a结尾</td></tr><tr><td align="center">( )</td><td align="left">表示分组符号</td></tr><tr><td align="center">( ?: )</td><td align="left">表示只匹配不捕获</td></tr><tr><td align="center">( ?= )</td><td align="left">表示正向预查</td></tr><tr><td align="center">( ?! )</td><td align="left">表示负向预查</td></tr><tr><td align="center">[abcs]</td><td align="left">表示abcs其中一个本身意思</td></tr></tbody></table><h4 id="修饰符："><a href="#修饰符：" class="headerlink" title="修饰符："></a>修饰符：</h4><table><thead><tr><th align="center">修饰符</th><th align="left">使用说明</th></tr></thead><tbody><tr><td align="center">i</td><td align="left">表示忽略大小写</td></tr><tr><td align="center">m</td><td align="left">表示进行多行匹配</td></tr><tr><td align="center">g</td><td align="left">表示进行全局匹配</td></tr></tbody></table><h3 id="创建正则的方式："><a href="#创建正则的方式：" class="headerlink" title="创建正则的方式："></a>创建正则的方式：</h3><ul><li><p>字面量创建</p><pre><code>let str=&#39;teal&#39;let reg=/\w/;//匹配字符串中的数字、字母和下划线console.log(reg.test(str));//true</code></pre></li><li><p>构造函数创建</p><pre><code>let str=&#39;teal&#39;;let reg=new RegExp(&quot;\\w&quot;);console.log(reg.test(str));//true</code></pre></li></ul><h3 id="正则中常用的方法"><a href="#正则中常用的方法" class="headerlink" title="正则中常用的方法"></a>正则中常用的方法</h3><ul><li><p>test </p><ol><li><p>effect:    验证字符串是否存在</p></li><li><p>params: value</p></li><li><p>return:   false | true</p><pre><code>let reg=/[a-z]/;//验证a-z之间的英文console.log(reg.test(&#39;teal&#39;));//true;console.log(reg.test(&#39;1234&#39;));//false</code></pre></li></ol></li><li><p>exec</p><ol><li><p>effect: :验证符合条件的值</p></li><li><p>params: value</p></li><li><p>return: 返回一个数组/null，数组中第一项是匹配的字符串，第二项匹配字符串的位置，第三项是原始字符串，第四项是</p><pre><code>let reg=/[a-z]/;console.log(reg.exec(&#39;teal&#39;));//[&quot;t&quot;, index: 0, input: &quot;teal&quot;, groups: undefined]console.log(reg.exec(2222));//null</code></pre></li></ol></li><li><p>match</p><ol><li><p>effect:验证符合条件所有的值</p></li><li><p>params: reg</p></li><li><p>return:返回一个数组/null，数组中包含所有符合条件的值。</p><pre><code>let reg=/(good)/g;console.log(&#39;good good study day day up!&#39;.match(reg));//[&quot;good&quot;, &quot;good&quot;]console.log(&#39;day day up!&#39;.match(reg));//null</code></pre></li></ol></li><li><p>replace</p><ol><li><p>effect:替换指定的字符串</p></li><li><p>params: reg,value</p></li><li><p>return:替换后的字符串</p><pre><code>let reg=/o/g;console.log(&#39;good good study day day up!&#39;.replace(reg,&#39;a&#39;));//&#39;gaad gaad study day day up!&#39;</code></pre></li></ol></li><li><p>search</p><ol><li><p>effect:查询时字符串中是否包含该字符</p></li><li><p>params:  reg</p></li><li><p>return:返回第一个位置得索引，没找到返回-1</p><pre><code>console.log(&#39;abc&#39;.search(/b/g));//1console.log?(&#39;abbc&#39;.search(/d/));//-1</code></pre></li></ol></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 正则 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git的基本使用</title>
       <link href="/posts/git/"/>
       <url>/posts/git/</url>
