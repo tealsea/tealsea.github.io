@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>queryUrlParams</title>
+      <link href="/posts/toolsqueryurlparams/"/>
+      <url>/posts/toolsqueryurlparams/</url>
+      
+        <content type="html"><![CDATA[<pre><code>/* * params: 无 * return: 返回一个对象，对象中存储url中的数据 */~ function() &#123;    //封装获取url参数    function queryUrlParams() &#123;        let obj = &#123;&#125;;//定义一个空对象        this.replace(/([^?#&amp;=]+)=([^?#&amp;=]+)/g, (...[, $1, $2]) =&gt; &#123; /获取参数            obj[$1] = $2//将参数存储到对象中        &#125;);        this.replace(/#([^=&amp;?#]+)/g, (...[, $1]) =&gt; &#123; //获取哈希值            obj[&#39;HASH&#39;] = $1;//将哈希值存储到对象中        &#125;);        return obj;/将对象返回    &#125;;    String.prototype[&#39;queryUrlParams&#39;] = queryUrlParams; //挂载到原型&#125;();//测试let url1 = &#39;www.baidu.com/?name=teal&amp;age=29#video&#39;;console.log(url1.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;, HASH: &quot;video&quot;&#125;let url2 = &#39;www.baidu.com/?name=teal&amp;age=29&#39;;console.log(url2.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;&#125;let url3 = &#39;www.baidu.com/#video&#39;;console.log(url3.queryUrlParams()); /&#123;HASH: &quot;video&quot;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 正则 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git的基本使用</title>
       <link href="/posts/git/"/>
       <url>/posts/git/</url>

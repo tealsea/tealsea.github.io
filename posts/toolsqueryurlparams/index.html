@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git的基本使用, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
+    <meta name="keywords" content="queryUrlParams, Teal 学习 分享 前端 博客 blog javascript css html 小程序 node mongodb 音乐 vue">
     <meta name="description" content="Teal的学习分享博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>git的基本使用 | Teal</title>
+    <title>queryUrlParams | Teal</title>
     <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/26/d2ISAJ.th.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -357,7 +357,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">git的基本使用</h1>
+                    <h1 class="description center-align post-title">queryUrlParams</h1>
                 </div>
             </div>
         </div>
@@ -474,8 +474,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/%E6%AD%A3%E5%88%99/">
+                                <span class="chip bg-color">正则</span>
                             </a>
                         
                     </div>
@@ -486,8 +486,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" class="post-category">
-                                版本控制
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                工具
                             </a>
                         
                     </div>
@@ -499,7 +499,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-21
+                    2020-09-22
                 </div>
                 
 
@@ -515,55 +515,31 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="git的基本使用"><a href="#git的基本使用" class="headerlink" title="git的基本使用"></a>git的基本使用</h2><ol>
-<li><p>初始化一个本地的git仓库</p>
-<pre class=" language-shell"><code class="language-shell">$ git init; // 初始化git仓库</code></pre>
-</li>
-<li><p>将工作区代码提交到暂存区</p>
-<pre class=" language-shell"><code class="language-shell">$ git status;// 查看工作区代码
-$ git add . / git add -A;// 将代码提交暂存区</code></pre>
-</li>
-<li><p>将暂存区代码提交到历史区</p>
-<pre class=" language-shell"><code class="language-shell">$ git commit -m'项目描述';//将暂存区代码提交到历史区
-$ git log;// 查看首次历史版本信息
-$ git reflog;// 查看所有的历史版本信息及操作
-$ git reset --hard 历史版本号;//回退到指定的版本</code></pre>
-</li>
-<li><p>把本地代码提交到远程仓库</p>
-<ol>
-<li><p>创建 github账号</p>
-</li>
-<li><p>创建一个新的远程仓库</p>
-</li>
-<li><p>将本地仓库和远程仓库进行连接</p>
-<pre class=" language-shell"><code class="language-shell">$ git remote -V;//查看连接状态
-$ git remote add origin 仓库地址;//将本地仓库和远程仓库建立连接
-$ git remote rm origin;//删除本地仓库和远程仓库的关联
-$ git remote pull origin master;//拉取远程仓库最新的代码
-$ git remote push origin master;//将本地代码上传到远程仓库</code></pre>
-</li>
-</ol>
-</li>
-<li><p>克隆仓库</p>
-<ol>
-<li><p>创建一个仓库</p>
-</li>
-<li><p>点击code查看仓库地址</p>
-</li>
-<li><p>在本地进行克隆</p>
-<pre class=" language-shell"><code class="language-shell">$ git clone 仓库地址</code></pre>
-<blockquote>
-<p>克隆的好处？</p>
-<ol>
-<li>克隆可以自动初始化仓库</li>
-<li>克隆自动和远程仓库进行连接</li>
-<li>克隆可以将仓库内容拉取到本地</li>
-</ol>
-</blockquote>
-</li>
-</ol>
-</li>
-</ol>
+                <pre><code>/*
+ * params: 无
+ * return: 返回一个对象，对象中存储url中的数据
+ */
+~ function() &#123;
+    //封装获取url参数
+    function queryUrlParams() &#123;
+        let obj = &#123;&#125;;//定义一个空对象
+        this.replace(/([^?#&amp;=]+)=([^?#&amp;=]+)/g, (...[, $1, $2]) =&gt; &#123; /获取参数
+            obj[$1] = $2//将参数存储到对象中
+        &#125;);
+        this.replace(/#([^=&amp;?#]+)/g, (...[, $1]) =&gt; &#123; //获取哈希值
+            obj[&#39;HASH&#39;] = $1;//将哈希值存储到对象中
+        &#125;);
+        return obj;/将对象返回
+    &#125;;
+    String.prototype[&#39;queryUrlParams&#39;] = queryUrlParams; //挂载到原型
+&#125;();
+//测试
+let url1 = &#39;www.baidu.com/?name=teal&amp;age=29#video&#39;;
+console.log(url1.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;, HASH: &quot;video&quot;&#125;
+let url2 = &#39;www.baidu.com/?name=teal&amp;age=29&#39;;
+console.log(url2.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;&#125;
+let url3 = &#39;www.baidu.com/#video&#39;;
+console.log(url3.queryUrlParams()); /&#123;HASH: &quot;video&quot;&#125;</code></pre>
 
             </div>
             <hr/>
@@ -589,7 +565,7 @@ $ git remote push origin master;//将本地代码上传到远程仓库</code></p
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tealsea.github.io/posts/git/">https://tealsea.github.io/posts/git/</a>
+                    <a href="https://tealsea.github.io/posts/toolsqueryurlparams/">https://tealsea.github.io/posts/toolsqueryurlparams/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -627,8 +603,8 @@ $ git remote push origin master;//将本地代码上传到远程仓库</code></p
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/%E6%AD%A3%E5%88%99/">
+                                    <span class="chip bg-color">正则</span>
                                 </a>
                             
                         </div>
@@ -1063,25 +1039,25 @@ $ git remote push origin master;//将本地代码上传到远程仓库</code></p
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/toolsqueryurlparams/">
+                <a href="/posts/toolsformattime/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dRERgI.jpg" class="responsive-img" alt="queryUrlParams">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRE4Df.jpg" class="responsive-img" alt="封装时间格式">
                         
-                        <span class="card-title">queryUrlParams</span>
+                        <span class="card-title">封装时间格式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             /*
- * params: 无
- * return: 返回一个对象，对象中存储url中的数据
+ * params: 任意参数分割日期，默认汉字格式
+ * return: 返回指定格式日期
  */
 ~ function() &#123;
-    //封装获取url参数
-    function queryUrlParams() &#1
+    // 封装格式日期函数
+    function formatTime(format
                         
                     </div>
                     <div class="publish-info">
@@ -1118,22 +1094,25 @@ $ git remote push origin master;//将本地代码上传到远程仓库</code></p
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/npm/">
+                <a href="/posts/git/">
                     <div class="card-image">
                         
                         
-                        <img src="https://s1.ax1x.com/2020/08/26/dREyUe.jpg" class="responsive-img" alt="npm的使用">
+                        <img src="https://s1.ax1x.com/2020/08/26/dRERgI.jpg" class="responsive-img" alt="git的基本使用">
                         
-                        <span class="card-title">npm的使用</span>
+                        <span class="card-title">git的基本使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            npm的基本使用npmjs：基于npm下载安装平台
-$ npm install xx; //下载完成后会在本地项目中生成（node_modules）的管理文件夹保存模块
-$ npm install xx -g; // 全局安装模块
-$ np
+                            git的基本使用
+初始化一个本地的git仓库
+$ git init; // 初始化git仓库
+
+将工作区代码提交到暂存区
+$ git status;// 查看工作区代码
+$ git add . / git add -A;// 将代码提交暂存
                         
                     </div>
                     <div class="publish-info">
@@ -1144,8 +1123,8 @@ $ np
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9D%97/" class="post-category">
-                                    包管理模块
+                            <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" class="post-category">
+                                    版本控制
                                 </a>
                             
                             
@@ -1155,8 +1134,8 @@ $ np
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/npm/">
-                        <span class="chip bg-color">npm</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
