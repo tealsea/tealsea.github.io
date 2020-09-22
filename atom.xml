@@ -155,33 +155,6 @@ import qs from &amp;#39;qs&amp;#39;
   </entry>
   
   <entry>
-    <title>js原型和原型链</title>
-    <link href="https://tealsea.github.io/posts/jspropotype/"/>
-    <id>https://tealsea.github.io/posts/jspropotype/</id>
-    <published>2020-09-12T00:00:00.000Z</published>
-    <updated>2020-09-12T04:30:05.796Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;原型&quot;&gt;&lt;a href=&quot;#原型&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
-    
-    <category term="prototype" scheme="https://tealsea.github.io/tags/prototype/"/>
-    
-  </entry>
-  
-  <entry>
     <title>js面向对象介绍</title>
     <link href="https://tealsea.github.io/posts/jsoop/"/>
     <id>https://tealsea.github.io/posts/jsoop/</id>
@@ -205,6 +178,33 @@ import qs from &amp;#39;qs&amp;#39;
     <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
     
     <category term="oop" scheme="https://tealsea.github.io/tags/oop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js原型和原型链</title>
+    <link href="https://tealsea.github.io/posts/jspropotype/"/>
+    <id>https://tealsea.github.io/posts/jspropotype/</id>
+    <published>2020-09-12T00:00:00.000Z</published>
+    <updated>2020-09-12T04:30:05.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;原型&quot;&gt;&lt;a href=&quot;#原型&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://tealsea.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javascript" scheme="https://tealsea.github.io/tags/javascript/"/>
+    
+    <category term="prototype" scheme="https://tealsea.github.io/tags/prototype/"/>
     
   </entry>
   

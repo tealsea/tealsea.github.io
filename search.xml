@@ -129,33 +129,6 @@
     
     
     <entry>
-      <title>js原型和原型链</title>
-      <link href="/posts/jspropotype/"/>
-      <url>/posts/jspropotype/</url>
-      
-        <content type="html"><![CDATA[<h4 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h4><ul><li>所有的函数类型都天生再带一个属性：prototype（原型），这个属性的值是一个对象，浏览器会默认给他开辟一个堆内存</li><li>在浏览器中给prototype（原型）开辟的堆内存中有一个天生自带的属性：constructor,这个属性存储的值是当前函数本身</li><li>每一个对象都有一个__proto__的属性，这个属性指向当前的实例所属类的prototype（如果不能确定他是谁的实例，都是Object的实例） </li></ul><h4 id="原型图"><a href="#原型图" class="headerlink" title="原型图"></a>原型图</h4><p><img src="https://s1.ax1x.com/2020/09/12/waCW7t.md.png" alt="原型图"></p><h4 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h4><blockquote><p>他是一种基于__proto__向上查找的机制，当我们操作实例的某一个属性或方法的时候，首先找到自己的私有的属性或方法</p><ul><li>找到了，则结束查找，使用自己私有的属性或方法即可</li><li>没找到，则基于__proto__找到所属类的prototype,如果找到了，就用这个属性或方法，没找到则继续向上查找，一直找到Object.protype的原型为止，如果还没找到，操作的属性或方法不存在</li></ul></blockquote><pre><code>function Fn()&#123;    var n=10;    this.aa=function()&#123;        console.log(&#39;aa私有&#39;);    &#125;;&#125;;Fn.prototype.AA=function()&#123;    console.log(&#39;AA公&#39;);&#125;;var f1=new Fn();var f2=new Fn();console.log(f1.n);//undefinedconsole.log(f1.aa===f2.aa);//falseconsole.log(f1.__proto__.AA===f2.__proto__.AA);//trueconsole.log(f1.hasOwnProperty===Fn.prototype.hasOwnProperty);//true</code></pre><p>原型图</p><p><img src="https://s1.ax1x.com/2020/09/12/waA8sg.md.png" alt="原型图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> javascript </tag>
-            
-            <tag> prototype </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>js面向对象介绍</title>
       <link href="/posts/jsoop/"/>
       <url>/posts/jsoop/</url>
@@ -175,6 +148,33 @@
             <tag> javascript </tag>
             
             <tag> oop </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js原型和原型链</title>
+      <link href="/posts/jspropotype/"/>
+      <url>/posts/jspropotype/</url>
+      
+        <content type="html"><![CDATA[<h4 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h4><ul><li>所有的函数类型都天生再带一个属性：prototype（原型），这个属性的值是一个对象，浏览器会默认给他开辟一个堆内存</li><li>在浏览器中给prototype（原型）开辟的堆内存中有一个天生自带的属性：constructor,这个属性存储的值是当前函数本身</li><li>每一个对象都有一个__proto__的属性，这个属性指向当前的实例所属类的prototype（如果不能确定他是谁的实例，都是Object的实例） </li></ul><h4 id="原型图"><a href="#原型图" class="headerlink" title="原型图"></a>原型图</h4><p><img src="https://s1.ax1x.com/2020/09/12/waCW7t.md.png" alt="原型图"></p><h4 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h4><blockquote><p>他是一种基于__proto__向上查找的机制，当我们操作实例的某一个属性或方法的时候，首先找到自己的私有的属性或方法</p><ul><li>找到了，则结束查找，使用自己私有的属性或方法即可</li><li>没找到，则基于__proto__找到所属类的prototype,如果找到了，就用这个属性或方法，没找到则继续向上查找，一直找到Object.protype的原型为止，如果还没找到，操作的属性或方法不存在</li></ul></blockquote><pre><code>function Fn()&#123;    var n=10;    this.aa=function()&#123;        console.log(&#39;aa私有&#39;);    &#125;;&#125;;Fn.prototype.AA=function()&#123;    console.log(&#39;AA公&#39;);&#125;;var f1=new Fn();var f2=new Fn();console.log(f1.n);//undefinedconsole.log(f1.aa===f2.aa);//falseconsole.log(f1.__proto__.AA===f2.__proto__.AA);//trueconsole.log(f1.hasOwnProperty===Fn.prototype.hasOwnProperty);//true</code></pre><p>原型图</p><p><img src="https://s1.ax1x.com/2020/09/12/waA8sg.md.png" alt="原型图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> prototype </tag>
             
         </tags>
       
