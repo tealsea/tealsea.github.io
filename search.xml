@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>封装时间格式</title>
+      <link href="/posts/toolsformattime/"/>
+      <url>/posts/toolsformattime/</url>
+      
+        <content type="html"><![CDATA[<pre><code>/* * params: 任意参数分割日期，默认汉字格式 * return: 返回指定格式日期 */~ function() &#123;    // 封装格式日期函数    function formatTime(format = &#39;cn&#39;) &#123; //格式默认为中文        time = this.match(/\d+/g);//将日期拆分成数组        let template = format === &#39;cn&#39; ? &quot;&#123;0&#125;年&#123;1&#125;月&#123;2&#125;日 &#123;3&#125;时&#123;4&#125;分&#123;5&#125;秒&quot; : `&#123;0&#125;$&#123;format&#125;&#123;1&#125;$&#123;format&#125;&#123;2&#125; &#123;3&#125;:&#123;4&#125;:&#123;5&#125;`;//判断日期模板        return template = template.replace(/\&#123;(\d+)\&#125;/g, (content, $1) =&gt; &#123; //将模板中指定内容替换            let newtime = time[$1] || &quot;00&quot;;// 自动将缺少的时间变为00            return newtime = newtime.length &lt; 2 ? &quot;0&quot; + newtime : newtime;//将小于两位的时间前面加一个字符串0        &#125;);    &#125;;    String.prototype[&#39;formatTime&#39;] = formatTime;//挂载到字符串原型&#125;();//测试let time1=&#39;2020年9月22号 12:22:33&#39;;console.log(time1.formatTime());//&#39;2020年09月22日 12时22分33秒&#39;let time2=&#39;2020年9月22号&#39;;console.log(time2.formatTime());//&#39;2020年09月22日 00时00分00秒&#39;let time3=&#39;2020年9月22号 12:22:33&#39;;console.log(time3.formatTime(&#39;-&#39;));//&#39;2020-09-22 12:22:33&#39;let time4=&#39;2020年9月22号&#39;;console.log(time4.formatTime(&#39;+&#39;));//&#39;2020+09+22 00:00:00&#39;let time5=&#39;2020-09-22 12:22:33&#39;;console.log(time5.formatTime());//&#39;2020年09月22日 12时22分33秒&#39;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 正则 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git的基本使用</title>
       <link href="/posts/git/"/>
       <url>/posts/git/</url>
