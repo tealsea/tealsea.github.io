@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>node爬虫-秀妹子</title>
+      <link href="/posts/showmeizi/"/>
+      <url>/posts/showmeizi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="使用node爬虫"><a href="#使用node爬虫" class="headerlink" title="使用node爬虫"></a>使用node爬虫</h2><h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul><li><a href="https://nodejs.org/zh-cn/">安装node</a>h环境</li><li>npm  install cheerio</li><li>npm install axios</li></ul><pre><code>//导入模块const cheerio = require(&#39;cheerio&#39;);const fs = require(&#39;fs&#39;);const axios = require(&#39;axios&#39;);const URL = &#39;https://www.showmeizi.com&#39;;//爬取的地址const pageAddress = &#39;/category/xinggan&#39;;//分类let flag = 0;//记录套图位置const end = 10;//结束页面let page = 1;//开始页面----必须大于1const dir = &#39;images&#39;;//目录名称const reg = /[`~!@#$^&amp;*()=|&#123;&#125;&#39;:;&#39;,\\\[\]\.&lt;&gt;\/?~！@#￥……&amp;*（）——|&#123;&#125;【】&#39;；：&quot;&quot;&#39;。，、？\s]/g;//特殊字符//主程序function run() &#123;  imgbox();//调用分类api&#125;;//获取分类图片async function imgbox() &#123;  const &#123; data &#125; = await axios.get(URL + pageAddress + &#39;?currentPage=&#39; + page);//获取页面  const $ = cheerio.load(data);//使用模块  const num = $(&#39;.clearfix li a&#39;).length;//获取图片总数量  // 判断所有图片是否爬取完毕  if (flag === num) &#123;    if (end &gt; page) &#123;      flag = 0;//初始化页面      console.log(&#39;开始爬取-----------------------第&#39; + (++page) + &#39;数据&#39;);      await imgbox();    &#125; else &#123;      console.log(&#39;『全部爬取成功-------结束程序』&#39;);    &#125;;    return;  &#125;;  const imgSrc = $(&#39;.clearfix li a&#39;).eq(flag).attr(&#39;href&#39;);//获取图片地址  await getImg(imgSrc, 0);//调用获取图片api&#125;;//获取具体图片async function getImg(imgSrc, num) &#123;  const &#123; data &#125; = await axios.get(URL + imgSrc);//获取页面代码  const $ = cheerio.load(data);//使用模块  const fileTitle = $(&#39;h1&#39;).text().trim().replace(reg, &#39;-&#39;);//将特殊字符变为‘-’  const imgNum = $(&#39;.swiper-wrapper .swiper-slide&#39;).length;//获取图片数量  //判断是否爬取完毕  if (num === imgNum) &#123;    flag++;    await imgbox();//循环执行    return;  &#125;;  fs.mkdir(&#39;./&#39;+dir, () =&gt; &#123; &#125;);//创建文件夹  const fileSrc = $(&#39;.swiper-wrapper .swiper-slide img&#39;).eq(num)[&#39;0&#39;].attribs[&#39;data-src&#39;];//获取图片连接  await downImg(num, fileSrc, fileTitle, imgSrc);&#125;;//下载爬取的文件async function downImg(num, fileSrc, fileTitle, imgSrc) &#123;  console.log(&#39;开始爬取&#39;);  fs.mkdir(&#39;./&#39; + dir + &#39;/&#39; + fileTitle, () =&gt; &#123; &#125;);//创建文件夹  const reg1 = /\.(bmp|jpg|png|tif|gif|pcx|tga|exif|fpx|svg|psd|cdr|pcd|dxf|ufo|eps|ai|raw|WMF|webp)/g;// 判断图片格式  const format = reg1.exec(fileSrc)[1];//获取文件格式  const str = encodeURI(fileSrc);//格式化编码  // 获取下载地址  const &#123; data &#125; = await axios.get(URL + str, &#123;    responseType: &#39;stream&#39;  //转换成流的方式  &#125;);  //`./$&#123;dir&#125;/$&#123;fileTitle&#125;/$&#123;++num&#125;.$&#123;format&#125;`  const fileName = fs.createWriteStream(`./$&#123;dir&#125;/$&#123;fileTitle&#125;/$&#123;++num&#125;.$&#123;format&#125;`);//创建文件名称  data.pipe(fileName);//建立管道爬取  //爬取成功  fileName.on(&#39;finish&#39;, async () =&gt; &#123;    console.log(`【$&#123;fileTitle&#125;】---第$&#123;num&#125;张-----爬取成功`);    //设置爬取间隔时间    setTimeout(async () =&gt; &#123;      await getImg(imgSrc, num);//循环爬取    &#125;, 1000);  &#125;);&#125;;run();//运行程序</code></pre><h3 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h3><ul><li><a href="https://gitee.com/tealsea/showmeizi">gitee</a></li><li><a href="https://github.com/tealsea/showmeizi">github</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 其他 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>node爬虫-妹子图</title>
       <link href="/posts/mzitu/"/>
       <url>/posts/mzitu/</url>
       
-        <content type="html"><![CDATA[<h2 id="使用node爬虫"><a href="#使用node爬虫" class="headerlink" title="使用node爬虫"></a>使用node爬虫</h2><h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul><li><a href="https://nodejs.org/zh-cn/">安装node</a>h环境</li><li>npm  install cheerio</li><li>npm install axios</li></ul><pre><code>const fs = require(&#39;fs&#39;),    cheerio = require(&#39;cheerio&#39;),    axios = require(&#39;axios&#39;),    URL = &#39;https://www.mzitu.com/246652/2&#39;;getImg(URL)// 获取页面信息async function getImg(url) &#123;    const html = await axios.get(url)    const $ = cheerio.load(html.data);    const imgSrc = $(&#39;.main-image img&#39;).attr(&#39;src&#39;);    const imgTitle = $(&#39;.main-image img&#39;).attr(&#39;alt&#39;);    const nextImgSrc = $(&#39;.main-image a&#39;).attr(&#39;href&#39;);    createDir(imgSrc, imgTitle, nextImgSrc);&#125;;// 创建分组文件夹async function createDir(imgSrc, imgTitle, next) &#123;    let reg = /\/(\d+)$/g;    let num = reg.exec(next)[1];    num &gt; 400?num=1:num-1;    //创建文件夹    fs.mkdir(&#39;./&#39;+imgTitle, error=&gt;&#123;        console.log(&#39;正在爬取图片&#39;);    &#125;);    sava(imgTitle, imgSrc, next, num);&#125;;// 将图片保存到本地async function sava(imgTitle, imgSrc, next, num) &#123;    // 判断图片格式    let reg=/\.(bmp|jpg|png|tif|gif|pcx|tga|exif|fpx|svg|psd|cdr|pcd|dxf|ufo|eps|ai|raw|WMF|webp)/g;    let format=reg.exec(imgSrc)[1];    //将图片转化为流的方式    let img = await axios.get(imgSrc, &#123;        responseType: &#39;stream&#39;, headers: &#123;            referer: &#39;https://www.mzitu.com/&#39;        &#125;,    &#125;);    //以流的方式下载到本地    let ws = fs.createWriteStream(`./$&#123;imgTitle&#125;/$&#123;num&#125;.$&#123;format&#125;`);    img.data.pipe(ws);    // 爬取成功触发    ws.on(&#39;finish&#39;, function () &#123;        console.log(&quot;『&quot;+imgTitle+&quot;』&quot; + &#39;-----------------爬取成功&#39;);        //循环下一个图片        getImg(next);    &#125;);&#125;;</code></pre><h3 id="运行图片"><a href="#运行图片" class="headerlink" title="运行图片"></a>运行图片</h3><p><img src="https://ftp.bmp.ovh/imgs/2020/09/1d09100e95910ae6.png" alt="网站代码"></p><p><img src="https://ftp.bmp.ovh/imgs/2020/09/ec328375d815f108.png" alt="运行代码"></p><p><img src="https://ftp.bmp.ovh/imgs/2020/09/df42f565cc20d82c.png" alt="本地输出"></p><h4 id="源码地址"><a href="#源码地址" class="headerlink" title="源码地址:"></a>源码地址:</h4><ul><li><a href="https://gitee.com/tealsea/sister-picture">gitee</a></li><li><a href="https://github.com/tealsea/mzitu">github</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="使用node爬虫"><a href="#使用node爬虫" class="headerlink" title="使用node爬虫"></a>使用node爬虫</h2><h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul><li><a href="https://nodejs.org/zh-cn/">安装node</a>h环境</li><li>npm  install cheerio</li><li>npm install axios</li></ul><pre><code>const fs = require(&#39;fs&#39;),    cheerio = require(&#39;cheerio&#39;),    axios = require(&#39;axios&#39;),    URL = &#39;https://www.mzitu.com/246652/2&#39;;getImg(URL)// 获取页面信息async function getImg(url) &#123;    const html = await axios.get(url)    const $ = cheerio.load(html.data);    const imgSrc = $(&#39;.main-image img&#39;).attr(&#39;src&#39;);    const imgTitle = $(&#39;.main-image img&#39;).attr(&#39;alt&#39;);    const nextImgSrc = $(&#39;.main-image a&#39;).attr(&#39;href&#39;);    createDir(imgSrc, imgTitle, nextImgSrc);&#125;;// 创建分组文件夹async function createDir(imgSrc, imgTitle, next) &#123;    let reg = /\/(\d+)$/g;    let num = reg.exec(next)[1];    num &gt; 400?num=1:num-1;    //创建文件夹    fs.mkdir(&#39;./&#39;+imgTitle, error=&gt;&#123;        console.log(&#39;正在爬取图片&#39;);    &#125;);    sava(imgTitle, imgSrc, next, num);&#125;;// 将图片保存到本地async function sava(imgTitle, imgSrc, next, num) &#123;    // 判断图片格式    let reg=/\.(bmp|jpg|png|tif|gif|pcx|tga|exif|fpx|svg|psd|cdr|pcd|dxf|ufo|eps|ai|raw|WMF|webp)/g;    let format=reg.exec(imgSrc)[1];    //将图片转化为流的方式    let img = await axios.get(imgSrc, &#123;        responseType: &#39;stream&#39;, headers: &#123;            referer: &#39;https://www.mzitu.com/&#39;        &#125;,    &#125;);    //以流的方式下载到本地    let ws = fs.createWriteStream(`./$&#123;imgTitle&#125;/$&#123;num&#125;.$&#123;format&#125;`);    img.data.pipe(ws);    // 爬取成功触发    ws.on(&#39;finish&#39;, function () &#123;        console.log(&quot;『&quot;+imgTitle+&quot;』&quot; + &#39;-----------------爬取成功&#39;);        //循环下一个图片        getImg(next);    &#125;);&#125;;</code></pre><h4 id="源码地址"><a href="#源码地址" class="headerlink" title="源码地址:"></a>源码地址:</h4><ul><li><a href="https://gitee.com/tealsea/sister-picture">gitee</a></li><li><a href="https://github.com/tealsea/mzitu">github</a></li></ul>]]></content>
       
       
       <categories>
@@ -54,11 +79,11 @@
     
     
     <entry>
-      <title>queryUrlParams</title>
-      <link href="/posts/toolsqueryurlparams/"/>
-      <url>/posts/toolsqueryurlparams/</url>
+      <title>封装时间格式</title>
+      <link href="/posts/toolsformattime/"/>
+      <url>/posts/toolsformattime/</url>
       
-        <content type="html"><![CDATA[<pre><code>/* * params: 无 * return: 返回一个对象，对象中存储url中的数据 */~ function() &#123;    //封装获取url参数    function queryUrlParams() &#123;        let obj = &#123;&#125;;//定义一个空对象        this.replace(/([^?#&amp;=]+)=([^?#&amp;=]+)/g, (...[, $1, $2]) =&gt; &#123; /获取参数            obj[$1] = $2//将参数存储到对象中        &#125;);        this.replace(/#([^=&amp;?#]+)/g, (...[, $1]) =&gt; &#123; //获取哈希值            obj[&#39;HASH&#39;] = $1;//将哈希值存储到对象中        &#125;);        return obj;/将对象返回    &#125;;    String.prototype[&#39;queryUrlParams&#39;] = queryUrlParams; //挂载到原型&#125;();//测试let url1 = &#39;www.baidu.com/?name=teal&amp;age=29#video&#39;;console.log(url1.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;, HASH: &quot;video&quot;&#125;let url2 = &#39;www.baidu.com/?name=teal&amp;age=29&#39;;console.log(url2.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;&#125;let url3 = &#39;www.baidu.com/#video&#39;;console.log(url3.queryUrlParams()); /&#123;HASH: &quot;video&quot;&#125;</code></pre>]]></content>
+        <content type="html"><![CDATA[<pre><code>/* * params: 任意参数分割日期，默认汉字格式 * return: 返回指定格式日期 */~ function() &#123;    // 封装格式日期函数    function formatTime(format = &#39;cn&#39;) &#123; //格式默认为中文        time = this.match(/\d+/g);//将日期拆分成数组        let template = format === &#39;cn&#39; ? &quot;&#123;0&#125;年&#123;1&#125;月&#123;2&#125;日 &#123;3&#125;时&#123;4&#125;分&#123;5&#125;秒&quot; : `&#123;0&#125;$&#123;format&#125;&#123;1&#125;$&#123;format&#125;&#123;2&#125; &#123;3&#125;:&#123;4&#125;:&#123;5&#125;`;//判断日期模板        return template = template.replace(/\&#123;(\d+)\&#125;/g, (content, $1) =&gt; &#123; //将模板中指定内容替换            let newtime = time[$1] || &quot;00&quot;;// 自动将缺少的时间变为00            return newtime = newtime.length &lt; 2 ? &quot;0&quot; + newtime : newtime;//将小于两位的时间前面加一个字符串0        &#125;);    &#125;;    String.prototype[&#39;formatTime&#39;] = formatTime;//挂载到字符串原型&#125;();//测试let time1=&#39;2020年9月22号 12:22:33&#39;;console.log(time1.formatTime());//&#39;2020年09月22日 12时22分33秒&#39;let time2=&#39;2020年9月22号&#39;;console.log(time2.formatTime());//&#39;2020年09月22日 00时00分00秒&#39;let time3=&#39;2020年9月22号 12:22:33&#39;;console.log(time3.formatTime(&#39;-&#39;));//&#39;2020-09-22 12:22:33&#39;let time4=&#39;2020年9月22号&#39;;console.log(time4.formatTime(&#39;+&#39;));//&#39;2020+09+22 00:00:00&#39;let time5=&#39;2020-09-22 12:22:33&#39;;console.log(time5.formatTime());//&#39;2020年09月22日 12时22分33秒&#39;</code></pre>]]></content>
       
       
       <categories>
@@ -79,11 +104,11 @@
     
     
     <entry>
-      <title>封装时间格式</title>
-      <link href="/posts/toolsformattime/"/>
-      <url>/posts/toolsformattime/</url>
+      <title>queryUrlParams</title>
+      <link href="/posts/toolsqueryurlparams/"/>
+      <url>/posts/toolsqueryurlparams/</url>
       
-        <content type="html"><![CDATA[<pre><code>/* * params: 任意参数分割日期，默认汉字格式 * return: 返回指定格式日期 */~ function() &#123;    // 封装格式日期函数    function formatTime(format = &#39;cn&#39;) &#123; //格式默认为中文        time = this.match(/\d+/g);//将日期拆分成数组        let template = format === &#39;cn&#39; ? &quot;&#123;0&#125;年&#123;1&#125;月&#123;2&#125;日 &#123;3&#125;时&#123;4&#125;分&#123;5&#125;秒&quot; : `&#123;0&#125;$&#123;format&#125;&#123;1&#125;$&#123;format&#125;&#123;2&#125; &#123;3&#125;:&#123;4&#125;:&#123;5&#125;`;//判断日期模板        return template = template.replace(/\&#123;(\d+)\&#125;/g, (content, $1) =&gt; &#123; //将模板中指定内容替换            let newtime = time[$1] || &quot;00&quot;;// 自动将缺少的时间变为00            return newtime = newtime.length &lt; 2 ? &quot;0&quot; + newtime : newtime;//将小于两位的时间前面加一个字符串0        &#125;);    &#125;;    String.prototype[&#39;formatTime&#39;] = formatTime;//挂载到字符串原型&#125;();//测试let time1=&#39;2020年9月22号 12:22:33&#39;;console.log(time1.formatTime());//&#39;2020年09月22日 12时22分33秒&#39;let time2=&#39;2020年9月22号&#39;;console.log(time2.formatTime());//&#39;2020年09月22日 00时00分00秒&#39;let time3=&#39;2020年9月22号 12:22:33&#39;;console.log(time3.formatTime(&#39;-&#39;));//&#39;2020-09-22 12:22:33&#39;let time4=&#39;2020年9月22号&#39;;console.log(time4.formatTime(&#39;+&#39;));//&#39;2020+09+22 00:00:00&#39;let time5=&#39;2020-09-22 12:22:33&#39;;console.log(time5.formatTime());//&#39;2020年09月22日 12时22分33秒&#39;</code></pre>]]></content>
+        <content type="html"><![CDATA[<pre><code>/* * params: 无 * return: 返回一个对象，对象中存储url中的数据 */~ function() &#123;    //封装获取url参数    function queryUrlParams() &#123;        let obj = &#123;&#125;;//定义一个空对象        this.replace(/([^?#&amp;=]+)=([^?#&amp;=]+)/g, (...[, $1, $2]) =&gt; &#123; /获取参数            obj[$1] = $2//将参数存储到对象中        &#125;);        this.replace(/#([^=&amp;?#]+)/g, (...[, $1]) =&gt; &#123; //获取哈希值            obj[&#39;HASH&#39;] = $1;//将哈希值存储到对象中        &#125;);        return obj;/将对象返回    &#125;;    String.prototype[&#39;queryUrlParams&#39;] = queryUrlParams; //挂载到原型&#125;();//测试let url1 = &#39;www.baidu.com/?name=teal&amp;age=29#video&#39;;console.log(url1.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;, HASH: &quot;video&quot;&#125;let url2 = &#39;www.baidu.com/?name=teal&amp;age=29&#39;;console.log(url2.queryUrlParams()); /&#123;name: &quot;teal&quot;, age: &quot;29&quot;&#125;let url3 = &#39;www.baidu.com/#video&#39;;console.log(url3.queryUrlParams()); /&#123;HASH: &quot;video&quot;&#125;</code></pre>]]></content>
       
       
       <categories>
@@ -129,31 +154,6 @@
     
     
     <entry>
-      <title>axios封装使用</title>
-      <link href="/posts/toolsaxios/"/>
-      <url>/posts/toolsaxios/</url>
-      
-        <content type="html"><![CDATA[<pre><code>//下载 axios &amp;&amp; qs// 导出axios模块import axios from &#39;axios&#39;// 导入qs模块import qs from &#39;qs&#39;// 设置开发环境(生产环境)switch (process.env.NODE_ENV) &#123;    case &#39;production&#39;:        axios.defaults.baseURL = &#39;http://tealseaproduction:80&#39;;// 开发环境        break;    case &#39;test&#39;:        axios.defaults.baseURL = &#39;http://tealseatest:3000&#39;;// 测试环境        break;    default:        axios.defaults.baseURL = &#39;http://tealseadevelop:3000&#39;;// 开发环境&#125;;// 设置超时时间(十秒)axios.defaults.timeou = 10000;// 设置跨域请求携带凭证(是)axios.defaults.withCredentials = true;//设置请求参数格式(x-www-form-urlencoded)axios.defaults.headers[&#39;Content-Type&#39;] = &quot;application/x-www-form-urlencoded&quot;;// 格式xxx=xxx&amp;&amp;xxx=xxx//将json格式转换为x-www-form-urlencoded格式[ tranformRequest只对post请求起作用, data是传递的参数 ]axios.defaults.transformRequest = data =&gt; qs.stringify(data);//将&#123;name=xxx,age=xx&#125;=&gt;name=xxx&amp;&amp;age=xx// 请求拦截器axios.interceptors.request.use(config =&gt; &#123;    // 携带本地存储的token    let token = localStorage.getItem(&#39;token&#39;);    token &amp;&amp; (config.headers.Authorization = token);    return config;&#125;, error =&gt; &#123;    // 将失败信息返回    return Promise.reject(error);&#125;);// 相应拦截器axios.interceptors.response.use(response =&gt; &#123;    // 直接返回数据    return response.data;&#125;, error =&gt; &#123;    let &#123; response &#125; = error;    // 判断是否有数据返回    if (response) &#123;        // 判断返回状态码，来判断错误问题        switch (response.status) &#123;            case 401://一般是未登录                break;            case 403://一般为token                break;            case 404: //找不到页面地址                break;        &#125;;        // 服务器什么都没返回    &#125; else &#123;        // 断网状态        if (!window.navigator.onLine) &#123;            console.log(&#39;没有网络&#39;);            return        &#125;;        // 服务器有问题        return Promise.reject(error);    &#125;;&#125;);// 将axios暴露出去export default axios;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> axios </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>npm的使用</title>
       <link href="/posts/npm/"/>
       <url>/posts/npm/</url>
@@ -171,6 +171,31 @@
         <tags>
             
             <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>axios封装使用</title>
+      <link href="/posts/toolsaxios/"/>
+      <url>/posts/toolsaxios/</url>
+      
+        <content type="html"><![CDATA[<pre><code>//下载 axios &amp;&amp; qs// 导出axios模块import axios from &#39;axios&#39;// 导入qs模块import qs from &#39;qs&#39;// 设置开发环境(生产环境)switch (process.env.NODE_ENV) &#123;    case &#39;production&#39;:        axios.defaults.baseURL = &#39;http://tealseaproduction:80&#39;;// 开发环境        break;    case &#39;test&#39;:        axios.defaults.baseURL = &#39;http://tealseatest:3000&#39;;// 测试环境        break;    default:        axios.defaults.baseURL = &#39;http://tealseadevelop:3000&#39;;// 开发环境&#125;;// 设置超时时间(十秒)axios.defaults.timeou = 10000;// 设置跨域请求携带凭证(是)axios.defaults.withCredentials = true;//设置请求参数格式(x-www-form-urlencoded)axios.defaults.headers[&#39;Content-Type&#39;] = &quot;application/x-www-form-urlencoded&quot;;// 格式xxx=xxx&amp;&amp;xxx=xxx//将json格式转换为x-www-form-urlencoded格式[ tranformRequest只对post请求起作用, data是传递的参数 ]axios.defaults.transformRequest = data =&gt; qs.stringify(data);//将&#123;name=xxx,age=xx&#125;=&gt;name=xxx&amp;&amp;age=xx// 请求拦截器axios.interceptors.request.use(config =&gt; &#123;    // 携带本地存储的token    let token = localStorage.getItem(&#39;token&#39;);    token &amp;&amp; (config.headers.Authorization = token);    return config;&#125;, error =&gt; &#123;    // 将失败信息返回    return Promise.reject(error);&#125;);// 相应拦截器axios.interceptors.response.use(response =&gt; &#123;    // 直接返回数据    return response.data;&#125;, error =&gt; &#123;    let &#123; response &#125; = error;    // 判断是否有数据返回    if (response) &#123;        // 判断返回状态码，来判断错误问题        switch (response.status) &#123;            case 401://一般是未登录                break;            case 403://一般为token                break;            case 404: //找不到页面地址                break;        &#125;;        // 服务器什么都没返回    &#125; else &#123;        // 断网状态        if (!window.navigator.onLine) &#123;            console.log(&#39;没有网络&#39;);            return        &#125;;        // 服务器有问题        return Promise.reject(error);    &#125;;&#125;);// 将axios暴露出去export default axios;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> axios </tag>
             
         </tags>
       
